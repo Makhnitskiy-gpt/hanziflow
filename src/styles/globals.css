@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+/* === Ink Culture Theme === */
+
+@theme {
+  /* Traditional Chinese colors */
+  --color-ink: #0d0d0d;
+  --color-ink-surface: #1a1917;
+  --color-ink-elevated: #242220;
+  --color-ink-border: #2a2520;
+  --color-rice: #e8e0d4;
+  --color-rice-muted: #a89e90;
+  --color-rice-dim: #4a453d;
+  --color-cinnabar: #c53d43;
+  --color-cinnabar-hover: #d4535a;
+  --color-gold: #c9a96e;
+  --color-gold-dim: #8a7548;
+  --color-jade: #5b8c72;
+  --color-jade-dim: #3d5e4d;
+  --color-hanzi: #f5f0e8;
+
+  /* Fonts */
+  --font-sans: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+  --font-serif: 'Noto Serif SC', 'Songti SC', serif;
+  --font-hanzi: 'Noto Serif SC', 'Songti SC', serif;
+}
+
+/* === Base styles === */
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-rice);
+  font-family: var(--font-sans);
+  overflow: hidden;
+  height: 100dvh;
+}
+
+#root {
+  height: 100dvh;
+}
+
+/* === Hanzi display === */
+
+.hanzi-display {
+  font-family: var(--font-hanzi);
+  color: var(--color-hanzi);
+}
+
+.hanzi-lg {
+  font-family: var(--font-hanzi);
+  font-size: 96px;
+  line-height: 1;
+  color: var(--color-hanzi);
+}
+
+.hanzi-md {
+  font-family: var(--font-hanzi);
+  font-size: 48px;
+  line-height: 1;
+  color: var(--color-hanzi);
+}
+
+.hanzi-sm {
+  font-family: var(--font-hanzi);
+  font-size: 32px;
+  line-height: 1;
+  color: var(--color-hanzi);
+}
+
+/* === Pinyin tones === */
+
+.tone-1 { color: var(--color-cinnabar); }
+.tone-2 { color: var(--color-gold); }
+.tone-3 { color: var(--color-jade); }
+.tone-4 { color: #7b8fc9; }
+.tone-5 { color: var(--color-rice-muted); }
+
+/* === Rice paper texture === */
+
+.rice-paper {
+  background-color: var(--color-ink-surface);
+  background-image: url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3h1v1H1V3zm2-2h1v1H3V1z' fill='%23ffffff' fill-opacity='0.02'/%3E%3C/svg%3E");
+}
+
+/* === Mi-zi-ge grid (calligraphy practice) === */
+
+.mizige {
+  position: relative;
+  background-color: var(--color-ink-surface);
+}
+
+.mizige::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(var(--color-ink-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-ink-border) 1px, transparent 1px),
+    linear-gradient(45deg, transparent calc(50% - 0.5px), var(--color-ink-border) calc(50% - 0.5px), var(--color-ink-border) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(-45deg, transparent calc(50% - 0.5px), var(--color-ink-border) calc(50% - 0.5px), var(--color-ink-border) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+  background-size: 100% 100%;
+  background-position: center;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* === Ink stamp badge === */
+
+.ink-stamp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid var(--color-cinnabar);
+  border-radius: 2px;
+  color: var(--color-cinnabar);
+  font-family: var(--font-hanzi);
+  font-size: 0.75rem;
+  transform: rotate(-3deg);
+}
+
+/* === Brush stroke divider === */
+
+.brush-divider {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-ink-border) 10%,
+    var(--color-rice-dim) 30%,
+    var(--color-rice-dim) 50%,
+    var(--color-ink-border) 70%,
+    transparent 90%
+  );
+  border-radius: 2px;
+}
+
+/* === Ink spread animation === */
+
+@keyframes ink-spread {
+  0% {
+    transform: scale(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.ink-spread {
+  animation: ink-spread 0.6s ease-out forwards;
+}
+
+/* === Fog of war (unlearned characters) === */
+
+.fog {
+  filter: blur(2px);
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.fog:hover {
+  filter: blur(1px);
+  opacity: 0.5;
+}
+
+/* === Scrollbar styling === */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-ink);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-ink-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-rice-dim);
+}
+
+/* === Canvas touch action === */
+
+canvas {
+  touch-action: none;
+}
