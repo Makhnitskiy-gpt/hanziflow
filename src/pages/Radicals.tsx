@@ -8,10 +8,12 @@ import { RadicalDetail } from '@/components/radical/RadicalDetail';
 
 interface OutletCtx {
   setCurrentChar: (char: string | undefined) => void;
+  setCanvasMode: (mode: 'stroke' | 'draw') => void;
+  setCanvasHighlight: (v: boolean) => void;
 }
 
 export default function Radicals() {
-  const { setCurrentChar } = useOutletContext<OutletCtx>();
+  const { setCurrentChar, setCanvasMode, setCanvasHighlight } = useOutletContext<OutletCtx>();
   const [selected, setSelected] = useState<Radical | null>(null);
   const [searchParams, setSearchParams] = useSearchParams();
 
@@ -42,8 +44,10 @@ export default function Radicals() {
   const handlePractice = useCallback(
     (char: string) => {
       setCurrentChar(char);
+      setCanvasMode('stroke');
+      setCanvasHighlight(true);
     },
-    [setCurrentChar],
+    [setCurrentChar, setCanvasMode, setCanvasHighlight],
   );
 
   return (

@@ -1,17 +1,45 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '@/db';
 import { StrokeCanvas } from '@/components/practice/StrokeCanvas';
 import { WritingPad } from '@/components/practice/WritingPad';
 
-interface CanvasPanelProps {
-  currentChar?: string;
-}
-
 type CanvasMode = 'stroke' | 'draw';
 
-export function CanvasPanel({ currentChar }: CanvasPanelProps) {
-  const [mode, setMode] = useState<CanvasMode>('stroke');
+interface CanvasPanelProps {
+  currentChar?: string;
+  mode?: CanvasMode;
+  onModeChange?: (mode: CanvasMode) => void;
+  highlight?: boolean;
+  onHighlightDone?: () => void;
+}
+
+export function CanvasPanel({
+  currentChar,
+  mode: externalMode,
+  onModeChange,
+  highlight,
+  onHighlightDone,
+}: CanvasPanelProps) {
+  const [internalMode, setInternalMode] = useState<CanvasMode>('stroke');
+  const mode = externalMode ?? internalMode;
+  const setMode = (m: CanvasMode) => {
+    setInternalMode(m);
+    onModeChange?.(m);
+  };
+
+  // Brief highlight animation when practice is triggered
+  const [flash, setFlash] = useState(false);
+  useEffect(() => {
+    if (highlight) {
+      setFlash(true);
+      const t = setTimeout(() => {
+        setFlash(false);
+        onHighlightDone?.();
+      }, 600);
+      return () => clearTimeout(t);
+    }
+  }, [highlight, onHighlightDone]);
 
   // Resolve itemId and itemType for the current character (for saving mnemonics)
   const itemInfo = useLiveQuery(async () => {
@@ -24,7 +52,9 @@ export function CanvasPanel({ currentChar }: CanvasPanelProps) {
   }, [currentChar]);
 
   return (
-    <aside className="flex h-full w-[360px] flex-col border-l border-ink-border bg-ink-surface">
+    <aside className={`flex h-full w-[360px] flex-col border-l bg-ink-surface transition-colors duration-300 ${
+      flash ? 'border-cinnabar bg-cinnabar/5' : 'border-ink-border'
+    }`}>
       {/* Mode toggle */}
       <div className="flex border-b border-ink-border">
         <button

@@ -152,9 +152,9 @@ export function RadicalDetail({ radical, onPractice, onAddToReview }: RadicalDet
       <div className="flex gap-3">
         <button
           onClick={() => onPractice?.(radical.char)}
-          className="flex-1 py-2.5 rounded-md bg-cinnabar text-rice text-sm font-medium hover:bg-cinnabar-hover transition-colors"
+          className="flex-1 py-2.5 min-h-[44px] rounded-md bg-cinnabar text-white text-sm font-medium hover:bg-cinnabar-hover transition-colors"
         >
-          Начать практику
+          Практика штрихов &rarr;
         </button>
         <button
           onClick={handleAddToReview}

@@ -7,6 +7,8 @@ import { AiChat } from '@/components/ai/AiChat';
 
 export function AppShell() {
   const [currentChar, setCurrentChar] = useState<string | undefined>();
+  const [canvasMode, setCanvasMode] = useState<'stroke' | 'draw'>('stroke');
+  const [canvasHighlight, setCanvasHighlight] = useState(false);
   const [aiOpen, setAiOpen] = useState(false);
   const [sessionActive, setSessionActive] = useState(false);
   const [sessionPhase, setSessionPhase] = useState('');
@@ -74,6 +76,8 @@ export function AppShell() {
           <Outlet
             context={{
               setCurrentChar,
+              setCanvasMode,
+              setCanvasHighlight,
               setSessionActive,
               setSessionPhase,
               setSessionTimeLeft,
@@ -85,7 +89,13 @@ export function AppShell() {
       </div>
 
       {/* Right canvas panel */}
-      <CanvasPanel currentChar={currentChar} />
+      <CanvasPanel
+        currentChar={currentChar}
+        mode={canvasMode}
+        onModeChange={setCanvasMode}
+        highlight={canvasHighlight}
+        onHighlightDone={() => setCanvasHighlight(false)}
+      />
 
       {/* AI Chat overlay */}
       {aiOpen && (
