@@ -10,7 +10,7 @@
 
 import { fsrs, Rating, State, createEmptyCard } from 'ts-fsrs';
 import type { FSRS, Card, RecordLogItem } from 'ts-fsrs';
-import type { SRSCard, SRSStats } from '@/types';
+import type { SRSCard, SRSStats, ItemType } from '@/types';
 import type { default as DBType } from '@/db';
 
 // ---------------------------------------------------------------------------
@@ -160,6 +160,45 @@ export async function getStats(db: typeof DBType): Promise<SRSStats> {
   }
 
   return { new: newCount, learning, review, known };
+}
+
+/**
+ * Ensure SRS cards (recognition + recall) exist for an item.
+ * Creates them only if they don't already exist. Called when
+ * a user studies an item in a lesson for the first time.
+ */
+export async function ensureSRSCards(
+  db: typeof DBType,
+  itemId: number,
+  itemType: ItemType,
+): Promise<void> {
+  const existing = await db.cards
+    .where('[itemType+itemId]')
+    .equals([itemType, itemId])
+    .toArray();
+
+  if (existing.length > 0) return;
+
+  const empty = createEmptyCard();
+  const base = {
+    itemId,
+    itemType,
+    due: empty.due,
+    stability: empty.stability,
+    difficulty: empty.difficulty,
+    elapsed_days: empty.elapsed_days,
+    scheduled_days: empty.scheduled_days,
+    learning_steps: empty.learning_steps,
+    reps: empty.reps,
+    lapses: empty.lapses,
+    state: empty.state,
+    last_review: empty.last_review,
+  };
+
+  await db.cards.bulkAdd([
+    { ...base, cardType: 'recognition' as const },
+    { ...base, cardType: 'recall' as const },
+  ]);
 }
 
 // Re-export Rating for convenience in components

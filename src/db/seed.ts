@@ -11,11 +11,11 @@
  * user settings (theme, seenExplainers) and SRS cards.
  */
 
-import type { Radical, Character, AppSettings } from '@/types';
+import type { Radical, Character, AppSettings, LessonProgress, StageDef } from '@/types';
 import type { default as DBType } from '@/db';
 
-/** Bump this whenever radicals.json / hsk1.json content changes */
-const DATA_VERSION = 2;
+/** Bump this whenever radicals.json / hsk1.json / learning-path.json content changes */
+const DATA_VERSION = 3;
 
 const DEFAULT_SETTINGS: AppSettings = {
   id: 1,
@@ -43,13 +43,15 @@ export async function seedDatabase(db: typeof DBType): Promise<void> {
   }
 
   // Dynamic imports so the JSON is code-split by Vite
-  const [radicalsModule, hsk1Module] = await Promise.all([
+  const [radicalsModule, hsk1Module, pathModule] = await Promise.all([
     import('@/data/radicals.json'),
     import('@/data/hsk1.json'),
+    import('@/data/learning-path.json'),
   ]);
 
   const radicals: Radical[] = radicalsModule.default;
   const characters: Character[] = hsk1Module.default;
+  const stages: StageDef[] = (pathModule as { stages: StageDef[] }).stages;
 
   // Preserve user preferences if they exist
   const preservedSettings: AppSettings = {
@@ -62,15 +64,37 @@ export async function seedDatabase(db: typeof DBType): Promise<void> {
     } : {}),
   };
 
+  // Build lesson progress rows — first lesson available, rest locked
+  const allLessons = stages.flatMap((s) => s.lessons);
+  const lessonRows: LessonProgress[] = allLessons.map((l, i) => ({
+    lessonId: l.id,
+    status: i === 0 ? 'available' as const : 'locked' as const,
+    radicalsDone: [],
+    charactersDone: [],
+  }));
+
+  // Preserve existing lesson progress if any (user may have started lessons)
+  const existingProgress = await db.lessonProgress.toArray().catch(() => [] as LessonProgress[]);
+  const progressMap = new Map(existingProgress.map((p) => [p.lessonId, p]));
+
+  const mergedLessons = lessonRows.map((row) => {
+    const prev = progressMap.get(row.lessonId);
+    return prev ? prev : row;
+  });
+
   await db.transaction(
     'rw',
-    [db.radicals, db.characters, db.cards, db.settings],
+    [db.radicals, db.characters, db.cards, db.settings, db.lessonProgress],
     async () => {
       // Replace content data (SRS cards are untouched)
       await db.radicals.clear();
       await db.characters.clear();
       await db.radicals.bulkAdd(radicals);
       await db.characters.bulkAdd(characters);
+
+      // Seed lesson progress
+      await db.lessonProgress.clear();
+      await db.lessonProgress.bulkAdd(mergedLessons);
 
       // Write settings with data version marker
       await db.settings.put({

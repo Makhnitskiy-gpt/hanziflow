@@ -1,0 +1,315 @@
+{
+  "stages": [
+    {
+      "id": "foundations",
+      "title": "Основы",
+      "title_cn": "基础",
+      "description": "Базовые черты, простейшие радикалы и первые иероглифы",
+      "lessons": [
+        {
+          "id": "L01",
+          "title": "Первые черты",
+          "description": "Горизонтальная, вертикальная, точка, откидная — кирпичики письменности",
+          "explainers": ["strokes", "tones"],
+          "radicals": ["一", "丨", "丶", "丿", "乙", "亅"],
+          "characters": [],
+          "unlock_after": null
+        },
+        {
+          "id": "L02",
+          "title": "Числа",
+          "description": "Один, два, три… десять — и как устроены китайские числа",
+          "explainers": [],
+          "radicals": ["二", "八", "十"],
+          "characters": ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"],
+          "unlock_after": "L01"
+        },
+        {
+          "id": "L03",
+          "title": "Человек",
+          "description": "Радикалы тела — человек, рот, женщина, ребёнок",
+          "explainers": ["radicals"],
+          "radicals": ["人", "口", "大", "女", "子"],
+          "characters": ["人", "大"],
+          "unlock_after": "L02"
+        },
+        {
+          "id": "L04",
+          "title": "Природа",
+          "description": "Солнце, луна, гора, вода, огонь, дерево — пиктограммы из древности",
+          "explainers": [],
+          "radicals": ["日", "月", "山", "水", "火", "木"],
+          "characters": ["日", "月", "山", "水", "火"],
+          "unlock_after": "L03"
+        },
+        {
+          "id": "L05",
+          "title": "Первые составные",
+          "description": "Как иероглифы складываются из частей: 好 = 女 + 子",
+          "explainers": ["formation_types"],
+          "radicals": ["小", "田", "目"],
+          "characters": ["好", "小", "明"],
+          "unlock_after": "L04"
+        },
+        {
+          "id": "L06",
+          "title": "Верх и низ",
+          "description": "Направления, земля и небо",
+          "explainers": [],
+          "radicals": ["土"],
+          "characters": ["上", "下", "天", "中"],
+          "unlock_after": "L05"
+        },
+        {
+          "id": "L07",
+          "title": "Я, ты, он, она",
+          "description": "Местоимения — первые слова для разговора",
+          "explainers": ["pinyin"],
+          "radicals": [],
+          "characters": ["我", "你", "他", "她"],
+          "unlock_after": "L06"
+        },
+        {
+          "id": "L08",
+          "title": "Да и нет",
+          "description": "Базовые глаголы и отрицание",
+          "explainers": [],
+          "radicals": [],
+          "characters": ["是", "不", "有", "在"],
+          "unlock_after": "L07"
+        }
+      ]
+    },
+    {
+      "id": "building_blocks",
+      "title": "Строительные блоки",
+      "title_cn": "积木",
+      "description": "Семьи иероглифов, фоно-семантика, первые фразы",
+      "lessons": [
+        {
+          "id": "L09",
+          "title": "Указатели",
+          "description": "Это, то, что — указательные слова и частицы",
+          "explainers": [],
+          "radicals": [],
+          "characters": ["这", "那", "什", "么", "的"],
+          "unlock_after": "L08"
+        },
+        {
+          "id": "L10",
+          "title": "Семья 马 (лошадь)",
+          "description": "Как один компонент рождает семью иероглифов",
+          "explainers": [],
+          "radicals": ["马"],
+          "characters": ["马", "妈", "吗"],
+          "unlock_after": "L09"
+        },
+        {
+          "id": "L11",
+          "title": "Учёба",
+          "description": "Учиться, жизнь, книга, писать",
+          "explainers": [],
+          "radicals": [],
+          "characters": ["学", "生", "书", "写"],
+          "unlock_after": "L10"
+        },
+        {
+          "id": "L12",
+          "title": "Частицы и грамматика",
+          "description": "Маленькие слова, без которых речь не построить",
+          "explainers": ["classifiers"],
+          "radicals": [],
+          "characters": ["了", "吧", "呢", "很"],
+          "unlock_after": "L11"
+        },
+        {
+          "id": "L13",
+          "title": "Действия: смотреть и говорить",
+          "description": "Глаголы восприятия и коммуникации",
+          "explainers": [],
+          "radicals": ["手"],
+          "characters": ["看", "说", "听", "读"],
+          "unlock_after": "L12"
+        },
+        {
+          "id": "L14",
+          "title": "Время",
+          "description": "Год, месяц, день, сейчас, вчера, завтра",
+          "explainers": [],
+          "radicals": [],
+          "characters": ["天", "年", "今", "昨", "时"],
+          "unlock_after": "L13"
+        },
+        {
+          "id": "L15",
+          "title": "Семья и дом",
+          "description": "Дом, друзья, учитель — первый круг общения",
+          "explainers": [],
+          "radicals": ["宀"],
+          "characters": ["家", "朋", "友", "老", "师"],
+          "unlock_after": "L14"
+        },
+        {
+          "id": "L16",
+          "title": "Приходить и уходить",
+          "description": "Глаголы движения и базовые действия",
+          "explainers": [],
+          "radicals": [],
+          "characters": ["来", "去", "吃", "喝"],
+          "unlock_after": "L15"
+        }
+      ]
+    },
+    {
+      "id": "expanding",
+      "title": "Расширение",
+      "title_cn": "扩展",
+      "description": "Больше глаголов, прилагательных и повседневных слов",
+      "lessons": [
+        {
+          "id": "L17",
+          "title": "Умения",
+          "description": "Уметь, мочь, хотеть, думать",
+          "explainers": [],
+          "radicals": ["心"],
+          "characters": ["会", "能", "想", "工", "作"],
+          "unlock_after": "L16"
+        },
+        {
+          "id": "L18",
+          "title": "Пространство",
+          "description": "Внутри, снаружи, впереди, сзади",
+          "explainers": [],
+          "radicals": [],
+          "characters": ["里", "外", "前", "后"],
+          "unlock_after": "L17"
+        },
+        {
+          "id": "L19",
+          "title": "Числа в жизни",
+          "description": "Деньги, время, счёт",
+          "explainers": [],
+          "radicals": [],
+          "characters": ["分", "钱", "块", "号", "点", "半"],
+          "unlock_after": "L18"
+        },
+        {
+          "id": "L20",
+          "title": "Общение",
+          "description": "Просить, благодарить, спрашивать, звать",
+          "explainers": [],
+          "radicals": [],
+          "characters": ["请", "谢", "问", "答", "叫"],
+          "unlock_after": "L19"
+        },
+        {
+          "id": "L21",
+          "title": "Эмоции",
+          "description": "Радость, любовь, смех, слёзы",
+          "explainers": [],
+          "radicals": [],
+          "characters": ["喜", "欢", "爱", "笑", "哭"],
+          "unlock_after": "L20"
+        },
+        {
+          "id": "L22",
+          "title": "Движение",
+          "description": "Идти, бегать, летать, возвращаться",
+          "explainers": [],
+          "radicals": ["走"],
+          "characters": ["走", "跑", "飞", "回", "起"],
+          "unlock_after": "L21"
+        },
+        {
+          "id": "L23",
+          "title": "Покупки",
+          "description": "Купить, продать, открыть, закрыть",
+          "explainers": [],
+          "radicals": [],
+          "characters": ["买", "卖", "开", "关", "送", "给"],
+          "unlock_after": "L22"
+        },
+        {
+          "id": "L24",
+          "title": "Описания: температура",
+          "description": "Холодный, горячий, быстрый, медленный",
+          "explainers": [],
+          "radicals": [],
+          "characters": ["冷", "热", "快", "慢", "高"],
+          "unlock_after": "L23"
+        }
+      ]
+    },
+    {
+      "id": "hsk1_complete",
+      "title": "HSK-1 Финиш",
+      "title_cn": "完成",
+      "description": "Оставшиеся слова HSK-1 — цвета, еда, места, описания",
+      "lessons": [
+        {
+          "id": "L25",
+          "title": "Размеры и расстояния",
+          "description": "Длинный, короткий, далёкий, близкий",
+          "explainers": [],
+          "radicals": [],
+          "characters": ["长", "短", "近", "远", "多", "少"],
+          "unlock_after": "L24"
+        },
+        {
+          "id": "L26",
+          "title": "Цвета",
+          "description": "Чёрный, белый, красный, зелёный, синий",
+          "explainers": [],
+          "radicals": [],
+          "characters": ["黑", "白", "红", "绿", "蓝"],
+          "unlock_after": "L25"
+        },
+        {
+          "id": "L27",
+          "title": "Еда и питьё",
+          "description": "Рис, овощи, чай, фрукты",
+          "explainers": [],
+          "radicals": [],
+          "characters": ["饭", "菜", "茶", "果"],
+          "unlock_after": "L26"
+        },
+        {
+          "id": "L28",
+          "title": "Места",
+          "description": "Магазин, больница, школа, кинотеатр",
+          "explainers": [],
+          "radicals": [],
+          "characters": ["店", "医", "院", "机", "场", "电"],
+          "unlock_after": "L27"
+        },
+        {
+          "id": "L29",
+          "title": "Повседневность",
+          "description": "Одежда, погода, мебель, животные",
+          "explainers": [],
+          "radicals": ["雨"],
+          "characters": ["穿", "衣", "服", "雨", "雪", "桌", "椅", "猫", "狗"],
+          "unlock_after": "L28"
+        },
+        {
+          "id": "L30",
+          "title": "Финальный набор",
+          "description": "Последние слова HSK-1 — описания, действия, наречия",
+          "explainers": [],
+          "radicals": [],
+          "characters": ["新", "忙", "累", "错", "坏", "漂", "亮", "没", "别", "太", "都", "再", "先", "对"],
+          "unlock_after": "L29"
+        },
+        {
+          "id": "L31",
+          "title": "Добивка HSK-1",
+          "description": "Оставшиеся слова — всё что нужно для уровня",
+          "explainers": [],
+          "radicals": [],
+          "characters": ["话", "车", "名", "字", "岁", "国", "怎", "样", "谁", "哪", "几", "地", "认", "识", "打", "住", "坐", "做", "找", "拿", "放", "等", "睡", "觉", "同", "影", "星", "期", "钟", "兴", "写"],
+          "unlock_after": "L30"
+        }
+      ]
+    }
+  ]
+}

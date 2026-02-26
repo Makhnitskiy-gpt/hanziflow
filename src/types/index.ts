@@ -136,6 +136,8 @@ export interface AppSettings {
   seenExplainers: string[];
   /** Flag set after initial data seed */
   seeded?: boolean;
+  /** Flag set after onboarding completion */
+  onboardingDone?: boolean;
 }
 
 // ---------------------------------------------------------------------------
@@ -190,3 +192,36 @@ export interface StylusPoint {
 }
 
 export type Stroke = StylusPoint[];
+
+// ---------------------------------------------------------------------------
+// Learning path
+// ---------------------------------------------------------------------------
+
+/** Lesson definition (from learning-path.json) */
+export interface LessonDef {
+  id: string;
+  title: string;
+  description: string;
+  explainers?: string[];
+  radicals: string[];
+  characters: string[];
+  unlock_after: string | null;
+}
+
+/** Stage grouping lessons (from learning-path.json) */
+export interface StageDef {
+  id: string;
+  title: string;
+  title_cn: string;
+  description: string;
+  lessons: LessonDef[];
+}
+
+/** Per-lesson progress stored in IndexedDB */
+export interface LessonProgress {
+  lessonId: string;
+  status: 'locked' | 'available' | 'in_progress' | 'completed';
+  completedAt?: string;
+  radicalsDone: string[];
+  charactersDone: string[];
+}

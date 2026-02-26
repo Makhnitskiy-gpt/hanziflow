@@ -4,6 +4,8 @@ import { AppShell } from '@/components/layout/AppShell';
 
 // Lazy-loaded pages
 const Home = lazy(() => import('@/pages/Home'));
+const Lessons = lazy(() => import('@/pages/Lessons'));
+const Lesson = lazy(() => import('@/pages/Lesson'));
 const Radicals = lazy(() => import('@/pages/Radicals'));
 const Characters = lazy(() => import('@/pages/Characters'));
 const Logic = lazy(() => import('@/pages/Logic'));
@@ -33,6 +35,22 @@ function App() {
             element={
               <Suspense fallback={<PageLoader />}>
                 <Home />
+              </Suspense>
+            }
+          />
+          <Route
+            path="lessons"
+            element={
+              <Suspense fallback={<PageLoader />}>
+                <Lessons />
+              </Suspense>
+            }
+          />
+          <Route
+            path="lesson/:lessonId"
+            element={
+              <Suspense fallback={<PageLoader />}>
+                <Lesson />
               </Suspense>
             }
           />

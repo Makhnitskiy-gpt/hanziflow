@@ -16,6 +16,7 @@ import type {
   StudySession,
   AppSettings,
   ChatMessage,
+  LessonProgress,
 } from '@/types';
 
 // ---------------------------------------------------------------------------
@@ -31,6 +32,7 @@ const db = new Dexie('HanziFlowDB') as Dexie & {
   settings: EntityTable<AppSettings, 'id'>;
   chatMessages: EntityTable<ChatMessage, 'id'>;
   reviewLogs: EntityTable<ReviewLog, 'id'>;
+  lessonProgress: EntityTable<LessonProgress, 'lessonId'>;
 };
 
 db.version(1).stores({
@@ -53,6 +55,11 @@ db.version(2).stores({
 db.version(3).stores({
   cards: '++id, itemId, itemType, cardType, due, state, [itemType+itemId], [cardType+state]',
   reviewLogs: '++id, cardId, timestamp',
+});
+
+// v4: Learning path progress
+db.version(4).stores({
+  lessonProgress: '&lessonId, status, completedAt',
 });
 
 export { db };

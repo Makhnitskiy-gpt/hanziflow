@@ -14,11 +14,8 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { to: '/', icon: '家', label: 'Главная' },
-  { to: '/radicals', icon: '部', label: 'Радикалы' },
-  { to: '/characters', icon: '字', label: 'Иероглифы' },
-  { to: '/logic', icon: '邏', label: 'Логика' },
+  { to: '/lessons', icon: '学', label: 'Уроки' },
   { to: '/review', icon: '復', label: 'Повторение' },
-  { to: '/practice', icon: '練', label: 'Практика' },
   { to: '/progress', icon: '進', label: 'Прогресс' },
   { to: '/guide', icon: '?', label: 'Справочник' },
 ];
