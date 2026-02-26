@@ -28,6 +28,17 @@ export function CanvasPanel({
     onModeChange?.(m);
   };
 
+  // Responsive canvas size: smaller on tablets (<1280px), full on desktop
+  const [canvasSize, setCanvasSize] = useState(() =>
+    typeof window !== 'undefined' && window.innerWidth >= 1280 ? 300 : 240,
+  );
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 1280px)');
+    const handler = (e: MediaQueryListEvent) => setCanvasSize(e.matches ? 300 : 240);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
+
   // Brief highlight animation when practice is triggered
   const [flash, setFlash] = useState(false);
   useEffect(() => {
@@ -52,7 +63,7 @@ export function CanvasPanel({
   }, [currentChar]);
 
   return (
-    <aside className={`flex h-full w-[360px] flex-col border-l bg-ink-surface transition-colors duration-300 ${
+    <aside className={`flex h-full w-[280px] xl:w-[360px] flex-col border-l bg-ink-surface transition-colors duration-300 ${
       flash ? 'border-cinnabar bg-cinnabar/5' : 'border-ink-border'
     }`}>
       {/* Mode toggle */}
@@ -86,7 +97,7 @@ export function CanvasPanel({
             <StrokeCanvas
               char={currentChar}
               onComplete={() => {}}
-              size={300}
+              size={canvasSize}
             />
           ) : (
             <div className="flex flex-col items-center gap-3 text-rice-dim">

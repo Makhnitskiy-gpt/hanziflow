@@ -72,7 +72,7 @@ export function AppShell() {
             cardsTotal={sessionProgress.total}
           />
         )}
-        <main className="flex-1 overflow-y-auto px-8 py-6">
+        <main className="flex-1 overflow-y-auto px-4 py-4 xl:px-8 xl:py-6">
           <Outlet
             context={{
               setCurrentChar,

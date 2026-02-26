@@ -88,7 +88,7 @@ body {
 
 .hanzi-lg {
   font-family: var(--font-hanzi);
-  font-size: 112px;
+  font-size: clamp(80px, 9vw, 112px);
   line-height: 1;
   font-weight: 600;
   color: var(--color-hanzi);
@@ -96,14 +96,14 @@ body {
 
 .hanzi-md {
   font-family: var(--font-hanzi);
-  font-size: 56px;
+  font-size: clamp(40px, 4.5vw, 56px);
   line-height: 1;
   color: var(--color-hanzi);
 }
 
 .hanzi-sm {
   font-family: var(--font-hanzi);
-  font-size: 36px;
+  font-size: clamp(28px, 3vw, 36px);
   line-height: 1;
   color: var(--color-hanzi);
 }
