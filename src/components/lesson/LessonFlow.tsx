@@ -1,12 +1,13 @@
 import { useState, useCallback } from 'react';
 import { useOutletContext } from 'react-router-dom';
-import { completeLesson, startLesson } from '@/hooks/useLearningPath';
+import { completeLesson, startLesson, restartLesson } from '@/hooks/useLearningPath';
 import type { LessonDef, LessonProgress } from '@/types';
 import { LessonIntro } from './LessonIntro';
 import { LessonLearn } from './LessonLearn';
 import { LessonPractice } from './LessonPractice';
 import { LessonSummary } from './LessonSummary';
 import { ExplainerCard } from '@/components/explainer/ExplainerCard';
+import { getExplainerContent, explainerTitles } from '@/components/explainer/explainerContent';
 import learningPath from '@/data/learning-path.json';
 
 type Phase = 'intro' | 'explainers' | 'learn' | 'practice' | 'summary';
@@ -15,6 +16,7 @@ interface OutletCtx {
   setCurrentChar: (char: string | undefined) => void;
   setCanvasMode: (mode: 'stroke' | 'draw') => void;
   setCanvasHighlight: (v: boolean) => void;
+  setPracticeMode: (v: boolean) => void;
 }
 
 interface LessonFlowProps {
@@ -23,24 +25,12 @@ interface LessonFlowProps {
   lessonIndex: number;
 }
 
-// Explainer content mapping — keys match ExplainerIndex content
-const explainerTitles: Record<string, string> = {
-  tones: 'Тоны в китайском языке',
-  pinyin: 'Пиньинь — латинская транскрипция',
-  radicals: 'Радикалы — строительные блоки',
-  strokes: 'Порядок черт',
-  formation_types: 'Типы образования иероглифов',
-  classifiers: 'Счётные слова (量词)',
-  srs: 'Интервальное повторение',
-  mnemonics: 'Мнемоника — рисуй ассоциации',
-};
-
 export function LessonFlow({ lesson, progress, lessonIndex }: LessonFlowProps) {
-  const { setCurrentChar, setCanvasMode, setCanvasHighlight } = useOutletContext<OutletCtx>();
+  const { setCurrentChar, setCanvasMode, setCanvasHighlight, setPracticeMode } = useOutletContext<OutletCtx>();
 
   // Determine initial phase based on progress
+  // Completed lessons start at intro (allows re-learning)
   const getInitialPhase = (): Phase => {
-    if (progress.status === 'completed') return 'summary';
     if (progress.status === 'in_progress') {
       const totalItems = lesson.radicals.length + lesson.characters.length;
       const doneItems = progress.radicalsDone.length + progress.charactersDone.length;
@@ -69,15 +59,20 @@ export function LessonFlow({ lesson, progress, lessonIndex }: LessonFlowProps) {
   };
 
   const handleLearnComplete = () => {
-    // Switch canvas to stroke mode for practice
-    setCanvasMode('stroke');
-    setCanvasHighlight(true);
+    // Hide CanvasPanel, 4x canvas is inline in LessonPractice
+    setPracticeMode(true);
     setPhase('practice');
   };
 
   const handlePracticeComplete = async () => {
+    setPracticeMode(false);
     await completeLesson(lesson.id);
     setPhase('summary');
+  };
+
+  const handleRestart = async () => {
+    await restartLesson(lesson.id);
+    setPhase('intro');
   };
 
   const handleCharChange = useCallback(
@@ -100,9 +95,7 @@ export function LessonFlow({ lesson, progress, lessonIndex }: LessonFlowProps) {
           </h2>
           {(lesson.explainers ?? []).map((key) => (
             <ExplainerCard key={key} explainerKey={key} title={explainerTitles[key] ?? key}>
-              <p className="text-sm text-rice-muted">
-                Подробная информация доступна в разделе Справочник.
-              </p>
+              {getExplainerContent(key)}
             </ExplainerCard>
           ))}
           <button
@@ -138,6 +131,7 @@ export function LessonFlow({ lesson, progress, lessonIndex }: LessonFlowProps) {
           lesson={lesson}
           lessonIndex={lessonIndex}
           isLastLesson={isLastLesson}
+          onRestart={handleRestart}
         />
       );
   }

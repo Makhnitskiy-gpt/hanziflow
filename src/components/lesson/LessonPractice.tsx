@@ -1,5 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
+import { StrokeCanvas } from '@/components/practice/StrokeCanvas';
+import { PronounceButton, pronounce } from '@/components/shared/PronounceButton';
 import type { LessonDef } from '@/types';
+
+const SLOTS_PER_CHAR = 4;
+const AUTO_ADVANCE_DELAY = 600;
+const CANVAS_SIZE = 240;
 
 interface LessonPracticeProps {
   lesson: LessonDef;
@@ -8,37 +14,47 @@ interface LessonPracticeProps {
 }
 
 export function LessonPractice({ lesson, onComplete, onCharChange }: LessonPracticeProps) {
-  // All items that need stroke practice
   const allChars = [...lesson.radicals, ...lesson.characters];
-  const [currentIdx, setCurrentIdx] = useState(0);
-  const [completed, setCompleted] = useState<Set<string>>(new Set());
+  const [charIdx, setCharIdx] = useState(0);
+  const [slotsDone, setSlotsDone] = useState(0);
+  const [completedChars, setCompletedChars] = useState<Set<string>>(new Set());
+  const advanceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const currentChar = allChars[currentIdx];
+  const currentChar = allChars[charIdx];
 
-  // When StrokeCanvas in the right panel completes, this gets called via parent
-  // For now, user manually advances
-  const handleMarkDone = () => {
-    const newCompleted = new Set(completed);
-    newCompleted.add(currentChar);
-    setCompleted(newCompleted);
-
-    if (currentIdx < allChars.length - 1) {
-      const nextIdx = currentIdx + 1;
-      setCurrentIdx(nextIdx);
-      onCharChange(allChars[nextIdx]);
-    } else {
-      onComplete();
+  // Pronounce current character on change
+  useEffect(() => {
+    if (currentChar) {
+      onCharChange(currentChar);
+      pronounce(currentChar);
     }
-  };
+  }, [currentChar, onCharChange]);
 
-  // Sync canvas to current character
-  if (currentChar) {
-    // This effect runs on mount / idx change
-    // We call onCharChange in the button handler and on initial render
-    if (completed.size === 0 && currentIdx === 0) {
-      // Initial call handled by useEffect in parent
-    }
-  }
+  // Cleanup timer
+  useEffect(() => {
+    return () => {
+      if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
+    };
+  }, []);
+
+  const handleSlotComplete = useCallback(() => {
+    setSlotsDone((prev) => {
+      const next = prev + 1;
+      if (next >= SLOTS_PER_CHAR) {
+        // All 4 slots done — auto-advance after delay
+        advanceTimerRef.current = setTimeout(() => {
+          setCompletedChars((s) => new Set(s).add(currentChar));
+          if (charIdx < allChars.length - 1) {
+            setCharIdx((i) => i + 1);
+            setSlotsDone(0);
+          } else {
+            onComplete();
+          }
+        }, AUTO_ADVANCE_DELAY);
+      }
+      return next;
+    });
+  }, [charIdx, allChars.length, currentChar, onComplete]);
 
   if (!currentChar) {
     onComplete();
@@ -46,39 +62,87 @@ export function LessonPractice({ lesson, onComplete, onCharChange }: LessonPract
   }
 
   return (
-    <div className="flex flex-col items-center gap-6 py-8 max-w-md mx-auto">
+    <div className="flex flex-col items-center gap-4 py-4 max-w-2xl mx-auto fade-in">
       {/* Progress */}
-      <div className="flex items-center gap-2 w-full">
+      <div className="flex items-center gap-2 w-full max-w-lg">
         <div className="flex-1 h-1.5 bg-ink-elevated rounded-full overflow-hidden">
           <div
             className="h-full bg-gold rounded-full transition-all duration-300"
-            style={{ width: `${((currentIdx + 1) / allChars.length) * 100}%` }}
+            style={{ width: `${((charIdx + (slotsDone / SLOTS_PER_CHAR)) / allChars.length) * 100}%` }}
           />
         </div>
         <span className="text-xs text-rice-dim">
-          {currentIdx + 1}/{allChars.length}
+          {charIdx + 1}/{allChars.length}
         </span>
       </div>
 
-      <h2 className="text-lg text-rice font-medium">Практика штрихов</h2>
+      {/* Character display + audio */}
+      <div className="flex items-center gap-3">
+        <span className="hanzi-md text-hanzi">{currentChar}</span>
+        <PronounceButton text={currentChar} size="md" />
+        <span className="text-sm text-rice-dim">
+          {slotsDone}/{SLOTS_PER_CHAR}
+        </span>
+      </div>
 
-      {/* Current character */}
-      <div className="flex flex-col items-center gap-2">
-        <span className="hanzi-lg text-hanzi">{currentChar}</span>
-        <p className="text-sm text-rice-muted">
-          Напишите этот символ на панели справа
-        </p>
+      {/* 2x2 Canvas grid */}
+      <div className="grid grid-cols-2 gap-3">
+        {Array.from({ length: SLOTS_PER_CHAR }).map((_, slotIdx) => {
+          const isActive = slotIdx === slotsDone;
+          const isDone = slotIdx < slotsDone;
+          const isLocked = slotIdx > slotsDone;
+
+          return (
+            <div
+              key={`${currentChar}-${charIdx}-${slotIdx}`}
+              className={`relative rounded-xl border-2 transition-colors ${
+                isDone
+                  ? 'border-jade/50 bg-jade/5'
+                  : isActive
+                  ? 'border-cinnabar bg-ink-surface'
+                  : 'border-ink-border bg-ink-elevated opacity-40'
+              }`}
+            >
+              {isDone && (
+                <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-jade/40">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </div>
+              )}
+              {isActive ? (
+                <StrokeCanvas
+                  char={currentChar}
+                  size={CANVAS_SIZE}
+                  skipAnimation={slotIdx > 0}
+                  onComplete={handleSlotComplete}
+                />
+              ) : (
+                <div
+                  className="flex items-center justify-center"
+                  style={{ width: CANVAS_SIZE, height: CANVAS_SIZE }}
+                >
+                  {isDone ? (
+                    <span className="font-hanzi text-4xl text-jade/30">{currentChar}</span>
+                  ) : (
+                    <span className="text-rice-dim text-sm">{slotIdx + 1}</span>
+                  )}
+                </div>
+              )}
+            </div>
+          );
+        })}
       </div>
 
       {/* Character sequence dots */}
-      <div className="flex gap-1.5 flex-wrap justify-center">
+      <div className="flex gap-1.5 flex-wrap justify-center mt-2">
         {allChars.map((ch, i) => (
           <span
             key={i}
             className={`w-8 h-8 rounded flex items-center justify-center text-sm font-hanzi transition-colors ${
-              i === currentIdx
+              i === charIdx
                 ? 'bg-cinnabar text-white'
-                : completed.has(ch)
+                : completedChars.has(ch)
                 ? 'bg-jade/20 text-jade'
                 : 'bg-ink-elevated text-rice-dim'
             }`}
@@ -87,14 +151,6 @@ export function LessonPractice({ lesson, onComplete, onCharChange }: LessonPract
           </span>
         ))}
       </div>
-
-      {/* Manual advance button */}
-      <button
-        onClick={handleMarkDone}
-        className="px-8 py-3 min-h-[48px] bg-cinnabar text-white rounded-lg font-medium hover:bg-cinnabar/90 transition-colors"
-      >
-        {currentIdx < allChars.length - 1 ? 'Следующий' : 'Завершить практику'}
-      </button>
     </div>
   );
 }

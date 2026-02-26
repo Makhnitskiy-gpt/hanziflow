@@ -64,6 +64,10 @@
 
 /* === Base styles === */
 
+html, body {
+  overscroll-behavior: none;
+}
+
 body {
   background-color: var(--color-ink);
   color: var(--color-rice);

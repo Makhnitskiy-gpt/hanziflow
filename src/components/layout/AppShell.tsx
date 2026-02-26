@@ -20,6 +20,7 @@ export function AppShell() {
     }
     return false;
   });
+  const [practiceMode, setPracticeMode] = useState(false);
   const [isPortrait, setIsPortrait] = useState(false);
 
   // Apply theme to document + persist
@@ -82,20 +83,23 @@ export function AppShell() {
               setSessionPhase,
               setSessionTimeLeft,
               setSessionProgress,
+              setPracticeMode,
               currentChar,
             }}
           />
         </main>
       </div>
 
-      {/* Right canvas panel */}
-      <CanvasPanel
-        currentChar={currentChar}
-        mode={canvasMode}
-        onModeChange={setCanvasMode}
-        highlight={canvasHighlight}
-        onHighlightDone={() => setCanvasHighlight(false)}
-      />
+      {/* Right canvas panel (hidden in practice mode — 4x canvas inline) */}
+      {!practiceMode && (
+        <CanvasPanel
+          currentChar={currentChar}
+          mode={canvasMode}
+          onModeChange={setCanvasMode}
+          highlight={canvasHighlight}
+          onHighlightDone={() => setCanvasHighlight(false)}
+        />
+      )}
 
       {/* AI Chat overlay */}
       {aiOpen && (

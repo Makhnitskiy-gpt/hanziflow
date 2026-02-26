@@ -34,3 +34,9 @@ dev-dist/
 # Build artifacts
 *.tsbuildinfo
 .vercel
+.env*.local
+
+# Android / Capacitor
+android/app/build/
+android/.gradle/
+android/local.properties

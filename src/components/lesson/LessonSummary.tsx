@@ -5,9 +5,10 @@ interface LessonSummaryProps {
   lesson: LessonDef;
   lessonIndex: number;
   isLastLesson: boolean;
+  onRestart?: () => void;
 }
 
-export function LessonSummary({ lesson, lessonIndex, isLastLesson }: LessonSummaryProps) {
+export function LessonSummary({ lesson, lessonIndex, isLastLesson, onRestart }: LessonSummaryProps) {
   const navigate = useNavigate();
   const totalItems = lesson.radicals.length + lesson.characters.length;
 
@@ -51,13 +52,21 @@ export function LessonSummary({ lesson, lessonIndex, isLastLesson }: LessonSumma
       </p>
 
       {/* Actions */}
-      <div className="flex gap-3">
+      <div className="flex flex-wrap gap-3 justify-center">
         <button
           onClick={() => navigate('/')}
           className="px-6 py-3 min-h-[48px] bg-cinnabar text-white rounded-lg font-medium hover:bg-cinnabar/90 transition-colors"
         >
           {isLastLesson ? 'На главную' : 'К следующему уроку'}
         </button>
+        {onRestart && (
+          <button
+            onClick={onRestart}
+            className="px-6 py-3 min-h-[48px] bg-gold/10 text-gold rounded-lg font-medium border border-gold/30 hover:bg-gold/20 transition-colors"
+          >
+            Пройти заново
+          </button>
+        )}
         <button
           onClick={() => navigate('/review')}
           className="px-6 py-3 min-h-[48px] bg-ink-elevated text-rice rounded-lg font-medium border border-ink-border hover:bg-ink-surface transition-colors"

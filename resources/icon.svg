@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c53d43"/>
+      <stop offset="100%" style="stop-color:#9b2c31"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#bg)"/>
+  <text x="512" y="580" text-anchor="middle" dominant-baseline="central"
+        font-family="Noto Serif SC, Songti SC, serif" font-size="520" font-weight="700"
+        fill="white">漢</text>
+</svg>

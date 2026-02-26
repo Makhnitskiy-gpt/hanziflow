@@ -7,6 +7,7 @@ interface StrokeCanvasProps {
   onCorrectStroke?: () => void;
   onMistake?: () => void;
   size?: number;
+  skipAnimation?: boolean;
 }
 
 export function StrokeCanvas({
@@ -15,6 +16,7 @@ export function StrokeCanvas({
   onCorrectStroke,
   onMistake,
   size = 300,
+  skipAnimation = false,
 }: StrokeCanvasProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const writerRef = useRef<HanziWriter | null>(null);
@@ -68,24 +70,22 @@ export function StrokeCanvas({
 
     writerRef.current = writer;
 
-    // First, animate the stroke order
-    writer.animateCharacter({
-      onComplete: () => {
-        // Then start the quiz — read callbacks from refs (always current)
-        writer.quiz({
-          onCorrectStroke: () => {
-            onCorrectStrokeRef.current?.();
-          },
-          onMistake: () => {
-            onMistakeRef.current?.();
-          },
-          onComplete: () => {
-            onCompleteRef.current?.();
-          },
-        });
-      },
-    });
-  }, [char, size]); // Only re-init when char or size changes
+    const startQuiz = () => {
+      writer.quiz({
+        onCorrectStroke: () => { onCorrectStrokeRef.current?.(); },
+        onMistake: () => { onMistakeRef.current?.(); },
+        onComplete: () => { onCompleteRef.current?.(); },
+      });
+    };
+
+    if (skipAnimation) {
+      // Go straight to quiz (used in 4x practice mode)
+      startQuiz();
+    } else {
+      // First animate stroke order, then start quiz
+      writer.animateCharacter({ onComplete: startQuiz });
+    }
+  }, [char, size, skipAnimation]); // Only re-init when char, size, or skipAnimation changes
 
   useEffect(() => {
     initWriter();

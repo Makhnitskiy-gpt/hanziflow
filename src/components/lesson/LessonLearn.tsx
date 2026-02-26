@@ -4,6 +4,7 @@ import { db } from '@/db';
 import { ensureSRSCards } from '@/lib/fsrs';
 import { markItemDone } from '@/hooks/useLearningPath';
 import { PinyinDisplay } from '@/components/shared/PinyinDisplay';
+import { PronounceButton } from '@/components/shared/PronounceButton';
 import type { LessonDef, Radical, Character } from '@/types';
 
 interface LessonLearnProps {
@@ -103,15 +104,18 @@ export function LessonLearn({ lesson, onComplete, onCharChange }: LessonLearnPro
 
         {/* Main display */}
         <div className="flex items-start gap-6">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center gap-1">
             <span className="hanzi-lg">{current.char}</span>
-            {(rad || ch) && (
-              <PinyinDisplay
-                pinyin={rad?.pinyin ?? ch?.pinyin ?? ''}
-                tone={ch?.tone ?? 1}
-                size="md"
-              />
-            )}
+            <div className="flex items-center gap-1">
+              {(rad || ch) && (
+                <PinyinDisplay
+                  pinyin={rad?.pinyin ?? ch?.pinyin ?? ''}
+                  tone={ch?.tone ?? 1}
+                  size="md"
+                />
+              )}
+              <PronounceButton text={current.char} size="sm" />
+            </div>
           </div>
 
           <div className="flex flex-col gap-2 flex-1">

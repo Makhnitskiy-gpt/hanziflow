@@ -90,6 +90,18 @@ export async function startLesson(lessonId: string): Promise<void> {
 }
 
 /**
+ * Restart a completed lesson (reset progress, keep status as in_progress).
+ */
+export async function restartLesson(lessonId: string): Promise<void> {
+  await db.lessonProgress.update(lessonId, {
+    status: 'in_progress',
+    radicalsDone: [],
+    charactersDone: [],
+    completedAt: undefined,
+  });
+}
+
+/**
  * Record that a specific item within a lesson has been studied.
  */
 export async function markItemDone(
