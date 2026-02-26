@@ -4,10 +4,18 @@
  * Imports static JSON data (radicals, HSK1 characters)
  * and writes default settings. SRS cards are NOT created
  * at seed time — the user adds items to review explicitly.
+ *
+ * DATA_VERSION tracks content updates. When the bundled data
+ * changes (e.g. 50 → 214 radicals), bumping this number
+ * triggers an automatic re-seed on next app load, preserving
+ * user settings (theme, seenExplainers) and SRS cards.
  */
 
 import type { Radical, Character, AppSettings } from '@/types';
 import type { default as DBType } from '@/db';
+
+/** Bump this whenever radicals.json / hsk1.json content changes */
+const DATA_VERSION = 2;
 
 const DEFAULT_SETTINGS: AppSettings = {
   id: 1,
@@ -24,12 +32,13 @@ const DEFAULT_SETTINGS: AppSettings = {
 
 /**
  * Seeds the database with radical and HSK1 character data.
- * Skips if already seeded (settings row with seeded=true exists).
+ * Re-seeds automatically when DATA_VERSION is bumped (preserving user prefs).
  */
 export async function seedDatabase(db: typeof DBType): Promise<void> {
-  // Check if already seeded
   const existing = await db.settings.get(1);
-  if (existing?.seeded) {
+
+  // Already seeded with the current data version — nothing to do
+  if (existing?.seeded && (existing as AppSettings & { dataVersion?: number }).dataVersion === DATA_VERSION) {
     return;
   }
 
@@ -42,21 +51,32 @@ export async function seedDatabase(db: typeof DBType): Promise<void> {
   const radicals: Radical[] = radicalsModule.default;
   const characters: Character[] = hsk1Module.default;
 
-  // Single transaction to ensure atomicity
+  // Preserve user preferences if they exist
+  const preservedSettings: AppSettings = {
+    ...DEFAULT_SETTINGS,
+    ...(existing ? {
+      theme: existing.theme,
+      seenExplainers: existing.seenExplainers,
+      sessionMinutes: existing.sessionMinutes,
+      cardsPerSession: existing.cardsPerSession,
+    } : {}),
+  };
+
   await db.transaction(
     'rw',
     [db.radicals, db.characters, db.cards, db.settings],
     async () => {
-      // Clear existing data in case of partial seed
+      // Replace content data (SRS cards are untouched)
       await db.radicals.clear();
       await db.characters.clear();
-
-      // Bulk-insert content (no SRS cards — user adds them manually)
       await db.radicals.bulkAdd(radicals);
       await db.characters.bulkAdd(characters);
 
-      // Write default settings (marks seeded=true)
-      await db.settings.put(DEFAULT_SETTINGS);
+      // Write settings with data version marker
+      await db.settings.put({
+        ...preservedSettings,
+        dataVersion: DATA_VERSION,
+      } as AppSettings & { dataVersion: number });
     },
   );
 }
