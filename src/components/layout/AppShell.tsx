@@ -12,12 +12,44 @@ export function AppShell() {
   const [sessionPhase, setSessionPhase] = useState('');
   const [sessionTimeLeft, setSessionTimeLeft] = useState(0);
   const [sessionProgress, setSessionProgress] = useState({ done: 0, total: 0 });
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof localStorage !== 'undefined') {
+      return localStorage.getItem('hanziflow-theme') === 'dark';
+    }
+    return false;
+  });
+  const [isPortrait, setIsPortrait] = useState(false);
 
-  // Apply theme to document
+  // Apply theme to document + persist
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+    localStorage.setItem('hanziflow-theme', darkMode ? 'dark' : 'light');
   }, [darkMode]);
+
+  // Detect portrait orientation
+  useEffect(() => {
+    const mq = window.matchMedia('(orientation: portrait)');
+    setIsPortrait(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsPortrait(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
+
+  if (isPortrait) {
+    return (
+      <div className="flex items-center justify-center h-dvh bg-ink p-8 text-center">
+        <div className="flex flex-col items-center gap-4">
+          <span className="font-hanzi text-6xl text-rice-dim">横</span>
+          <p className="text-rice-muted text-lg">
+            Поверните устройство горизонтально
+          </p>
+          <p className="text-rice-dim text-sm">
+            HanziFlow оптимизирован для ландшафтного режима
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="flex h-dvh w-dvw overflow-hidden bg-ink">

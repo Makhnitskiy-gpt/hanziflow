@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '@/db';
 import type { SRSCard } from '@/types';
@@ -20,9 +20,34 @@ export function QuizCard({ card, onGrade }: QuizCardProps) {
     return db.characters.get(card.itemId);
   }, [card.itemId, card.itemType]);
 
+  // Fetch user-drawn mnemonic if it exists
+  const mnemonic = useLiveQuery(async () => {
+    const all = await db.mnemonics
+      .where('[itemType+itemId]')
+      .equals([card.itemType, card.itemId])
+      .toArray();
+    return all.length > 0 ? all[all.length - 1] : undefined;
+  }, [card.itemId, card.itemType]);
+
   useEffect(() => {
     setRevealed(false);
   }, [card.id]);
+
+  // Keyboard shortcuts: Space = reveal, 1-4 = grade
+  const handleKeyDown = useCallback((e: KeyboardEvent) => {
+    if (e.key === ' ' && !revealed) {
+      e.preventDefault();
+      setRevealed(true);
+    } else if (revealed && ['1', '2', '3', '4'].includes(e.key)) {
+      e.preventDefault();
+      onGrade(Number(e.key) as 1 | 2 | 3 | 4);
+    }
+  }, [revealed, onGrade]);
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [handleKeyDown]);
 
   if (!itemData) {
     return (
@@ -64,9 +89,10 @@ export function QuizCard({ card, onGrade }: QuizCardProps) {
       {!revealed ? (
         <button
           onClick={() => setRevealed(true)}
-          className="w-full py-4 rounded-xl bg-ink-elevated border border-ink-border text-rice text-lg hover:bg-ink-surface transition-colors"
+          className="w-full py-4 rounded-xl bg-cinnabar text-white text-lg font-medium hover:bg-cinnabar-hover transition-colors shadow-md shadow-cinnabar/15"
         >
           Показать ответ
+          <span className="text-sm opacity-60 ml-2">[Пробел]</span>
         </button>
       ) : (
         <div className="w-full fade-in">
@@ -91,9 +117,19 @@ export function QuizCard({ card, onGrade }: QuizCardProps) {
             {'formation_explanation_ru' in itemData && itemData.formation_explanation_ru && (
               <p className="text-sm text-gold mt-4 italic">{itemData.formation_explanation_ru}</p>
             )}
+
+            {mnemonic?.dataUrl && (
+              <div className="mt-4 flex justify-center">
+                <img
+                  src={mnemonic.dataUrl}
+                  alt="Мнемоника"
+                  className="max-w-[200px] max-h-[120px] rounded-lg border border-ink-border opacity-80"
+                />
+              </div>
+            )}
           </div>
 
-          <RatingButtons onRate={onGrade} />
+          <RatingButtons card={card} onRate={onGrade} />
         </div>
       )}
     </div>

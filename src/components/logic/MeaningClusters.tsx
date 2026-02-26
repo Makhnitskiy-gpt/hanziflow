@@ -82,7 +82,7 @@ export function MeaningClusters({ clusters, onCharSelect }: MeaningClustersProps
                     <span className={`font-hanzi text-lg ${isKnown ? 'text-hanzi' : 'text-rice-dim'}`}>
                       {c.char}
                     </span>
-                    <span className={`text-[10px] ${isKnown ? 'text-rice-muted' : 'text-rice-dim'}`}>
+                    <span className={`text-xs ${isKnown ? 'text-rice-muted' : 'text-rice-dim'}`}>
                       {c.meaning_ru}
                     </span>
                   </button>

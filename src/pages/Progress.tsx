@@ -15,8 +15,8 @@ export default function Progress() {
     const countByState = (cards: typeof allCards) => ({
       new: cards.filter((c) => c.state === 0).length,
       learning: cards.filter((c) => c.state === 1 || c.state === 3).length, // Learning + Relearning
-      review: cards.filter((c) => c.state === 2).length,
-      known: cards.filter((c) => c.state === 2).length, // Only Review state = "known"
+      review: cards.filter((c) => c.state === 2 && c.stability < 21).length, // Review but not yet mastered
+      known: cards.filter((c) => c.state === 2 && c.stability >= 21).length, // Mastered (stability 21+ days)
     });
 
     const radStats = countByState(radicalCards);
@@ -197,14 +197,14 @@ function StatBar({
 
   return (
     <div className="flex items-center gap-2">
-      <span className="text-[11px] text-rice-muted w-16 flex-shrink-0">{label}</span>
+      <span className="text-xs text-rice-muted w-16 flex-shrink-0">{label}</span>
       <div className="flex-1 h-3 bg-ink-elevated rounded-full overflow-hidden">
         <div
           className={`h-full ${color} rounded-full transition-[width] duration-500`}
           style={{ width: `${pct}%` }}
         />
       </div>
-      <span className="text-[11px] text-rice-dim w-8 text-right">{count}</span>
+      <span className="text-xs text-rice-dim w-8 text-right">{count}</span>
     </div>
   );
 }

@@ -52,14 +52,14 @@ export function AiInput({ onSend, disabled, contextChar }: AiInputProps) {
       {/* Suggestions */}
       {showSuggestions && (
         <div className="px-3 py-2 border-b border-ink-border bg-ink-elevated/50">
-          <p className="text-[10px] text-rice-dim mb-1.5">Быстрые вопросы:</p>
+          <p className="text-xs text-rice-dim mb-1.5">Быстрые вопросы:</p>
           <div className="flex flex-wrap gap-1.5">
             {suggestions.map((q) => (
               <button
                 key={q}
                 onClick={() => handleSuggestionClick(q)}
                 disabled={disabled}
-                className="px-2 py-1 text-xs rounded-md bg-ink-elevated text-rice-muted border border-ink-border hover:text-rice hover:border-gold-dim transition-colors disabled:opacity-50"
+                className="px-3 py-2 text-sm rounded-lg min-h-[44px] bg-ink-elevated text-rice-muted border border-ink-border hover:text-rice hover:border-gold-dim transition-colors disabled:opacity-50"
               >
                 {q}
               </button>
@@ -74,7 +74,7 @@ export function AiInput({ onSend, disabled, contextChar }: AiInputProps) {
         <button
           type="button"
           onClick={() => setShowSuggestions(!showSuggestions)}
-          className={`flex-shrink-0 p-1.5 rounded-md transition-colors ${
+          className={`flex-shrink-0 p-2.5 min-w-[44px] min-h-[44px] rounded-lg transition-colors ${
             showSuggestions ? 'text-gold' : 'text-rice-dim hover:text-rice-muted'
           }`}
           title="Быстрые вопросы"

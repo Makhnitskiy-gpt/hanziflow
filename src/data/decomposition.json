@@ -1,152 +1,1976 @@
 {
   "好": {
-    "components": ["女", "子"],
+    "components": [
+      "女",
+      "子"
+    ],
     "type": "会意",
     "explanation_ru": "Женщина 女 + ребёнок 子 = хорошо. Мать с ребёнком — всё хорошо."
   },
   "大": {
-    "components": ["一", "人"],
+    "components": [
+      "一",
+      "人"
+    ],
     "type": "象形",
     "explanation_ru": "Человек 人 раскинул руки — большой."
   },
   "小": {
-    "components": ["丨", "丶", "丶"],
+    "components": [
+      "丨",
+      "丶",
+      "丶"
+    ],
     "type": "象形",
     "explanation_ru": "Вертикальная черта с двумя точками по бокам — нечто мелкое, разделённое."
   },
   "人": {
-    "components": ["丿", "㇏"],
+    "components": [
+      "丿",
+      "㇏"
+    ],
     "type": "象形",
     "explanation_ru": "Две черты — две ноги шагающего человека."
   },
   "一": {
-    "components": ["一"],
+    "components": [
+      "一"
+    ],
     "type": "指事",
     "explanation_ru": "Одна горизонтальная черта — единица."
   },
   "二": {
-    "components": ["一", "一"],
+    "components": [
+      "一",
+      "一"
+    ],
     "type": "指事",
     "explanation_ru": "Две горизонтальные черты — два."
   },
   "三": {
-    "components": ["一", "一", "一"],
+    "components": [
+      "一",
+      "一",
+      "一"
+    ],
     "type": "指事",
     "explanation_ru": "Три горизонтальные черты — три."
   },
   "四": {
-    "components": ["囗", "八"],
+    "components": [
+      "囗",
+      "八"
+    ],
     "type": "指事",
     "explanation_ru": "Ограда 囗 с разделением 八 внутри — четыре."
   },
   "五": {
-    "components": ["一", "㐅", "一"],
+    "components": [
+      "一",
+      "㐅",
+      "一"
+    ],
     "type": "指事",
     "explanation_ru": "Перекрещённые линии между двумя горизонталями — пять стихий."
   },
   "六": {
-    "components": ["亠", "八"],
+    "components": [
+      "亠",
+      "八"
+    ],
     "type": "指事",
     "explanation_ru": "Крышка 亠 сверху и расходящиеся 八 снизу — шесть."
   },
   "七": {
-    "components": ["一", "乚"],
+    "components": [
+      "一",
+      "乚"
+    ],
     "type": "指事",
     "explanation_ru": "Горизонтальная черта с вертикальной — разрез, семь."
   },
   "八": {
-    "components": ["丿", "乀"],
+    "components": [
+      "丿",
+      "乀"
+    ],
     "type": "象形",
     "explanation_ru": "Две расходящиеся черты — разделение, восемь."
   },
   "九": {
-    "components": ["丿", "乙"],
+    "components": [
+      "丿",
+      "乙"
+    ],
     "type": "指事",
     "explanation_ru": "Изогнутая рука — предел, девять."
   },
   "十": {
-    "components": ["一", "丨"],
+    "components": [
+      "一",
+      "丨"
+    ],
     "type": "指事",
     "explanation_ru": "Крест из горизонтали и вертикали — полнота, десять."
   },
   "我": {
-    "components": ["手", "戈"],
+    "components": [
+      "手",
+      "戈"
+    ],
     "type": "会意",
     "explanation_ru": "Рука 手 с алебардой 戈 — я, защищающий себя."
   },
   "你": {
-    "components": ["亻", "尔"],
+    "components": [
+      "亻",
+      "尔"
+    ],
     "type": "形声",
     "explanation_ru": "Человек 亻 + фонетик 尔 — человек напротив, ты."
   },
   "他": {
-    "components": ["亻", "也"],
+    "components": [
+      "亻",
+      "也"
+    ],
     "type": "形声",
     "explanation_ru": "Человек 亻 + 也 (тоже) — другой человек, он."
   },
   "她": {
-    "components": ["女", "也"],
+    "components": [
+      "女",
+      "也"
+    ],
     "type": "形声",
     "explanation_ru": "Женщина 女 + 也 (тоже) — другая женщина, она."
   },
   "是": {
-    "components": ["日", "疋"],
+    "components": [
+      "日",
+      "正"
+    ],
     "type": "会意",
     "explanation_ru": "Солнце 日 сверху + прямой 正 снизу — при свете всё ясно, истина."
   },
   "不": {
-    "components": ["一", "丨", "丿", "丶"],
+    "components": [
+      "一",
+      "丨",
+      "丿",
+      "丶"
+    ],
     "type": "象形",
     "explanation_ru": "Птица не может подняться выше черты — отрицание, нет."
   },
   "有": {
-    "components": ["又", "月"],
+    "components": [
+      "又",
+      "月"
+    ],
     "type": "会意",
     "explanation_ru": "Рука 又 держит мясо 月 — иметь, обладать."
   },
   "在": {
-    "components": ["土", "才"],
+    "components": [
+      "土",
+      "才"
+    ],
     "type": "形声",
     "explanation_ru": "Земля 土 + фонетик 才 — стоять на земле, находиться."
   },
   "这": {
-    "components": ["辶", "文"],
+    "components": [
+      "辶",
+      "文"
+    ],
     "type": "形声",
     "explanation_ru": "Движение 辶 + фонетик 文 — идёшь к этому, это."
   },
   "那": {
-    "components": ["冄", "阝"],
+    "components": [
+      "冉",
+      "阝"
+    ],
     "type": "形声",
     "explanation_ru": "Фонетик + холм 阝 — за холмом, то далёкое."
   },
   "什": {
-    "components": ["亻", "十"],
+    "components": [
+      "亻",
+      "十"
+    ],
     "type": "形声",
     "explanation_ru": "Человек 亻 + десять 十 — множество вопросов, что?"
   },
   "么": {
-    "components": ["幺", "丶"],
+    "components": [
+      "幺",
+      "丶"
+    ],
     "type": "指事",
     "explanation_ru": "Тонкая нить 幺 + точка — нечто неуловимое, неопределённое."
   },
   "的": {
-    "components": ["白", "勺"],
+    "components": [
+      "白",
+      "勺"
+    ],
     "type": "形声",
     "explanation_ru": "Белый 白 + ложка 勺 (фонетик) — притяжательная частица."
   },
   "了": {
-    "components": ["亅", "乛"],
+    "components": [
+      "亅",
+      "乛"
+    ],
     "type": "象形",
     "explanation_ru": "Упрощённый ребёнок — завершение, конец действия."
   },
   "吗": {
-    "components": ["口", "马"],
+    "components": [
+      "口",
+      "马"
+    ],
     "type": "形声",
     "explanation_ru": "Рот 口 + лошадь 马 (фонетик) — вопросительная частица."
   },
   "很": {
-    "components": ["彳", "艮"],
+    "components": [
+      "彳",
+      "艮"
+    ],
     "type": "形声",
     "explanation_ru": "Шаг 彳 + упорный 艮 (фонетик) — упорное движение, очень."
+  },
+  "学": {
+    "components": [
+      "⺍",
+      "冖",
+      "子"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Руки ⺍ передают знания под крышей 冖 ребёнку 子 — ребёнок учится у наставника.",
+    "related_characters": [
+      "字",
+      "子",
+      "觉"
+    ]
+  },
+  "生": {
+    "components": [
+      "生"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Росток, пробивающийся из земли — рождение, жизнь.",
+    "related_characters": [
+      "星",
+      "姓",
+      "性"
+    ]
+  },
+  "中": {
+    "components": [
+      "口",
+      "丨"
+    ],
+    "type": "指事",
+    "formation_explanation_ru": "Стрела 丨 пронзает мишень 口 по центру — середина.",
+    "related_characters": [
+      "钟",
+      "忠",
+      "种"
+    ]
+  },
+  "国": {
+    "components": [
+      "囗",
+      "玉"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Граница 囗 защищает яшму 玉 — страна хранит своё сокровище.",
+    "related_characters": [
+      "围",
+      "园",
+      "图"
+    ]
+  },
+  "来": {
+    "components": [
+      "一",
+      "米",
+      "丨"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Колос пшеницы (пришёл с запада в Китай) — приходить.",
+    "related_characters": [
+      "莱"
+    ]
+  },
+  "去": {
+    "components": [
+      "土",
+      "厶"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Человек уходит от места 厶 по земле 土 — уходить.",
+    "related_characters": [
+      "法",
+      "却"
+    ]
+  },
+  "吃": {
+    "components": [
+      "口",
+      "乞"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Рот 口 (значение) + 乞 (фонетик) — ртом просить еду, есть.",
+    "related_characters": [
+      "喝",
+      "吧",
+      "叫"
+    ]
+  },
+  "喝": {
+    "components": [
+      "口",
+      "曷"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Рот 口 (значение) + 曷 (фонетик) — глотать ртом жидкость, пить.",
+    "related_characters": [
+      "吃",
+      "渴"
+    ]
+  },
+  "看": {
+    "components": [
+      "手",
+      "目"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Рука 手 козырьком над глазом 目 — вглядываться вдаль.",
+    "related_characters": [
+      "眼",
+      "睛",
+      "见"
+    ]
+  },
+  "说": {
+    "components": [
+      "讠",
+      "兑"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Речь 讠+ 兑 (фонетик) — произносить слова, говорить.",
+    "related_characters": [
+      "话",
+      "请",
+      "读",
+      "谢"
+    ]
+  },
+  "写": {
+    "components": [
+      "冖",
+      "与"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Крыша 冖 + упрощённый фонетик — писать, записывать.",
+    "related_characters": [
+      "字"
+    ]
+  },
+  "听": {
+    "components": [
+      "口",
+      "斤"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Рот 口 (значение: речь) + 斤 (фонетик) — слушать слова.",
+    "related_characters": [
+      "近",
+      "新"
+    ]
+  },
+  "读": {
+    "components": [
+      "讠",
+      "卖"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Речь 讠+ 卖 (фонетик) — произносить текст вслух.",
+    "related_characters": [
+      "说",
+      "话"
+    ]
+  },
+  "会": {
+    "components": [
+      "人",
+      "云"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Крышка/люди сверху + облако 云 — собираться вместе, уметь.",
+    "related_characters": [
+      "合",
+      "能"
+    ]
+  },
+  "能": {
+    "components": [
+      "厶",
+      "月",
+      "匕",
+      "匕"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Пиктограмма медведя — сильный зверь, символ способности.",
+    "related_characters": [
+      "会",
+      "态"
+    ]
+  },
+  "想": {
+    "components": [
+      "相",
+      "心"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Сердце 心 (значение) + 相 (фонетик) — мысли рождаются в сердце.",
+    "related_characters": [
+      "忙",
+      "快",
+      "慢",
+      "怎"
+    ]
+  },
+  "工": {
+    "components": [
+      "工"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Угольник плотника — инструмент мастера, работа.",
+    "related_characters": [
+      "红",
+      "空",
+      "功"
+    ]
+  },
+  "作": {
+    "components": [
+      "亻",
+      "乍"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Человек 亻+ 乍 (фонетик) — человек трудится, делает.",
+    "related_characters": [
+      "做",
+      "住",
+      "昨"
+    ]
+  },
+  "家": {
+    "components": [
+      "宀",
+      "豕"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Крыша 宀 + свинья 豕 — домашнее хозяйство под крышей, дом.",
+    "related_characters": [
+      "字",
+      "安",
+      "室"
+    ]
+  },
+  "前": {
+    "components": [
+      "丷",
+      "月",
+      "刂"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Нога продвигается вперёд — до, перед, впереди.",
+    "related_characters": [
+      "后"
+    ]
+  },
+  "后": {
+    "components": [
+      "厂",
+      "口"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Обрыв 厂 + рот 口 — что осталось позади, после.",
+    "related_characters": [
+      "前"
+    ]
+  },
+  "上": {
+    "components": [
+      "一",
+      "卜"
+    ],
+    "type": "指事",
+    "formation_explanation_ru": "Чёрточка над горизонтальной линией — наверху.",
+    "related_characters": [
+      "下"
+    ]
+  },
+  "下": {
+    "components": [
+      "一",
+      "卜"
+    ],
+    "type": "指事",
+    "formation_explanation_ru": "Чёрточка под горизонтальной линией — внизу.",
+    "related_characters": [
+      "上"
+    ]
+  },
+  "里": {
+    "components": [
+      "田",
+      "土"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Поле 田 + земля 土 — внутри поля, внутренняя часть.",
+    "related_characters": [
+      "理",
+      "野"
+    ]
+  },
+  "外": {
+    "components": [
+      "夕",
+      "卜"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Вечер 夕 + гадание 卜 — гадали снаружи дома, внешний.",
+    "related_characters": [
+      "多",
+      "名"
+    ]
+  },
+  "天": {
+    "components": [
+      "一",
+      "大"
+    ],
+    "type": "指事",
+    "formation_explanation_ru": "Черта над человеком 大 — то, что над головой, небо.",
+    "related_characters": [
+      "太",
+      "关"
+    ]
+  },
+  "年": {
+    "components": [
+      "年"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Человек несёт урожай — один цикл урожая, год.",
+    "related_characters": [
+      "岁"
+    ]
+  },
+  "月": {
+    "components": [
+      "月"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Серп луны — пиктограмма полумесяца в ночном небе.",
+    "related_characters": [
+      "明",
+      "朋",
+      "期",
+      "服"
+    ]
+  },
+  "号": {
+    "components": [
+      "口",
+      "丂"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Рот 口 + 丂 (фонетик) — выкрикивать номер.",
+    "related_characters": [
+      "叫",
+      "问"
+    ]
+  },
+  "今": {
+    "components": [
+      "人",
+      "一"
+    ],
+    "type": "指事",
+    "formation_explanation_ru": "Крышка над ртом — схватить момент, сейчас.",
+    "related_characters": [
+      "金",
+      "念"
+    ]
+  },
+  "明": {
+    "components": [
+      "日",
+      "月"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Солнце 日 + луна 月 — два светила, ярко, ясно.",
+    "related_characters": [
+      "星",
+      "时",
+      "晴"
+    ]
+  },
+  "昨": {
+    "components": [
+      "日",
+      "乍"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Солнце/день 日 (значение: время) + 乍 (фонетик) — прошедший день, вчера.",
+    "related_characters": [
+      "作",
+      "时"
+    ]
+  },
+  "时": {
+    "components": [
+      "日",
+      "寸"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Солнце 日 (значение: время) + 寸 (упрощ. от 寺, фонетик) — движение солнца, время.",
+    "related_characters": [
+      "明",
+      "昨",
+      "星"
+    ]
+  },
+  "分": {
+    "components": [
+      "八",
+      "刀"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Разделение 八 + нож 刀 — ножом разрезать, разделить.",
+    "related_characters": [
+      "半",
+      "份",
+      "粉"
+    ]
+  },
+  "钱": {
+    "components": [
+      "钅",
+      "戋"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Металл 钅+ 戋 (фонетик) — металлические монеты, деньги.",
+    "related_characters": [
+      "银",
+      "铁",
+      "钟"
+    ]
+  },
+  "块": {
+    "components": [
+      "土",
+      "夬"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Земля 土 (значение) + 夬 (фонетик) — кусок земли, кусок.",
+    "related_characters": [
+      "快",
+      "决"
+    ]
+  },
+  "电": {
+    "components": [
+      "日",
+      "乚"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Молния бьёт с неба — электричество. Упрощение от 電.",
+    "related_characters": [
+      "雨",
+      "雪"
+    ]
+  },
+  "话": {
+    "components": [
+      "讠",
+      "舌"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Речь 讠+ язык 舌 (фонетик) — слова, произнесённые языком.",
+    "related_characters": [
+      "说",
+      "请",
+      "谢",
+      "认"
+    ]
+  },
+  "车": {
+    "components": [
+      "车"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Пиктограмма колесницы вид сверху — ось, колёса, кузов.",
+    "related_characters": [
+      "辆",
+      "轮"
+    ]
+  },
+  "水": {
+    "components": [
+      "水"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Центральная струя с брызгами — текущая вода.",
+    "related_characters": [
+      "冰",
+      "永",
+      "泉"
+    ]
+  },
+  "菜": {
+    "components": [
+      "艹",
+      "采"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Трава 艹 (значение: растение) + 采 (фонетик) — съедобное растение.",
+    "related_characters": [
+      "茶",
+      "花",
+      "草"
+    ]
+  },
+  "饭": {
+    "components": [
+      "饣",
+      "反"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Еда 饣(значение) + 反 (фонетик) — основная пища, рис.",
+    "related_characters": [
+      "饿",
+      "饮"
+    ]
+  },
+  "茶": {
+    "components": [
+      "艹",
+      "人",
+      "木"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Трава 艹 сверху + человек 人 + дерево 木 — человек собирает листья чайного куста.",
+    "related_characters": [
+      "菜",
+      "花",
+      "草"
+    ]
+  },
+  "果": {
+    "components": [
+      "田",
+      "木"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Плоды 田 на дереве 木 — фрукт на ветке.",
+    "related_characters": [
+      "课",
+      "棵"
+    ]
+  },
+  "书": {
+    "components": [
+      "书"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Рука с кистью пишет — письмо, книга. Упрощение от 書.",
+    "related_characters": [
+      "画"
+    ]
+  },
+  "桌": {
+    "components": [
+      "卜",
+      "日",
+      "木"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Дерево 木 (значение) + верхняя часть (фонетик) — деревянный стол.",
+    "related_characters": [
+      "椅",
+      "机"
+    ]
+  },
+  "椅": {
+    "components": [
+      "木",
+      "奇"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Дерево 木 (значение: мебель) + 奇 (фонетик) — деревянный стул.",
+    "related_characters": [
+      "桌",
+      "机"
+    ]
+  },
+  "猫": {
+    "components": [
+      "犭",
+      "苗"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Зверь 犭+ 苗 (фонетик, miáo ≈ мяу) — зверь, который мяукает.",
+    "related_characters": [
+      "狗"
+    ]
+  },
+  "狗": {
+    "components": [
+      "犭",
+      "句"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Зверь 犭+ 句 (фонетик) — домашний зверь, собака.",
+    "related_characters": [
+      "猫"
+    ]
+  },
+  "朋": {
+    "components": [
+      "月",
+      "月"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Две луны 月月 рядом — два одинаковых, два друга вместе.",
+    "related_characters": [
+      "友"
+    ]
+  },
+  "友": {
+    "components": [
+      "又",
+      "又"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Две руки 又 протянуты друг к другу — рукопожатие, дружба.",
+    "related_characters": [
+      "朋",
+      "爱"
+    ]
+  },
+  "爱": {
+    "components": [
+      "爫",
+      "冖",
+      "友"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Рука сверху + сердце (традиц.) + друг 友 — протягивать руку с сердцем другу.",
+    "related_characters": [
+      "友",
+      "受"
+    ]
+  },
+  "喜": {
+    "components": [
+      "士",
+      "口",
+      "豆"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Барабан сверху + рот 口 — радостный крик под барабан, веселье.",
+    "related_characters": [
+      "欢"
+    ]
+  },
+  "欢": {
+    "components": [
+      "又",
+      "欠"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Фонетик (упрощ.) + 欠 (дышать) — радостное дыхание, веселье.",
+    "related_characters": [
+      "喜"
+    ]
+  },
+  "高": {
+    "components": [
+      "高"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Пиктограмма высокой башни/помоста — высокий, возвышенный.",
+    "related_characters": [
+      "亮"
+    ]
+  },
+  "兴": {
+    "components": [
+      "丷",
+      "一",
+      "八"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Четыре руки поднимают вместе — воодушевление, подъём. Упрощение от 興.",
+    "related_characters": [
+      "高"
+    ]
+  },
+  "漂": {
+    "components": [
+      "氵",
+      "票"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Вода 氵(значение) + 票 (фонетик) — плыть по воде; красивый (перенос.).",
+    "related_characters": [
+      "亮"
+    ]
+  },
+  "亮": {
+    "components": [
+      "亠",
+      "口",
+      "冖",
+      "几"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Высокий 高 (упрощ.) + 几 — свет на высоте, яркий, светлый.",
+    "related_characters": [
+      "漂",
+      "明"
+    ]
+  },
+  "冷": {
+    "components": [
+      "冫",
+      "令"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Лёд 冫(значение) + 令 (фонетик) — ледяной, холодный.",
+    "related_characters": [
+      "热",
+      "冰"
+    ]
+  },
+  "热": {
+    "components": [
+      "执",
+      "灬"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Огонь 灬 (значение) + верхняя часть (фонетик) — огонь нагревает, горячий.",
+    "related_characters": [
+      "冷",
+      "点"
+    ]
+  },
+  "快": {
+    "components": [
+      "忄",
+      "夬"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Сердце 忄(значение) + 夬 (фонетик) — сердце бьётся быстро.",
+    "related_characters": [
+      "慢",
+      "块"
+    ]
+  },
+  "慢": {
+    "components": [
+      "忄",
+      "曼"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Сердце 忄(значение) + 曼 (фонетик) — спокойное сердце, медленный.",
+    "related_characters": [
+      "快",
+      "漫"
+    ]
+  },
+  "长": {
+    "components": [
+      "长"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Пиктограмма длинных волос старика — длинный, долгий.",
+    "related_characters": [
+      "短",
+      "张"
+    ]
+  },
+  "短": {
+    "components": [
+      "矢",
+      "豆"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Стрела 矢 + мера 豆 — стрела отмеряет короткое расстояние.",
+    "related_characters": [
+      "长"
+    ]
+  },
+  "近": {
+    "components": [
+      "辶",
+      "斤"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Движение 辶 + 斤 (фонетик) — подойти близко, рядом.",
+    "related_characters": [
+      "远",
+      "听"
+    ]
+  },
+  "远": {
+    "components": [
+      "辶",
+      "元"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Движение 辶 + 元 (фонетик) — уйти далеко.",
+    "related_characters": [
+      "近",
+      "院"
+    ]
+  },
+  "老": {
+    "components": [
+      "耂",
+      "匕"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Старик с длинными волосами и тростью — пожилой, старый.",
+    "related_characters": [
+      "师",
+      "考"
+    ]
+  },
+  "师": {
+    "components": [
+      "刂",
+      "巾"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Знамя 巾 + упрощ. часть — наставник армии, учитель. Упрощение от 師.",
+    "related_characters": [
+      "老"
+    ]
+  },
+  "同": {
+    "components": [
+      "冂",
+      "一",
+      "口"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Рамка 冂 + рот 口 + одно 一 — все говорят одно, вместе.",
+    "related_characters": [
+      "合",
+      "铜"
+    ]
+  },
+  "医": {
+    "components": [
+      "匚",
+      "矢"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Ящик 匚 + стрела 矢 — извлечь стрелу из раны, лечить.",
+    "related_characters": [
+      "院"
+    ]
+  },
+  "院": {
+    "components": [
+      "阝",
+      "完"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Холм 阝(значение: место) + 完 (фонетик) — огороженное место, двор.",
+    "related_characters": [
+      "医",
+      "远"
+    ]
+  },
+  "机": {
+    "components": [
+      "木",
+      "几"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Дерево 木 (значение) + 几 (фонетик) — деревянный ткацкий станок, механизм.",
+    "related_characters": [
+      "椅",
+      "桌"
+    ]
+  },
+  "场": {
+    "components": [
+      "土",
+      "昜"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Земля 土 (значение) + упрощ. фонетик — ровная площадка.",
+    "related_characters": [
+      "地",
+      "块"
+    ]
+  },
+  "店": {
+    "components": [
+      "广",
+      "占"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Навес 广 (значение) + 占 (фонетик) — место торговли под навесом.",
+    "related_characters": [
+      "广",
+      "府"
+    ]
+  },
+  "影": {
+    "components": [
+      "景",
+      "彡"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Свет/пейзаж 景 + полосы 彡 (тень) — тень от света, изображение.",
+    "related_characters": [
+      "明",
+      "亮"
+    ]
+  },
+  "坐": {
+    "components": [
+      "人",
+      "人",
+      "土"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Два человека 人人 на земле 土 — сидеть на земле.",
+    "related_characters": [
+      "座"
+    ]
+  },
+  "打": {
+    "components": [
+      "扌",
+      "丁"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Рука 扌+ 丁 (фонетик) — рукой ударить.",
+    "related_characters": [
+      "找",
+      "拿"
+    ]
+  },
+  "住": {
+    "components": [
+      "亻",
+      "主"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Человек 亻+ 主 (фонетик: хозяин) — человек на одном месте, жить.",
+    "related_characters": [
+      "作",
+      "做"
+    ]
+  },
+  "请": {
+    "components": [
+      "讠",
+      "青"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Речь 讠+ 青 (фонетик) — просить словами, пожалуйста.",
+    "related_characters": [
+      "清",
+      "情",
+      "晴"
+    ]
+  },
+  "谢": {
+    "components": [
+      "讠",
+      "射"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Речь 讠+ 射 (фонетик) — словами благодарить.",
+    "related_characters": [
+      "说",
+      "话"
+    ]
+  },
+  "对": {
+    "components": [
+      "又",
+      "寸"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Рука 又 + мера 寸 — точно отмерить, правильно.",
+    "related_characters": [
+      "寸",
+      "过"
+    ]
+  },
+  "起": {
+    "components": [
+      "走",
+      "己"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Бежать 走 (значение) + 己 (фонетик) — подняться и пойти.",
+    "related_characters": [
+      "走",
+      "跑"
+    ]
+  },
+  "回": {
+    "components": [
+      "囗",
+      "口"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Водоворот — вода вращается и возвращается к началу.",
+    "related_characters": [
+      "国",
+      "围"
+    ]
+  },
+  "开": {
+    "components": [
+      "一",
+      "廾"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Две руки 廾 поднимают засов 一 — открывать ворота.",
+    "related_characters": [
+      "关"
+    ]
+  },
+  "关": {
+    "components": [
+      "丷",
+      "天"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Засов между створками — закрыть ворота. Упрощение от 關.",
+    "related_characters": [
+      "开",
+      "送"
+    ]
+  },
+  "买": {
+    "components": [
+      "乛",
+      "头"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Сеть + ракушки-деньги (упрощ.) — ловить товар за деньги, покупать.",
+    "related_characters": [
+      "卖"
+    ]
+  },
+  "卖": {
+    "components": [
+      "十",
+      "买"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Десять 十 (наценка) + покупка 买 — купить и перепродать.",
+    "related_characters": [
+      "买",
+      "读"
+    ]
+  },
+  "少": {
+    "components": [
+      "小",
+      "丿"
+    ],
+    "type": "指事",
+    "formation_explanation_ru": "От 小 (маленький) с изменением — ещё меньше, мало.",
+    "related_characters": [
+      "小",
+      "多"
+    ]
+  },
+  "认": {
+    "components": [
+      "讠",
+      "人"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Речь 讠+ 人 (фонетик) — словами подтвердить, узнать.",
+    "related_characters": [
+      "识"
+    ]
+  },
+  "识": {
+    "components": [
+      "讠",
+      "只"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Речь 讠+ 只 (упрощ. фонетик) — различать словами, знать.",
+    "related_characters": [
+      "认",
+      "知"
+    ]
+  },
+  "睡": {
+    "components": [
+      "目",
+      "垂"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Глаз 目 (значение) + 垂 (фонетик: свисать) — веки опускаются, спать.",
+    "related_characters": [
+      "觉",
+      "眼"
+    ]
+  },
+  "觉": {
+    "components": [
+      "⺍",
+      "冖",
+      "见"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Руки 爫 + крышка 冖 + видеть 见 — осознание, чувство; сон.",
+    "related_characters": [
+      "睡",
+      "学"
+    ]
+  },
+  "穿": {
+    "components": [
+      "穴",
+      "牙"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Дыра 穴 + зуб 牙 — зуб проходит через дыру, продевать, надевать.",
+    "related_characters": [
+      "衣",
+      "空"
+    ]
+  },
+  "衣": {
+    "components": [
+      "衣"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Пиктограмма халата — воротник сверху, полы расходятся.",
+    "related_characters": [
+      "服",
+      "穿",
+      "裤"
+    ]
+  },
+  "服": {
+    "components": [
+      "月",
+      "卩"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Тело 月 + фонетик — надевать на тело, одежда.",
+    "related_characters": [
+      "衣"
+    ]
+  },
+  "雨": {
+    "components": [
+      "雨"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Облако с каплями — дождь падает с неба.",
+    "related_characters": [
+      "雪",
+      "电",
+      "雷"
+    ]
+  },
+  "雪": {
+    "components": [
+      "雨",
+      "彐"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Дождь 雨 + рука 彐 — осадки, которые можно подобрать рукой, снег.",
+    "related_characters": [
+      "雨"
+    ]
+  },
+  "名": {
+    "components": [
+      "夕",
+      "口"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Вечер 夕 + рот 口 — в темноте называешь имя голосом.",
+    "related_characters": [
+      "字",
+      "外"
+    ]
+  },
+  "字": {
+    "components": [
+      "宀",
+      "子"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Крыша 宀 + ребёнок 子 — ребёнок рождается дома; иероглиф рождается от ключа.",
+    "related_characters": [
+      "名",
+      "学",
+      "家"
+    ]
+  },
+  "岁": {
+    "components": [
+      "山",
+      "夕"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Гора 山 + 夕 — смена циклов у горы, год жизни. Упрощение от 歲.",
+    "related_characters": [
+      "年"
+    ]
+  },
+  "点": {
+    "components": [
+      "占",
+      "灬"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Фонетик 占 + огонь 灬 — искра, точка; час (отметка времени).",
+    "related_characters": [
+      "热",
+      "黑"
+    ]
+  },
+  "半": {
+    "components": [
+      "丷",
+      "牛"
+    ],
+    "type": "指事",
+    "formation_explanation_ru": "Разделение 丷 + бык 牛 — разрубить быка надвое, половина.",
+    "related_characters": [
+      "分"
+    ]
+  },
+  "钟": {
+    "components": [
+      "钅",
+      "中"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Металл 钅(значение) + 中 (фонетик) — металлический колокол, часы.",
+    "related_characters": [
+      "钱",
+      "铁"
+    ]
+  },
+  "星": {
+    "components": [
+      "日",
+      "生"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Солнце/свет 日 (значение) + 生 (фонетик) — небесное светило, звезда.",
+    "related_characters": [
+      "明",
+      "期"
+    ]
+  },
+  "期": {
+    "components": [
+      "其",
+      "月"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Луна 月 (значение: цикл) + 其 (фонетик) — лунный цикл, период.",
+    "related_characters": [
+      "星"
+    ]
+  },
+  "怎": {
+    "components": [
+      "乍",
+      "心"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Сердце 心 (значение) + 乍 (фонетик) — в сердце вопрос: как?",
+    "related_characters": [
+      "想",
+      "作"
+    ]
+  },
+  "样": {
+    "components": [
+      "木",
+      "羊"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Дерево 木 (значение: образец) + 羊 (фонетик) — деревянный шаблон, вид.",
+    "related_characters": [
+      "杨"
+    ]
+  },
+  "谁": {
+    "components": [
+      "讠",
+      "隹"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Речь 讠+ 隹 (фонетик: птица) — спрашивать: кто?",
+    "related_characters": [
+      "准"
+    ]
+  },
+  "哪": {
+    "components": [
+      "口",
+      "那"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Рот 口 (значение) + 那 (фонетик) — ртом спрашиваешь: где?",
+    "related_characters": [
+      "那"
+    ]
+  },
+  "几": {
+    "components": [
+      "几"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Маленький столик — нечто малое, немного; сколько?",
+    "related_characters": [
+      "机"
+    ]
+  },
+  "多": {
+    "components": [
+      "夕",
+      "夕"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Два вечера 夕夕 подряд — один за другим, много.",
+    "related_characters": [
+      "少",
+      "外",
+      "名"
+    ]
+  },
+  "先": {
+    "components": [
+      "丿",
+      "土",
+      "儿"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Нога шагает впереди человека 儿 — первый, раньше.",
+    "related_characters": [
+      "生"
+    ]
+  },
+  "再": {
+    "components": [
+      "一",
+      "冂",
+      "土"
+    ],
+    "type": "指事",
+    "formation_explanation_ru": "Абстрактный символ повтора — снова, ещё раз.",
+    "related_characters": [
+      "在"
+    ]
+  },
+  "都": {
+    "components": [
+      "者",
+      "阝"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Фонетик 者 + холм/город 阝— столица; все собираются.",
+    "related_characters": [
+      "着"
+    ]
+  },
+  "太": {
+    "components": [
+      "大",
+      "丶"
+    ],
+    "type": "指事",
+    "formation_explanation_ru": "Большой 大 + точка — ещё больше, чем большой, слишком.",
+    "related_characters": [
+      "大",
+      "天"
+    ]
+  },
+  "没": {
+    "components": [
+      "氵",
+      "殳"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Вода 氵+ 殳 (фонетик) — утонуть в воде, исчезнуть, нет.",
+    "related_characters": [
+      "有"
+    ]
+  },
+  "别": {
+    "components": [
+      "口",
+      "力",
+      "刂"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Кость + нож 刂 — ножом отрезать, разделить; не надо!",
+    "related_characters": [
+      "到"
+    ]
+  },
+  "地": {
+    "components": [
+      "土",
+      "也"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Земля 土 (значение) + 也 (фонетик) — земля; наречная частица.",
+    "related_characters": [
+      "他",
+      "她",
+      "在"
+    ]
+  },
+  "呢": {
+    "components": [
+      "口",
+      "尼"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Рот 口 + 尼 (фонетик) — переспрашивать: а ты?",
+    "related_characters": [
+      "吧",
+      "吗"
+    ]
+  },
+  "吧": {
+    "components": [
+      "口",
+      "巴"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Рот 口 + 巴 (фонетик) — предлагать ртом: давай!",
+    "related_characters": [
+      "呢",
+      "吗",
+      "把"
+    ]
+  },
+  "做": {
+    "components": [
+      "亻",
+      "故"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Человек 亻+ 故 (фонетик) — человек создаёт, делает.",
+    "related_characters": [
+      "作"
+    ]
+  },
+  "笑": {
+    "components": [
+      "竹",
+      "夭"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Бамбук 竹 + молодой 夭 — бамбук качается как человек от смеха.",
+    "related_characters": [
+      "哭"
+    ]
+  },
+  "哭": {
+    "components": [
+      "口",
+      "口",
+      "犬"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Два рта 口口 (глаза) + собака 犬 (вой) — рыдать, плакать.",
+    "related_characters": [
+      "笑"
+    ]
+  },
+  "跑": {
+    "components": [
+      "足",
+      "包"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Нога 足 (значение) + 包 (фонетик) — ноги несут, бежать.",
+    "related_characters": [
+      "走",
+      "起"
+    ]
+  },
+  "走": {
+    "components": [
+      "土",
+      "止"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Нога 止 делает большой шаг — ходить, идти.",
+    "related_characters": [
+      "跑",
+      "起"
+    ]
+  },
+  "飞": {
+    "components": [
+      "飞"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Птица в полёте — летать. Упрощение от 飛.",
+    "related_characters": [
+      "机"
+    ]
+  },
+  "送": {
+    "components": [
+      "辶",
+      "关"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Движение 辶 + 关 (фонетик, упрощ.) — идти с подарком, провожать.",
+    "related_characters": [
+      "给",
+      "远",
+      "近"
+    ]
+  },
+  "给": {
+    "components": [
+      "纟",
+      "合"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Нить 纟(значение: связь) + 合 (фонетик) — связать передачей, давать.",
+    "related_characters": [
+      "送"
+    ]
+  },
+  "叫": {
+    "components": [
+      "口",
+      "丩"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Рот 口 + 丩 (фонетик) — кричать, звать, называться.",
+    "related_characters": [
+      "号"
+    ]
+  },
+  "问": {
+    "components": [
+      "门",
+      "口"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Ворота 门 (фонетик) + рот 口 (значение) — стоять у ворот и спрашивать.",
+    "related_characters": [
+      "答",
+      "闻"
+    ]
+  },
+  "答": {
+    "components": [
+      "竹",
+      "合"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Бамбук 竹 + 合 (фонетик) — бамбуковые дощечки с ответом.",
+    "related_characters": [
+      "问"
+    ]
+  },
+  "等": {
+    "components": [
+      "竹",
+      "寺"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Бамбук 竹 + 寺 (фонетик) — бамбуковые таблички равной длины; ждать.",
+    "related_characters": [
+      "时"
+    ]
+  },
+  "找": {
+    "components": [
+      "扌",
+      "戈"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Рука 扌+ 戈 (фонетик) — рукой шарить, искать.",
+    "related_characters": [
+      "打",
+      "拿"
+    ]
+  },
+  "拿": {
+    "components": [
+      "合",
+      "手"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Соединять 合 + рука 手 — рукой схватить и держать.",
+    "related_characters": [
+      "打",
+      "找",
+      "放"
+    ]
+  },
+  "放": {
+    "components": [
+      "方",
+      "攵"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Направление 方 (фонетик) + действие 攵 — отпустить в сторону, положить.",
+    "related_characters": [
+      "拿"
+    ]
+  },
+  "坏": {
+    "components": [
+      "土",
+      "不"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Земля 土 (значение) + 不 (фонетик, упрощ.) — земля разрушена, плохой.",
+    "related_characters": [
+      "新"
+    ]
+  },
+  "新": {
+    "components": [
+      "亲",
+      "斤"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Дерево 亲 (упрощ.) + топор 斤 (фонетик) — свежесрубленное, новый.",
+    "related_characters": [
+      "坏",
+      "老"
+    ]
+  },
+  "忙": {
+    "components": [
+      "忄",
+      "亡"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Сердце 忄+ 亡 (фонетик: пропасть) — сердце в смятении, занят.",
+    "related_characters": [
+      "快",
+      "慢"
+    ]
+  },
+  "累": {
+    "components": [
+      "田",
+      "糸"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Поле 田 + нити 糸 — связки урожая с поля, усталость.",
+    "related_characters": [
+      "忙"
+    ]
+  },
+  "错": {
+    "components": [
+      "钅",
+      "昔"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Металл 钅(значение: скрещение) + 昔 (фонетик) — перекрест, ошибка.",
+    "related_characters": [
+      "对"
+    ]
+  },
+  "黑": {
+    "components": [
+      "里",
+      "灬"
+    ],
+    "type": "会意",
+    "formation_explanation_ru": "Окно с сажей + огонь 灬 — дым от огня оставляет чёрную копоть.",
+    "related_characters": [
+      "白",
+      "点"
+    ]
+  },
+  "白": {
+    "components": [
+      "白"
+    ],
+    "type": "象形",
+    "formation_explanation_ru": "Белое зерно риса или луч солнца — чистый, белый.",
+    "related_characters": [
+      "黑",
+      "的",
+      "明"
+    ]
+  },
+  "红": {
+    "components": [
+      "纟",
+      "工"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Нить/шёлк 纟(значение) + 工 (фонетик) — красная нить, красный.",
+    "related_characters": [
+      "绿",
+      "蓝"
+    ]
+  },
+  "绿": {
+    "components": [
+      "纟",
+      "录"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Нить 纟(значение: краска) + 录 (фонетик) — зелёная краска.",
+    "related_characters": [
+      "红",
+      "蓝"
+    ]
+  },
+  "蓝": {
+    "components": [
+      "艹",
+      "监"
+    ],
+    "type": "形声",
+    "formation_explanation_ru": "Трава 艹 (значение: растение-индиго) + 监 (фонетик) — растение для синей краски.",
+    "related_characters": [
+      "红",
+      "绿"
+    ]
   }
 }

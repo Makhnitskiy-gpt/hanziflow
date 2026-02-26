@@ -60,7 +60,7 @@ export function DecompositionView({ character }: DecompositionViewProps) {
                   className="flex flex-col items-center p-2 rounded-md bg-ink-elevated border border-ink-border hover:border-gold transition-colors"
                 >
                   <span className="hanzi-md">{rad}</span>
-                  <span className="text-[10px] text-rice-muted mt-1">радикал</span>
+                  <span className="text-xs text-rice-muted mt-1">радикал</span>
                 </button>
               </span>
             ))}

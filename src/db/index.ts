@@ -11,6 +11,7 @@ import type {
   Radical,
   Character,
   SRSCard,
+  ReviewLog,
   Mnemonic,
   StudySession,
   AppSettings,
@@ -29,6 +30,7 @@ const db = new Dexie('HanziFlowDB') as Dexie & {
   sessions: EntityTable<StudySession, 'id'>;
   settings: EntityTable<AppSettings, 'id'>;
   chatMessages: EntityTable<ChatMessage, 'id'>;
+  reviewLogs: EntityTable<ReviewLog, 'id'>;
 };
 
 db.version(1).stores({
@@ -45,6 +47,12 @@ db.version(1).stores({
 db.version(2).stores({
   radicals: 'id, char, category',
   characters: 'id, char, hsk_level, pinyin',
+});
+
+// v3: Add review log table for FSRS calibration + cardType index
+db.version(3).stores({
+  cards: '++id, itemId, itemType, cardType, due, state, [itemType+itemId], [cardType+state]',
+  reviewLogs: '++id, cardId, timestamp',
 });
 
 export { db };

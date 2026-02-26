@@ -29,6 +29,10 @@ export function StrokeCanvas({
       writerRef.current = null;
     }
 
+    // Read theme colors from CSS variables for light/dark mode support
+    const styles = getComputedStyle(document.documentElement);
+    const getVar = (name: string) => styles.getPropertyValue(name).trim();
+
     const writer = HanziWriter.create(containerRef.current, char, {
       width: size,
       height: size,
@@ -37,11 +41,11 @@ export function StrokeCanvas({
       showCharacter: false,
       strokeAnimationSpeed: 1.5,
       delayBetweenStrokes: 200,
-      strokeColor: '#e8e0d4', // rice
-      outlineColor: '#2a2520', // ink-border
-      radicalColor: '#c9a96e', // gold
-      highlightColor: '#c53d43', // cinnabar
-      drawingColor: '#e8e0d4', // rice
+      strokeColor: getVar('--color-stroke') || '#1a1714',
+      outlineColor: getVar('--color-stroke-outline') || '#e0d8cc',
+      radicalColor: getVar('--color-gold') || '#b8942e',
+      highlightColor: getVar('--color-cinnabar') || '#c53d43',
+      drawingColor: getVar('--color-stroke') || '#1a1714',
       drawingWidth: 6,
       showHintAfterMisses: 3,
       highlightOnComplete: true,
@@ -103,13 +107,13 @@ export function StrokeCanvas({
           onClick={() => {
             writerRef.current?.animateCharacter();
           }}
-          className="px-3 py-1.5 text-xs text-rice-muted bg-ink-elevated rounded-md border border-ink-border hover:text-rice transition-colors"
+          className="px-4 py-2.5 text-sm text-rice-muted bg-ink-elevated rounded-lg border border-ink-border hover:text-rice transition-colors min-h-[44px]"
         >
           Показать порядок
         </button>
         <button
           onClick={initWriter}
-          className="px-3 py-1.5 text-xs text-rice-muted bg-ink-elevated rounded-md border border-ink-border hover:text-rice transition-colors"
+          className="px-4 py-2.5 text-sm text-rice-muted bg-ink-elevated rounded-lg border border-ink-border hover:text-rice transition-colors min-h-[44px]"
         >
           Заново
         </button>

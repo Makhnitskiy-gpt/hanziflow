@@ -7,10 +7,16 @@
     "meaning_ru": "хороший, хорошо",
     "meaning_en": "good, well",
     "hsk_level": 1,
-    "radicals": ["女", "子"],
+    "radicals": [
+      "女",
+      "子"
+    ],
     "formation_type": "会意",
     "formation_explanation_ru": "Женщина 女 + ребёнок 子 = хорошо. Когда мать рядом с ребёнком — всё хорошо.",
-    "examples_ru": ["你好 (nǐ hǎo) — привет", "好的 (hǎo de) — ладно"]
+    "examples_ru": [
+      "你好 (nǐ hǎo) — привет",
+      "好的 (hǎo de) — ладно"
+    ]
   },
   {
     "id": 2,
@@ -20,10 +26,15 @@
     "meaning_ru": "большой, великий",
     "meaning_en": "big, large, great",
     "hsk_level": 1,
-    "radicals": ["大"],
+    "radicals": [
+      "大"
+    ],
     "formation_type": "象形",
     "formation_explanation_ru": "Человек 人 раскинул руки в стороны — показывает, какой он большой.",
-    "examples_ru": ["大家 (dàjiā) — все", "大学 (dàxué) — университет"]
+    "examples_ru": [
+      "大家 (dàjiā) — все",
+      "大学 (dàxué) — университет"
+    ]
   },
   {
     "id": 3,
@@ -33,10 +44,15 @@
     "meaning_ru": "маленький",
     "meaning_en": "small, little",
     "hsk_level": 1,
-    "radicals": ["小"],
+    "radicals": [
+      "小"
+    ],
     "formation_type": "象形",
     "formation_explanation_ru": "Три маленькие чёрточки — нечто крохотное, разделённое на мелкие части.",
-    "examples_ru": ["小姐 (xiǎojiě) — девушка (обращение)", "小时 (xiǎoshí) — час"]
+    "examples_ru": [
+      "小姐 (xiǎojiě) — девушка (обращение)",
+      "小时 (xiǎoshí) — час"
+    ]
   },
   {
     "id": 4,
@@ -46,10 +62,15 @@
     "meaning_ru": "человек, люди",
     "meaning_en": "person, people",
     "hsk_level": 1,
-    "radicals": ["人"],
+    "radicals": [
+      "人"
+    ],
     "formation_type": "象形",
     "formation_explanation_ru": "Пиктограмма шагающего человека — две ноги в движении.",
-    "examples_ru": ["人们 (rénmen) — люди", "中国人 (zhōngguó rén) — китаец"]
+    "examples_ru": [
+      "人们 (rénmen) — люди",
+      "中国人 (zhōngguó rén) — китаец"
+    ]
   },
   {
     "id": 5,
@@ -59,10 +80,15 @@
     "meaning_ru": "один",
     "meaning_en": "one",
     "hsk_level": 1,
-    "radicals": ["一"],
+    "radicals": [
+      "一"
+    ],
     "formation_type": "指事",
     "formation_explanation_ru": "Одна горизонтальная черта — самое простое число, единица.",
-    "examples_ru": ["一个 (yí gè) — один (штука)", "一起 (yìqǐ) — вместе"]
+    "examples_ru": [
+      "一个 (yí gè) — один (штука)",
+      "一起 (yìqǐ) — вместе"
+    ]
   },
   {
     "id": 6,
@@ -72,10 +98,15 @@
     "meaning_ru": "два",
     "meaning_en": "two",
     "hsk_level": 1,
-    "radicals": ["一"],
+    "radicals": [
+      "一"
+    ],
     "formation_type": "指事",
     "formation_explanation_ru": "Две горизонтальные черты — два уровня, число два.",
-    "examples_ru": ["二月 (èr yuè) — февраль", "第二 (dì èr) — второй"]
+    "examples_ru": [
+      "二月 (èr yuè) — февраль",
+      "第二 (dì èr) — второй"
+    ]
   },
   {
     "id": 7,
@@ -85,10 +116,15 @@
     "meaning_ru": "три",
     "meaning_en": "three",
     "hsk_level": 1,
-    "radicals": ["一"],
+    "radicals": [
+      "一"
+    ],
     "formation_type": "指事",
     "formation_explanation_ru": "Три горизонтальные черты — небо, земля и человек между ними.",
-    "examples_ru": ["三月 (sān yuè) — март", "三个 (sān gè) — три (штуки)"]
+    "examples_ru": [
+      "三月 (sān yuè) — март",
+      "三个 (sān gè) — три (штуки)"
+    ]
   },
   {
     "id": 8,
@@ -98,10 +134,16 @@
     "meaning_ru": "четыре",
     "meaning_en": "four",
     "hsk_level": 1,
-    "radicals": ["囗", "八"],
+    "radicals": [
+      "囗",
+      "八"
+    ],
     "formation_type": "指事",
     "formation_explanation_ru": "Рамка 囗 с разделением внутри — четыре части.",
-    "examples_ru": ["四月 (sì yuè) — апрель", "四个 (sì gè) — четыре (штуки)"]
+    "examples_ru": [
+      "四月 (sì yuè) — апрель",
+      "四个 (sì gè) — четыре (штуки)"
+    ]
   },
   {
     "id": 9,
@@ -111,10 +153,15 @@
     "meaning_ru": "пять",
     "meaning_en": "five",
     "hsk_level": 1,
-    "radicals": ["一"],
+    "radicals": [
+      "一"
+    ],
     "formation_type": "指事",
     "formation_explanation_ru": "Пять стихий (металл, дерево, вода, огонь, земля) между небом и землёй.",
-    "examples_ru": ["五月 (wǔ yuè) — май", "五个 (wǔ gè) — пять (штук)"]
+    "examples_ru": [
+      "五月 (wǔ yuè) — май",
+      "五个 (wǔ gè) — пять (штук)"
+    ]
   },
   {
     "id": 10,
@@ -124,10 +171,15 @@
     "meaning_ru": "шесть",
     "meaning_en": "six",
     "hsk_level": 1,
-    "radicals": ["八"],
+    "radicals": [
+      "八"
+    ],
     "formation_type": "指事",
     "formation_explanation_ru": "Крыша с расходящимися линиями внизу — шесть направлений.",
-    "examples_ru": ["六月 (liù yuè) — июнь", "六个 (liù gè) — шесть (штук)"]
+    "examples_ru": [
+      "六月 (liù yuè) — июнь",
+      "六个 (liù gè) — шесть (штук)"
+    ]
   },
   {
     "id": 11,
@@ -137,10 +189,15 @@
     "meaning_ru": "семь",
     "meaning_en": "seven",
     "hsk_level": 1,
-    "radicals": ["一"],
+    "radicals": [
+      "一"
+    ],
     "formation_type": "指事",
     "formation_explanation_ru": "Горизонтальная черта, перечёркнутая вертикальной — разрез, разделение.",
-    "examples_ru": ["七月 (qī yuè) — июль", "七个 (qī gè) — семь (штук)"]
+    "examples_ru": [
+      "七月 (qī yuè) — июль",
+      "七个 (qī gè) — семь (штук)"
+    ]
   },
   {
     "id": 12,
@@ -150,10 +207,15 @@
     "meaning_ru": "восемь",
     "meaning_en": "eight",
     "hsk_level": 1,
-    "radicals": ["八"],
-    "formation_type": "象形",
+    "radicals": [
+      "八"
+    ],
+    "formation_type": "指事",
     "formation_explanation_ru": "Две расходящиеся черты — разделение, деление пополам. Счастливое число в Китае.",
-    "examples_ru": ["八月 (bā yuè) — август", "八个 (bā gè) — восемь (штук)"]
+    "examples_ru": [
+      "八月 (bā yuè) — август",
+      "八个 (bā gè) — восемь (штук)"
+    ]
   },
   {
     "id": 13,
@@ -163,10 +225,15 @@
     "meaning_ru": "девять",
     "meaning_en": "nine",
     "hsk_level": 1,
-    "radicals": ["乙"],
+    "radicals": [
+      "乙"
+    ],
     "formation_type": "指事",
     "formation_explanation_ru": "Изогнутая рука — достигающая предела, последнее однозначное число.",
-    "examples_ru": ["九月 (jiǔ yuè) — сентябрь", "九个 (jiǔ gè) — девять (штук)"]
+    "examples_ru": [
+      "九月 (jiǔ yuè) — сентябрь",
+      "九个 (jiǔ gè) — девять (штук)"
+    ]
   },
   {
     "id": 14,
@@ -176,10 +243,15 @@
     "meaning_ru": "десять",
     "meaning_en": "ten",
     "hsk_level": 1,
-    "radicals": ["十"],
+    "radicals": [
+      "十"
+    ],
     "formation_type": "指事",
     "formation_explanation_ru": "Крест — десять, полнота. Все десять пальцев.",
-    "examples_ru": ["十月 (shí yuè) — октябрь", "十个 (shí gè) — десять (штук)"]
+    "examples_ru": [
+      "十月 (shí yuè) — октябрь",
+      "十个 (shí gè) — десять (штук)"
+    ]
   },
   {
     "id": 15,
@@ -189,10 +261,16 @@
     "meaning_ru": "я, мне, меня",
     "meaning_en": "I, me",
     "hsk_level": 1,
-    "radicals": ["手", "戈"],
+    "radicals": [
+      "手",
+      "戈"
+    ],
     "formation_type": "会意",
     "formation_explanation_ru": "Рука 手 с оружием 戈 — я защищаю себя, я отстаиваю своё.",
-    "examples_ru": ["我们 (wǒmen) — мы", "我的 (wǒ de) — мой"]
+    "examples_ru": [
+      "我们 (wǒmen) — мы",
+      "我的 (wǒ de) — мой"
+    ]
   },
   {
     "id": 16,
@@ -202,10 +280,16 @@
     "meaning_ru": "ты, тебе, тебя",
     "meaning_en": "you",
     "hsk_level": 1,
-    "radicals": ["人", "小"],
+    "radicals": [
+      "亻",
+      "尔"
+    ],
     "formation_type": "形声",
     "formation_explanation_ru": "Человек 亻 слева + фонетик 尔 справа. Человек напротив — ты.",
-    "examples_ru": ["你好 (nǐ hǎo) — привет", "你们 (nǐmen) — вы"]
+    "examples_ru": [
+      "你好 (nǐ hǎo) — привет",
+      "你们 (nǐmen) — вы"
+    ]
   },
   {
     "id": 17,
@@ -215,10 +299,16 @@
     "meaning_ru": "он, его, ему",
     "meaning_en": "he, him",
     "hsk_level": 1,
-    "radicals": ["人", "也"],
+    "radicals": [
+      "人",
+      "也"
+    ],
     "formation_type": "形声",
     "formation_explanation_ru": "Человек 亻 + 也 (тоже). Другой человек — он.",
-    "examples_ru": ["他们 (tāmen) — они (муж.)", "他的 (tā de) — его"]
+    "examples_ru": [
+      "他们 (tāmen) — они (муж.)",
+      "他的 (tā de) — его"
+    ]
   },
   {
     "id": 18,
@@ -228,10 +318,16 @@
     "meaning_ru": "она, её, ей",
     "meaning_en": "she, her",
     "hsk_level": 1,
-    "radicals": ["女", "也"],
+    "radicals": [
+      "女",
+      "也"
+    ],
     "formation_type": "形声",
     "formation_explanation_ru": "Женщина 女 + 也 (тоже). Та другая женщина — она.",
-    "examples_ru": ["她们 (tāmen) — они (жен.)", "她的 (tā de) — её"]
+    "examples_ru": [
+      "她们 (tāmen) — они (жен.)",
+      "她的 (tā de) — её"
+    ]
   },
   {
     "id": 19,
@@ -241,10 +337,16 @@
     "meaning_ru": "быть, являться, да",
     "meaning_en": "to be, is, yes",
     "hsk_level": 1,
-    "radicals": ["日", "一"],
+    "radicals": [
+      "日",
+      "正"
+    ],
     "formation_type": "会意",
     "formation_explanation_ru": "Солнце 日 наверху + правильный 正 внизу — под солнцем всё видно, как есть. Истина.",
-    "examples_ru": ["我是学生 (wǒ shì xuéshēng) — я студент", "是的 (shì de) — да"]
+    "examples_ru": [
+      "我是学生 (wǒ shì xuéshēng) — я студент",
+      "是的 (shì de) — да"
+    ]
   },
   {
     "id": 20,
@@ -254,10 +356,15 @@
     "meaning_ru": "не, нет (отрицание)",
     "meaning_en": "not, no",
     "hsk_level": 1,
-    "radicals": ["一"],
-    "formation_type": "象形",
+    "radicals": [
+      "一"
+    ],
+    "formation_type": "指事",
     "formation_explanation_ru": "Птица взлетает и упирается в потолок — не может лететь выше. Преграда = отрицание.",
-    "examples_ru": ["不好 (bù hǎo) — нехорошо", "不是 (bú shì) — не является"]
+    "examples_ru": [
+      "不好 (bù hǎo) — нехорошо",
+      "不是 (bú shì) — не является"
+    ]
   },
   {
     "id": 21,
@@ -267,10 +374,16 @@
     "meaning_ru": "иметь, есть, существовать",
     "meaning_en": "to have, there is",
     "hsk_level": 1,
-    "radicals": ["月"],
+    "radicals": [
+      "又",
+      "月"
+    ],
     "formation_type": "会意",
     "formation_explanation_ru": "Рука 又 держит мясо 月 (月 здесь = мясо) — имеешь еду, значит имеешь.",
-    "examples_ru": ["有人 (yǒu rén) — есть кто-то", "没有 (méi yǒu) — не иметь"]
+    "examples_ru": [
+      "有人 (yǒu rén) — есть кто-то",
+      "没有 (méi yǒu) — не иметь"
+    ]
   },
   {
     "id": 22,
@@ -280,10 +393,16 @@
     "meaning_ru": "находиться, в, на (место/время)",
     "meaning_en": "at, in, to be at",
     "hsk_level": 1,
-    "radicals": ["土"],
+    "radicals": [
+      "土",
+      "才"
+    ],
     "formation_type": "形声",
     "formation_explanation_ru": "Земля 土 + фонетик 才. Стоять на земле — находиться где-то.",
-    "examples_ru": ["在家 (zài jiā) — дома", "我在这儿 (wǒ zài zhèr) — я здесь"]
+    "examples_ru": [
+      "在家 (zài jiā) — дома",
+      "我在这儿 (wǒ zài zhèr) — я здесь"
+    ]
   },
   {
     "id": 23,
@@ -293,10 +412,16 @@
     "meaning_ru": "это, этот",
     "meaning_en": "this",
     "hsk_level": 1,
-    "radicals": ["辶", "文"],
+    "radicals": [
+      "辶",
+      "文"
+    ],
     "formation_type": "形声",
     "formation_explanation_ru": "Движение 辶 + фонетик 文. Идёшь к этому — вот это.",
-    "examples_ru": ["这个 (zhège) — этот", "这是 (zhè shì) — это есть"]
+    "examples_ru": [
+      "这个 (zhège) — этот",
+      "这是 (zhè shì) — это есть"
+    ]
   },
   {
     "id": 24,
@@ -306,10 +431,15 @@
     "meaning_ru": "тот, то, тогда",
     "meaning_en": "that",
     "hsk_level": 1,
-    "radicals": ["阝"],
+    "radicals": [
+      "阝"
+    ],
     "formation_type": "形声",
     "formation_explanation_ru": "Холм 阝 + фонетик. То, что за холмом — далёкое, то.",
-    "examples_ru": ["那个 (nàge) — тот", "那里 (nàlǐ) — там"]
+    "examples_ru": [
+      "那个 (nàge) — тот",
+      "那里 (nàlǐ) — там"
+    ]
   },
   {
     "id": 25,
@@ -319,10 +449,16 @@
     "meaning_ru": "что (в составе 什么)",
     "meaning_en": "what (in 什么)",
     "hsk_level": 1,
-    "radicals": ["人", "十"],
+    "radicals": [
+      "人",
+      "十"
+    ],
     "formation_type": "形声",
     "formation_explanation_ru": "Человек 亻 + десять 十 — десять вопросов, путаница: что?",
-    "examples_ru": ["什么 (shénme) — что", "为什么 (wèi shénme) — почему"]
+    "examples_ru": [
+      "什么 (shénme) — что",
+      "为什么 (wèi shénme) — почему"
+    ]
   },
   {
     "id": 26,
@@ -332,10 +468,15 @@
     "meaning_ru": "вопросительная/модальная частица",
     "meaning_en": "interrogative particle",
     "hsk_level": 1,
-    "radicals": ["幺"],
+    "radicals": [
+      "幺"
+    ],
     "formation_type": "指事",
     "formation_explanation_ru": "Упрощение от 麼. Тонкая нитка 幺 — нечто неуловимое, неопределённое.",
-    "examples_ru": ["什么 (shénme) — что", "怎么 (zěnme) — как"]
+    "examples_ru": [
+      "什么 (shénme) — что",
+      "怎么 (zěnme) — как"
+    ]
   },
   {
     "id": 27,
@@ -345,10 +486,16 @@
     "meaning_ru": "притяжательная частица (мой, твой...)",
     "meaning_en": "possessive particle",
     "hsk_level": 1,
-    "radicals": ["白", "勺"],
+    "radicals": [
+      "白",
+      "勺"
+    ],
     "formation_type": "形声",
     "formation_explanation_ru": "Белый 白 + ложка 勺 (фонетик). Самая частая частица — связывает слова.",
-    "examples_ru": ["我的 (wǒ de) — мой", "好的 (hǎo de) — хорошо"]
+    "examples_ru": [
+      "我的 (wǒ de) — мой",
+      "好的 (hǎo de) — хорошо"
+    ]
   },
   {
     "id": 28,
@@ -358,10 +505,15 @@
     "meaning_ru": "частица завершённости действия",
     "meaning_en": "completed action particle",
     "hsk_level": 1,
-    "radicals": ["亅"],
+    "radicals": [
+      "亅"
+    ],
     "formation_type": "象形",
     "formation_explanation_ru": "Ребёнок без рук — нечто завершённое, оконченное. Действие сделано.",
-    "examples_ru": ["我吃了 (wǒ chī le) — я поел", "好了 (hǎo le) — готово"]
+    "examples_ru": [
+      "我吃了 (wǒ chī le) — я поел",
+      "好了 (hǎo le) — готово"
+    ]
   },
   {
     "id": 29,
@@ -371,10 +523,16 @@
     "meaning_ru": "вопросительная частица (да/нет)",
     "meaning_en": "question particle (yes/no)",
     "hsk_level": 1,
-    "radicals": ["口", "马"],
+    "radicals": [
+      "口",
+      "马"
+    ],
     "formation_type": "形声",
     "formation_explanation_ru": "Рот 口 + лошадь 马 (фонетик). Рот задаёт вопрос: ...ма?",
-    "examples_ru": ["你好吗？(nǐ hǎo ma?) — как дела?", "是吗？(shì ma?) — правда?"]
+    "examples_ru": [
+      "你好吗？(nǐ hǎo ma?) — как дела?",
+      "是吗？(shì ma?) — правда?"
+    ]
   },
   {
     "id": 30,
@@ -384,9 +542,2945 @@
     "meaning_ru": "очень",
     "meaning_en": "very, quite",
     "hsk_level": 1,
-    "radicals": ["彳"],
+    "radicals": [
+      "彳"
+    ],
     "formation_type": "形声",
     "formation_explanation_ru": "Шаг 彳 + 艮 (фонетик, упорный). Упорное движение — очень, весьма.",
-    "examples_ru": ["很好 (hěn hǎo) — очень хорошо", "很大 (hěn dà) — очень большой"]
+    "examples_ru": [
+      "很好 (hěn hǎo) — очень хорошо",
+      "很大 (hěn dà) — очень большой"
+    ]
+  },
+  {
+    "id": 31,
+    "char": "学",
+    "pinyin": "xué",
+    "tone": 2,
+    "meaning_ru": "учиться, учёба",
+    "meaning_en": "to study, to learn",
+    "hsk_level": 1,
+    "radicals": [
+      "⺍",
+      "冖",
+      "子"
+    ],
+    "stroke_count": 8,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Руки ⺍ передают знания под крышей 冖 ребёнку 子 — учиться.",
+    "examples_ru": [
+      "学生 (xuéshēng) — студент",
+      "学校 (xuéxiào) — школа",
+      "大学 (dàxué) — университет"
+    ]
+  },
+  {
+    "id": 32,
+    "char": "生",
+    "pinyin": "shēng",
+    "tone": 1,
+    "meaning_ru": "рождаться, жизнь, сырой",
+    "meaning_en": "to be born, life, raw",
+    "hsk_level": 1,
+    "radicals": [
+      "生"
+    ],
+    "stroke_count": 5,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Росток пробивается из земли — рождение, жизнь.",
+    "examples_ru": [
+      "学生 (xuéshēng) — студент",
+      "生日 (shēngrì) — день рождения",
+      "先生 (xiānshēng) — господин"
+    ]
+  },
+  {
+    "id": 33,
+    "char": "中",
+    "pinyin": "zhōng",
+    "tone": 1,
+    "meaning_ru": "середина, центр, Китай",
+    "meaning_en": "middle, center, China",
+    "hsk_level": 1,
+    "radicals": [
+      "口",
+      "丨"
+    ],
+    "stroke_count": 4,
+    "formation_type": "指事",
+    "formation_explanation_ru": "Стрела пронзает мишень по центру — середина, центр.",
+    "examples_ru": [
+      "中国 (zhōngguó) — Китай",
+      "中文 (zhōngwén) — китайский язык",
+      "中间 (zhōngjiān) — между"
+    ]
+  },
+  {
+    "id": 34,
+    "char": "国",
+    "pinyin": "guó",
+    "tone": 2,
+    "meaning_ru": "страна, государство",
+    "meaning_en": "country, nation",
+    "hsk_level": 1,
+    "radicals": [
+      "囗",
+      "玉"
+    ],
+    "stroke_count": 8,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Граница 囗 защищает драгоценность 玉 (яшму) — страна хранит своё сокровище.",
+    "examples_ru": [
+      "中国 (zhōngguó) — Китай",
+      "国家 (guójiā) — государство",
+      "外国 (wàiguó) — заграница"
+    ]
+  },
+  {
+    "id": 35,
+    "char": "来",
+    "pinyin": "lái",
+    "tone": 2,
+    "meaning_ru": "приходить, приезжать",
+    "meaning_en": "to come",
+    "hsk_level": 1,
+    "radicals": [
+      "木"
+    ],
+    "stroke_count": 7,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Колос пшеницы — пришёл издалека (пшеница пришла в Китай с запада).",
+    "examples_ru": [
+      "来了 (lái le) — пришёл",
+      "回来 (huílái) — вернуться",
+      "过来 (guòlái) — подойти"
+    ]
+  },
+  {
+    "id": 36,
+    "char": "去",
+    "pinyin": "qù",
+    "tone": 4,
+    "meaning_ru": "идти, уходить, ехать (куда-то)",
+    "meaning_en": "to go",
+    "hsk_level": 1,
+    "radicals": [
+      "土",
+      "厶"
+    ],
+    "stroke_count": 5,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Человек 大 уходит от места 厶 — уходить, ехать.",
+    "examples_ru": [
+      "去哪 (qù nǎ) — куда идёшь?",
+      "回去 (huíqù) — уйти обратно",
+      "出去 (chūqù) — выйти"
+    ]
+  },
+  {
+    "id": 37,
+    "char": "吃",
+    "pinyin": "chī",
+    "tone": 1,
+    "meaning_ru": "есть, кушать",
+    "meaning_en": "to eat",
+    "hsk_level": 1,
+    "radicals": [
+      "口",
+      "乞"
+    ],
+    "stroke_count": 6,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Рот 口 (значение) + 乞 (фонетик) — рот просит еды, есть.",
+    "examples_ru": [
+      "吃饭 (chīfàn) — есть (еду)",
+      "吃了 (chī le) — поел",
+      "好吃 (hǎochī) — вкусный"
+    ]
+  },
+  {
+    "id": 38,
+    "char": "喝",
+    "pinyin": "hē",
+    "tone": 1,
+    "meaning_ru": "пить",
+    "meaning_en": "to drink",
+    "hsk_level": 1,
+    "radicals": [
+      "口",
+      "曷"
+    ],
+    "stroke_count": 12,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Рот 口 (значение) + 曷 (фонетик) — рот пьёт, пить.",
+    "examples_ru": [
+      "喝水 (hē shuǐ) — пить воду",
+      "喝茶 (hē chá) — пить чай",
+      "喝酒 (hē jiǔ) — пить алкоголь"
+    ]
+  },
+  {
+    "id": 39,
+    "char": "看",
+    "pinyin": "kàn",
+    "tone": 4,
+    "meaning_ru": "смотреть, видеть, читать",
+    "meaning_en": "to look, to see, to read",
+    "hsk_level": 1,
+    "radicals": [
+      "手",
+      "目"
+    ],
+    "stroke_count": 9,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Рука 手 над глазом 目 — приставить руку ко лбу и всматриваться вдаль.",
+    "examples_ru": [
+      "看书 (kàn shū) — читать книгу",
+      "看见 (kànjiàn) — увидеть",
+      "好看 (hǎokàn) — красивый"
+    ]
+  },
+  {
+    "id": 40,
+    "char": "说",
+    "pinyin": "shuō",
+    "tone": 1,
+    "meaning_ru": "говорить, сказать",
+    "meaning_en": "to say, to speak",
+    "hsk_level": 1,
+    "radicals": [
+      "讠",
+      "兑"
+    ],
+    "stroke_count": 9,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Речь 讠(значение) + 兑 (фонетик) — произносить слова, говорить.",
+    "examples_ru": [
+      "说话 (shuōhuà) — разговаривать",
+      "听说 (tīngshuō) — слышал, что...",
+      "小说 (xiǎoshuō) — роман"
+    ]
+  },
+  {
+    "id": 41,
+    "char": "写",
+    "pinyin": "xiě",
+    "tone": 3,
+    "meaning_ru": "писать",
+    "meaning_en": "to write",
+    "hsk_level": 1,
+    "radicals": [
+      "冖",
+      "与"
+    ],
+    "stroke_count": 5,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Крыша 冖 + упрощённый фонетик — писать под крышей, записывать.",
+    "examples_ru": [
+      "写字 (xiězì) — писать иероглифы",
+      "写作 (xiězuò) — писать (творить)"
+    ]
+  },
+  {
+    "id": 42,
+    "char": "听",
+    "pinyin": "tīng",
+    "tone": 1,
+    "meaning_ru": "слушать, слышать",
+    "meaning_en": "to listen, to hear",
+    "hsk_level": 1,
+    "radicals": [
+      "口",
+      "斤"
+    ],
+    "stroke_count": 7,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Рот 口 (значение: речь) + 斤 (фонетик) — слушать то, что говорят.",
+    "examples_ru": [
+      "听说 (tīngshuō) — слышал, что...",
+      "好听 (hǎotīng) — приятный на слух"
+    ]
+  },
+  {
+    "id": 43,
+    "char": "读",
+    "pinyin": "dú",
+    "tone": 2,
+    "meaning_ru": "читать (вслух), учиться",
+    "meaning_en": "to read (aloud), to study",
+    "hsk_level": 1,
+    "radicals": [
+      "讠",
+      "卖"
+    ],
+    "stroke_count": 9,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Речь 讠(значение) + 卖 (фонетик) — произносить текст вслух, читать.",
+    "examples_ru": [
+      "读书 (dúshū) — читать книги",
+      "阅读 (yuèdú) — чтение"
+    ]
+  },
+  {
+    "id": 44,
+    "char": "会",
+    "pinyin": "huì",
+    "tone": 4,
+    "meaning_ru": "уметь, мочь, собрание",
+    "meaning_en": "can, to be able to, meeting",
+    "hsk_level": 1,
+    "radicals": [
+      "人",
+      "云"
+    ],
+    "stroke_count": 6,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Крышка сверху + облако 云 — собираться вместе, уметь (собранный опыт).",
+    "examples_ru": [
+      "我会 (wǒ huì) — я умею",
+      "会说 (huì shuō) — умеет говорить",
+      "开会 (kāihuì) — проводить собрание"
+    ]
+  },
+  {
+    "id": 45,
+    "char": "能",
+    "pinyin": "néng",
+    "tone": 2,
+    "meaning_ru": "мочь, способность",
+    "meaning_en": "can, to be able to",
+    "hsk_level": 1,
+    "radicals": [
+      "厶",
+      "月",
+      "匕"
+    ],
+    "stroke_count": 10,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Пиктограмма медведя — сильный зверь, символ способности и мощи.",
+    "examples_ru": [
+      "能不能 (néng bù néng) — можно ли?",
+      "不能 (bù néng) — нельзя"
+    ]
+  },
+  {
+    "id": 46,
+    "char": "想",
+    "pinyin": "xiǎng",
+    "tone": 3,
+    "meaning_ru": "думать, хотеть, скучать",
+    "meaning_en": "to think, to want, to miss",
+    "hsk_level": 1,
+    "radicals": [
+      "相",
+      "心"
+    ],
+    "stroke_count": 13,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Сердце 心 (значение) + 相 (фонетик, xiāng) — мысли в сердце, думать.",
+    "examples_ru": [
+      "想你 (xiǎng nǐ) — скучаю по тебе",
+      "我想 (wǒ xiǎng) — я думаю/хочу",
+      "想法 (xiǎngfǎ) — идея"
+    ]
+  },
+  {
+    "id": 47,
+    "char": "工",
+    "pinyin": "gōng",
+    "tone": 1,
+    "meaning_ru": "работа, мастер, рабочий",
+    "meaning_en": "work, worker",
+    "hsk_level": 1,
+    "radicals": [
+      "工"
+    ],
+    "stroke_count": 3,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Инструмент — угольник плотника. Символ ремесла и работы.",
+    "examples_ru": [
+      "工作 (gōngzuò) — работа",
+      "工人 (gōngrén) — рабочий"
+    ]
+  },
+  {
+    "id": 48,
+    "char": "作",
+    "pinyin": "zuò",
+    "tone": 4,
+    "meaning_ru": "делать, работать",
+    "meaning_en": "to do, to make, to work",
+    "hsk_level": 1,
+    "radicals": [
+      "亻",
+      "乍"
+    ],
+    "stroke_count": 7,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Человек 亻(значение) + 乍 (фонетик, zuò) — человек делает, работает.",
+    "examples_ru": [
+      "工作 (gōngzuò) — работа",
+      "作业 (zuòyè) — домашнее задание"
+    ]
+  },
+  {
+    "id": 49,
+    "char": "家",
+    "pinyin": "jiā",
+    "tone": 1,
+    "meaning_ru": "дом, семья",
+    "meaning_en": "home, family",
+    "hsk_level": 1,
+    "radicals": [
+      "宀",
+      "豕"
+    ],
+    "stroke_count": 10,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Крыша 宀 + свинья 豕 — под крышей домашнее животное, значит есть хозяйство, дом.",
+    "examples_ru": [
+      "家人 (jiārén) — родня",
+      "回家 (huíjiā) — вернуться домой",
+      "大家 (dàjiā) — все"
+    ]
+  },
+  {
+    "id": 50,
+    "char": "前",
+    "pinyin": "qián",
+    "tone": 2,
+    "meaning_ru": "перед, до, впереди",
+    "meaning_en": "before, front, ago",
+    "hsk_level": 1,
+    "radicals": [
+      "丷",
+      "月",
+      "刂"
+    ],
+    "stroke_count": 9,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Нога 止 + лодка 舟 (упрощ.) — двигаться вперёд, перед.",
+    "examples_ru": [
+      "前面 (qiánmiàn) — впереди",
+      "以前 (yǐqián) — раньше",
+      "前天 (qiántiān) — позавчера"
+    ]
+  },
+  {
+    "id": 51,
+    "char": "后",
+    "pinyin": "hòu",
+    "tone": 4,
+    "meaning_ru": "после, за, позади",
+    "meaning_en": "after, behind, later",
+    "hsk_level": 1,
+    "radicals": [
+      "厂",
+      "口"
+    ],
+    "stroke_count": 6,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Упрощение от 後. Обрыв 厂 + рот 口 — то, что осталось позади.",
+    "examples_ru": [
+      "后面 (hòumiàn) — позади",
+      "以后 (yǐhòu) — потом",
+      "后天 (hòutiān) — послезавтра"
+    ]
+  },
+  {
+    "id": 52,
+    "char": "上",
+    "pinyin": "shàng",
+    "tone": 4,
+    "meaning_ru": "верх, на, подниматься",
+    "meaning_en": "up, above, to go up",
+    "hsk_level": 1,
+    "radicals": [
+      "一",
+      "卜"
+    ],
+    "stroke_count": 3,
+    "formation_type": "指事",
+    "formation_explanation_ru": "Черта над горизонтальной линией — то, что находится наверху.",
+    "examples_ru": [
+      "上面 (shàngmiàn) — наверху",
+      "上学 (shàngxué) — ходить в школу",
+      "上午 (shàngwǔ) — утро"
+    ]
+  },
+  {
+    "id": 53,
+    "char": "下",
+    "pinyin": "xià",
+    "tone": 4,
+    "meaning_ru": "низ, под, спускаться",
+    "meaning_en": "down, below, to go down",
+    "hsk_level": 1,
+    "radicals": [
+      "一",
+      "卜"
+    ],
+    "stroke_count": 3,
+    "formation_type": "指事",
+    "formation_explanation_ru": "Черта под горизонтальной линией — то, что находится внизу.",
+    "examples_ru": [
+      "下面 (xiàmiàn) — внизу",
+      "下午 (xiàwǔ) — после обеда",
+      "下雨 (xiàyǔ) — идёт дождь"
+    ]
+  },
+  {
+    "id": 54,
+    "char": "里",
+    "pinyin": "lǐ",
+    "tone": 3,
+    "meaning_ru": "внутри, ли (мера длины)",
+    "meaning_en": "inside, li (unit of distance)",
+    "hsk_level": 1,
+    "radicals": [
+      "田",
+      "土"
+    ],
+    "stroke_count": 7,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Поле 田 + земля 土 — внутри поля, внутренняя часть деревни.",
+    "examples_ru": [
+      "里面 (lǐmiàn) — внутри",
+      "那里 (nàlǐ) — там",
+      "这里 (zhèlǐ) — здесь"
+    ]
+  },
+  {
+    "id": 55,
+    "char": "外",
+    "pinyin": "wài",
+    "tone": 4,
+    "meaning_ru": "снаружи, внешний",
+    "meaning_en": "outside, external",
+    "hsk_level": 1,
+    "radicals": [
+      "夕",
+      "卜"
+    ],
+    "stroke_count": 5,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Вечер 夕 + гадание 卜 — гадали на панцире вне дома, снаружи.",
+    "examples_ru": [
+      "外面 (wàimiàn) — снаружи",
+      "外国 (wàiguó) — заграница"
+    ]
+  },
+  {
+    "id": 56,
+    "char": "天",
+    "pinyin": "tiān",
+    "tone": 1,
+    "meaning_ru": "небо, день",
+    "meaning_en": "sky, day, heaven",
+    "hsk_level": 1,
+    "radicals": [
+      "一",
+      "大"
+    ],
+    "stroke_count": 4,
+    "formation_type": "指事",
+    "formation_explanation_ru": "Черта над человеком 大 — то, что над головой, небо.",
+    "examples_ru": [
+      "天气 (tiānqì) — погода",
+      "今天 (jīntiān) — сегодня",
+      "每天 (měitiān) — каждый день"
+    ]
+  },
+  {
+    "id": 57,
+    "char": "年",
+    "pinyin": "nián",
+    "tone": 2,
+    "meaning_ru": "год",
+    "meaning_en": "year",
+    "hsk_level": 1,
+    "radicals": [
+      "年"
+    ],
+    "stroke_count": 6,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Человек несёт созревший урожай — один урожайный цикл, год.",
+    "examples_ru": [
+      "今年 (jīnnián) — этот год",
+      "去年 (qùnián) — прошлый год",
+      "新年 (xīnnián) — Новый год"
+    ]
+  },
+  {
+    "id": 58,
+    "char": "月",
+    "pinyin": "yuè",
+    "tone": 4,
+    "meaning_ru": "луна, месяц",
+    "meaning_en": "moon, month",
+    "hsk_level": 1,
+    "radicals": [
+      "月"
+    ],
+    "stroke_count": 4,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Серп луны — пиктограмма полумесяца.",
+    "examples_ru": [
+      "一月 (yī yuè) — январь",
+      "月亮 (yuèliang) — луна"
+    ]
+  },
+  {
+    "id": 59,
+    "char": "号",
+    "pinyin": "hào",
+    "tone": 4,
+    "meaning_ru": "номер, число (дата)",
+    "meaning_en": "number, date",
+    "hsk_level": 1,
+    "radicals": [
+      "口",
+      "丂"
+    ],
+    "stroke_count": 5,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Рот 口 + 丂 (фонетик) — кричать номер, обозначать.",
+    "examples_ru": [
+      "几号 (jǐ hào) — какое число?",
+      "三号 (sān hào) — третье число"
+    ]
+  },
+  {
+    "id": 60,
+    "char": "今",
+    "pinyin": "jīn",
+    "tone": 1,
+    "meaning_ru": "сейчас, нынешний",
+    "meaning_en": "now, present, today",
+    "hsk_level": 1,
+    "radicals": [
+      "人",
+      "一"
+    ],
+    "stroke_count": 4,
+    "formation_type": "指事",
+    "formation_explanation_ru": "Рот под крышкой — схватить момент, сейчас.",
+    "examples_ru": [
+      "今天 (jīntiān) — сегодня",
+      "今年 (jīnnián) — этот год"
+    ]
+  },
+  {
+    "id": 61,
+    "char": "明",
+    "pinyin": "míng",
+    "tone": 2,
+    "meaning_ru": "яркий, ясный, следующий (день/год)",
+    "meaning_en": "bright, clear, tomorrow",
+    "hsk_level": 1,
+    "radicals": [
+      "日",
+      "月"
+    ],
+    "stroke_count": 8,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Солнце 日 + луна 月 — два светила вместе дают яркий свет.",
+    "examples_ru": [
+      "明天 (míngtiān) — завтра",
+      "明白 (míngbai) — понимать",
+      "明年 (míngnián) — следующий год"
+    ]
+  },
+  {
+    "id": 62,
+    "char": "昨",
+    "pinyin": "zuó",
+    "tone": 2,
+    "meaning_ru": "вчерашний",
+    "meaning_en": "yesterday",
+    "hsk_level": 1,
+    "radicals": [
+      "日",
+      "乍"
+    ],
+    "stroke_count": 9,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Солнце 日 (значение: время) + 乍 (фонетик) — прошедшее солнце, вчера.",
+    "examples_ru": [
+      "昨天 (zuótiān) — вчера"
+    ]
+  },
+  {
+    "id": 63,
+    "char": "时",
+    "pinyin": "shí",
+    "tone": 2,
+    "meaning_ru": "время, час",
+    "meaning_en": "time, hour",
+    "hsk_level": 1,
+    "radicals": [
+      "日",
+      "寸"
+    ],
+    "stroke_count": 7,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Солнце 日 (значение: время) + 寸 (упрощ. от 寺, фонетик) — движение солнца, время.",
+    "examples_ru": [
+      "小时 (xiǎoshí) — час",
+      "时间 (shíjiān) — время",
+      "有时 (yǒushí) — иногда"
+    ]
+  },
+  {
+    "id": 64,
+    "char": "分",
+    "pinyin": "fēn",
+    "tone": 1,
+    "meaning_ru": "делить, минута, балл",
+    "meaning_en": "to divide, minute, point",
+    "hsk_level": 1,
+    "radicals": [
+      "八",
+      "刀"
+    ],
+    "stroke_count": 4,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Разделение 八 + нож 刀 — разрезать надвое, делить.",
+    "examples_ru": [
+      "十分 (shífēn) — очень (десять частей)",
+      "分钟 (fēnzhōng) — минута"
+    ]
+  },
+  {
+    "id": 65,
+    "char": "钱",
+    "pinyin": "qián",
+    "tone": 2,
+    "meaning_ru": "деньги",
+    "meaning_en": "money",
+    "hsk_level": 1,
+    "radicals": [
+      "钅",
+      "戋"
+    ],
+    "stroke_count": 10,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Металл 钅 (значение) + 戋 (фонетик) — металлические монеты, деньги.",
+    "examples_ru": [
+      "多少钱 (duōshao qián) — сколько стоит?",
+      "有钱 (yǒu qián) — богатый"
+    ]
+  },
+  {
+    "id": 66,
+    "char": "块",
+    "pinyin": "kuài",
+    "tone": 4,
+    "meaning_ru": "кусок; юань (разг.)",
+    "meaning_en": "piece, lump; yuan (colloquial)",
+    "hsk_level": 1,
+    "radicals": [
+      "土",
+      "夬"
+    ],
+    "stroke_count": 7,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Земля 土 (значение) + 夬 (фонетик, kuài) — кусок земли, кусок.",
+    "examples_ru": [
+      "一块钱 (yí kuài qián) — один юань",
+      "两块 (liǎng kuài) — два юаня"
+    ]
+  },
+  {
+    "id": 67,
+    "char": "电",
+    "pinyin": "diàn",
+    "tone": 4,
+    "meaning_ru": "электричество",
+    "meaning_en": "electricity, electric",
+    "hsk_level": 1,
+    "radicals": [
+      "日",
+      "乚"
+    ],
+    "stroke_count": 5,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Молния, бьющая с неба — электричество. Упрощение от 電.",
+    "examples_ru": [
+      "电话 (diànhuà) — телефон",
+      "电影 (diànyǐng) — фильм",
+      "电脑 (diànnǎo) — компьютер"
+    ]
+  },
+  {
+    "id": 68,
+    "char": "话",
+    "pinyin": "huà",
+    "tone": 4,
+    "meaning_ru": "слово, речь, разговор",
+    "meaning_en": "word, speech, language",
+    "hsk_level": 1,
+    "radicals": [
+      "讠",
+      "舌"
+    ],
+    "stroke_count": 8,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Речь 讠(значение) + 舌 (язык, фонетик) — то, что язык произносит, слова.",
+    "examples_ru": [
+      "说话 (shuōhuà) — разговаривать",
+      "电话 (diànhuà) — телефон"
+    ]
+  },
+  {
+    "id": 69,
+    "char": "车",
+    "pinyin": "chē",
+    "tone": 1,
+    "meaning_ru": "машина, транспорт, колесница",
+    "meaning_en": "car, vehicle",
+    "hsk_level": 1,
+    "radicals": [
+      "车"
+    ],
+    "stroke_count": 4,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Пиктограмма повозки — вид сверху на колесницу с осью и колёсами.",
+    "examples_ru": [
+      "火车 (huǒchē) — поезд",
+      "出租车 (chūzūchē) — такси",
+      "汽车 (qìchē) — автомобиль"
+    ]
+  },
+  {
+    "id": 70,
+    "char": "水",
+    "pinyin": "shuǐ",
+    "tone": 3,
+    "meaning_ru": "вода",
+    "meaning_en": "water",
+    "hsk_level": 1,
+    "radicals": [
+      "水"
+    ],
+    "stroke_count": 4,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Поток воды — центральная струя с брызгами по бокам.",
+    "examples_ru": [
+      "喝水 (hē shuǐ) — пить воду",
+      "水果 (shuǐguǒ) — фрукты"
+    ]
+  },
+  {
+    "id": 71,
+    "char": "菜",
+    "pinyin": "cài",
+    "tone": 4,
+    "meaning_ru": "овощи, блюдо",
+    "meaning_en": "vegetable, dish, cuisine",
+    "hsk_level": 1,
+    "radicals": [
+      "艹",
+      "采"
+    ],
+    "stroke_count": 11,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Трава 艹 (значение: растение) + 采 (фонетик, cǎi) — съедобное растение, овощ.",
+    "examples_ru": [
+      "菜单 (càidān) — меню",
+      "蔬菜 (shūcài) — овощи",
+      "点菜 (diǎncài) — заказать блюдо"
+    ]
+  },
+  {
+    "id": 72,
+    "char": "饭",
+    "pinyin": "fàn",
+    "tone": 4,
+    "meaning_ru": "рис (варёный), еда",
+    "meaning_en": "rice (cooked), meal",
+    "hsk_level": 1,
+    "radicals": [
+      "饣",
+      "反"
+    ],
+    "stroke_count": 7,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Еда 饣(значение) + 反 (фонетик, fǎn) — основная пища, рис, еда.",
+    "examples_ru": [
+      "吃饭 (chīfàn) — есть",
+      "米饭 (mǐfàn) — рис (варёный)",
+      "饭店 (fàndiàn) — ресторан"
+    ]
+  },
+  {
+    "id": 73,
+    "char": "茶",
+    "pinyin": "chá",
+    "tone": 2,
+    "meaning_ru": "чай",
+    "meaning_en": "tea",
+    "hsk_level": 1,
+    "radicals": [
+      "艹",
+      "人",
+      "木"
+    ],
+    "stroke_count": 9,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Трава 艹 сверху + человек + дерево 木 — человек собирает листья с куста чая.",
+    "examples_ru": [
+      "喝茶 (hē chá) — пить чай",
+      "茶叶 (cháyè) — чайные листья"
+    ]
+  },
+  {
+    "id": 74,
+    "char": "果",
+    "pinyin": "guǒ",
+    "tone": 3,
+    "meaning_ru": "фрукт, плод, результат",
+    "meaning_en": "fruit, result",
+    "hsk_level": 1,
+    "radicals": [
+      "田",
+      "木"
+    ],
+    "stroke_count": 8,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Плоды 田 на дереве 木 — фрукты на ветке.",
+    "examples_ru": [
+      "水果 (shuǐguǒ) — фрукты",
+      "苹果 (píngguǒ) — яблоко",
+      "如果 (rúguǒ) — если"
+    ]
+  },
+  {
+    "id": 75,
+    "char": "书",
+    "pinyin": "shū",
+    "tone": 1,
+    "meaning_ru": "книга",
+    "meaning_en": "book",
+    "hsk_level": 1,
+    "radicals": [
+      "书"
+    ],
+    "stroke_count": 4,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Упрощение от 書. Рука держит кисть и пишет — письменность, книга.",
+    "examples_ru": [
+      "看书 (kàn shū) — читать книгу",
+      "书店 (shūdiàn) — книжный магазин"
+    ]
+  },
+  {
+    "id": 76,
+    "char": "桌",
+    "pinyin": "zhuō",
+    "tone": 1,
+    "meaning_ru": "стол",
+    "meaning_en": "table, desk",
+    "hsk_level": 1,
+    "radicals": [
+      "卜",
+      "日",
+      "木"
+    ],
+    "stroke_count": 10,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Дерево 木 (значение: мебель) + верхняя часть (фонетик) — деревянный стол.",
+    "examples_ru": [
+      "桌子 (zhuōzi) — стол",
+      "书桌 (shūzhuō) — письменный стол"
+    ]
+  },
+  {
+    "id": 77,
+    "char": "椅",
+    "pinyin": "yǐ",
+    "tone": 3,
+    "meaning_ru": "стул",
+    "meaning_en": "chair",
+    "hsk_level": 1,
+    "radicals": [
+      "木",
+      "奇"
+    ],
+    "stroke_count": 12,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Дерево 木 (значение: мебель) + 奇 (фонетик, qí→yǐ) — деревянный стул.",
+    "examples_ru": [
+      "椅子 (yǐzi) — стул"
+    ]
+  },
+  {
+    "id": 78,
+    "char": "猫",
+    "pinyin": "māo",
+    "tone": 1,
+    "meaning_ru": "кот, кошка",
+    "meaning_en": "cat",
+    "hsk_level": 1,
+    "radicals": [
+      "犭",
+      "苗"
+    ],
+    "stroke_count": 11,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Зверь 犭(значение) + 苗 (фонетик, miáo→māo) — зверь, который мяукает.",
+    "examples_ru": [
+      "小猫 (xiǎo māo) — котёнок",
+      "猫咪 (māomī) — кошечка"
+    ]
+  },
+  {
+    "id": 79,
+    "char": "狗",
+    "pinyin": "gǒu",
+    "tone": 3,
+    "meaning_ru": "собака",
+    "meaning_en": "dog",
+    "hsk_level": 1,
+    "radicals": [
+      "犭",
+      "句"
+    ],
+    "stroke_count": 8,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Зверь 犭(значение) + 句 (фонетик, gōu→gǒu) — домашний зверь, собака.",
+    "examples_ru": [
+      "小狗 (xiǎo gǒu) — щенок",
+      "热狗 (règǒu) — хот-дог"
+    ]
+  },
+  {
+    "id": 80,
+    "char": "朋",
+    "pinyin": "péng",
+    "tone": 2,
+    "meaning_ru": "друг (в составе 朋友)",
+    "meaning_en": "friend (in 朋友)",
+    "hsk_level": 1,
+    "radicals": [
+      "月",
+      "月"
+    ],
+    "stroke_count": 8,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Две луны 月月 рядом — два одинаковых, друзья идут вместе.",
+    "examples_ru": [
+      "朋友 (péngyou) — друг",
+      "小朋友 (xiǎopéngyou) — ребёнок (ласковое)"
+    ]
+  },
+  {
+    "id": 81,
+    "char": "友",
+    "pinyin": "yǒu",
+    "tone": 3,
+    "meaning_ru": "друг, дружба",
+    "meaning_en": "friend, friendship",
+    "hsk_level": 1,
+    "radicals": [
+      "又"
+    ],
+    "stroke_count": 4,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Две руки 又 протянуты друг к другу — рукопожатие, дружба.",
+    "examples_ru": [
+      "朋友 (péngyou) — друг",
+      "友好 (yǒuhǎo) — дружеский"
+    ]
+  },
+  {
+    "id": 82,
+    "char": "爱",
+    "pinyin": "ài",
+    "tone": 4,
+    "meaning_ru": "любить, любовь",
+    "meaning_en": "to love, love",
+    "hsk_level": 1,
+    "radicals": [
+      "爫",
+      "冖",
+      "友"
+    ],
+    "stroke_count": 10,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Рука сверху + сердце (в традиц. форме) + друг 友 — протягивать руку с сердцем другу, любить.",
+    "examples_ru": [
+      "爱你 (ài nǐ) — люблю тебя",
+      "爱好 (àihào) — хобби"
+    ]
+  },
+  {
+    "id": 83,
+    "char": "喜",
+    "pinyin": "xǐ",
+    "tone": 3,
+    "meaning_ru": "радость, любить (что-то)",
+    "meaning_en": "joy, to like",
+    "hsk_level": 1,
+    "radicals": [
+      "士",
+      "口",
+      "豆"
+    ],
+    "stroke_count": 12,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Барабан 壴 + рот 口 — радостный крик под барабан, веселье.",
+    "examples_ru": [
+      "喜欢 (xǐhuan) — нравиться",
+      "喜事 (xǐshì) — радостное событие"
+    ]
+  },
+  {
+    "id": 84,
+    "char": "欢",
+    "pinyin": "huān",
+    "tone": 1,
+    "meaning_ru": "радостный, весёлый",
+    "meaning_en": "joyful, happy",
+    "hsk_level": 1,
+    "radicals": [
+      "又",
+      "欠"
+    ],
+    "stroke_count": 6,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Упрощение от 歡. Фонетик + 欠 (дышать) — радостное дыхание, веселье.",
+    "examples_ru": [
+      "喜欢 (xǐhuan) — нравиться",
+      "欢迎 (huānyíng) — добро пожаловать"
+    ]
+  },
+  {
+    "id": 85,
+    "char": "高",
+    "pinyin": "gāo",
+    "tone": 1,
+    "meaning_ru": "высокий, высоко",
+    "meaning_en": "tall, high",
+    "hsk_level": 1,
+    "radicals": [
+      "高"
+    ],
+    "stroke_count": 10,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Пиктограмма высокой башни или помоста — высокий, возвышенный.",
+    "examples_ru": [
+      "高兴 (gāoxìng) — рад",
+      "高中 (gāozhōng) — старшая школа"
+    ]
+  },
+  {
+    "id": 86,
+    "char": "兴",
+    "pinyin": "xìng",
+    "tone": 4,
+    "meaning_ru": "настроение, интерес (в 高兴)",
+    "meaning_en": "mood, interest (in 高兴)",
+    "hsk_level": 1,
+    "radicals": [
+      "八",
+      "一"
+    ],
+    "stroke_count": 6,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Упрощение от 興. Четыре руки поднимают — воодушевление, подъём.",
+    "examples_ru": [
+      "高兴 (gāoxìng) — рад",
+      "兴趣 (xìngqù) — интерес"
+    ]
+  },
+  {
+    "id": 87,
+    "char": "漂",
+    "pinyin": "piào",
+    "tone": 4,
+    "meaning_ru": "красивый (в 漂亮)",
+    "meaning_en": "pretty (in 漂亮)",
+    "hsk_level": 1,
+    "radicals": [
+      "氵",
+      "票"
+    ],
+    "stroke_count": 14,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Вода 氵(значение: плыть) + 票 (фонетик, piào) — плывущий, красивый (перенос.).",
+    "examples_ru": [
+      "漂亮 (piàoliang) — красивый"
+    ]
+  },
+  {
+    "id": 88,
+    "char": "亮",
+    "pinyin": "liàng",
+    "tone": 4,
+    "meaning_ru": "яркий, светлый",
+    "meaning_en": "bright, light",
+    "hsk_level": 1,
+    "radicals": [
+      "亠",
+      "口",
+      "冖",
+      "几"
+    ],
+    "stroke_count": 9,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Высокий 高 (упрощ.) + 几 — свет на высоте, яркий.",
+    "examples_ru": [
+      "漂亮 (piàoliang) — красивый",
+      "月亮 (yuèliang) — луна"
+    ]
+  },
+  {
+    "id": 89,
+    "char": "冷",
+    "pinyin": "lěng",
+    "tone": 3,
+    "meaning_ru": "холодный",
+    "meaning_en": "cold",
+    "hsk_level": 1,
+    "radicals": [
+      "冫",
+      "令"
+    ],
+    "stroke_count": 7,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Лёд 冫(значение) + 令 (фонетик, lìng→lěng) — ледяной, холодный.",
+    "examples_ru": [
+      "冷水 (lěng shuǐ) — холодная вода",
+      "天冷了 (tiān lěng le) — похолодало"
+    ]
+  },
+  {
+    "id": 90,
+    "char": "热",
+    "pinyin": "rè",
+    "tone": 4,
+    "meaning_ru": "горячий, жаркий",
+    "meaning_en": "hot, warm",
+    "hsk_level": 1,
+    "radicals": [
+      "执",
+      "灬"
+    ],
+    "stroke_count": 10,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Огонь 灬 (значение) + 埶 (фонетик, упрощ.) — огонь нагревает, горячий.",
+    "examples_ru": [
+      "热水 (rè shuǐ) — горячая вода",
+      "天热 (tiān rè) — жарко"
+    ]
+  },
+  {
+    "id": 91,
+    "char": "快",
+    "pinyin": "kuài",
+    "tone": 4,
+    "meaning_ru": "быстрый, скоро",
+    "meaning_en": "fast, quick, soon",
+    "hsk_level": 1,
+    "radicals": [
+      "忄",
+      "夬"
+    ],
+    "stroke_count": 7,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Сердце 忄(значение: чувство) + 夬 (фонетик, kuài) — сердце бьётся быстро, быстрый.",
+    "examples_ru": [
+      "快来 (kuài lái) — давай быстрее",
+      "快乐 (kuàilè) — счастливый"
+    ]
+  },
+  {
+    "id": 92,
+    "char": "慢",
+    "pinyin": "màn",
+    "tone": 4,
+    "meaning_ru": "медленный",
+    "meaning_en": "slow",
+    "hsk_level": 1,
+    "radicals": [
+      "忄",
+      "曼"
+    ],
+    "stroke_count": 14,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Сердце 忄(значение) + 曼 (фонетик, màn) — спокойное сердце, медленный.",
+    "examples_ru": [
+      "慢慢 (mànmàn) — потихоньку",
+      "慢走 (màn zǒu) — не торопитесь (прощание)"
+    ]
+  },
+  {
+    "id": 93,
+    "char": "长",
+    "pinyin": "cháng",
+    "tone": 2,
+    "meaning_ru": "длинный, долгий",
+    "meaning_en": "long",
+    "hsk_level": 1,
+    "radicals": [
+      "长"
+    ],
+    "stroke_count": 4,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Пиктограмма длинных волос старика — длинный, долгий.",
+    "examples_ru": [
+      "长城 (chángchéng) — Великая стена",
+      "很长 (hěn cháng) — очень длинный"
+    ]
+  },
+  {
+    "id": 94,
+    "char": "短",
+    "pinyin": "duǎn",
+    "tone": 3,
+    "meaning_ru": "короткий",
+    "meaning_en": "short",
+    "hsk_level": 1,
+    "radicals": [
+      "矢",
+      "豆"
+    ],
+    "stroke_count": 12,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Стрела 矢 + мера 豆 — стрела отмеряет короткое расстояние.",
+    "examples_ru": [
+      "短信 (duǎnxìn) — SMS",
+      "很短 (hěn duǎn) — очень короткий"
+    ]
+  },
+  {
+    "id": 95,
+    "char": "近",
+    "pinyin": "jìn",
+    "tone": 4,
+    "meaning_ru": "близкий, рядом",
+    "meaning_en": "near, close",
+    "hsk_level": 1,
+    "radicals": [
+      "辶",
+      "斤"
+    ],
+    "stroke_count": 7,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Движение 辶 (значение) + 斤 (фонетик, jīn→jìn) — подойти близко.",
+    "examples_ru": [
+      "附近 (fùjìn) — поблизости",
+      "近来 (jìnlái) — в последнее время"
+    ]
+  },
+  {
+    "id": 96,
+    "char": "远",
+    "pinyin": "yuǎn",
+    "tone": 3,
+    "meaning_ru": "далёкий",
+    "meaning_en": "far, distant",
+    "hsk_level": 1,
+    "radicals": [
+      "辶",
+      "元"
+    ],
+    "stroke_count": 7,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Движение 辶 (значение) + 元 (фонетик, yuán→yuǎn) — уйти далеко.",
+    "examples_ru": [
+      "很远 (hěn yuǎn) — очень далеко",
+      "远方 (yuǎnfāng) — даль"
+    ]
+  },
+  {
+    "id": 97,
+    "char": "老",
+    "pinyin": "lǎo",
+    "tone": 3,
+    "meaning_ru": "старый, старик, уважаемый",
+    "meaning_en": "old, elderly, respected",
+    "hsk_level": 1,
+    "radicals": [
+      "耂",
+      "匕"
+    ],
+    "stroke_count": 6,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Старик с тростью и длинными волосами — пожилой, старый.",
+    "examples_ru": [
+      "老师 (lǎoshī) — учитель",
+      "老人 (lǎorén) — пожилой человек"
+    ]
+  },
+  {
+    "id": 98,
+    "char": "师",
+    "pinyin": "shī",
+    "tone": 1,
+    "meaning_ru": "учитель, мастер",
+    "meaning_en": "teacher, master",
+    "hsk_level": 1,
+    "radicals": [
+      "刂",
+      "巾"
+    ],
+    "stroke_count": 6,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Упрощение от 師. Холм 阜 + полотно 巾 — знамя армии, наставник.",
+    "examples_ru": [
+      "老师 (lǎoshī) — учитель",
+      "师父 (shīfu) — мастер"
+    ]
+  },
+  {
+    "id": 99,
+    "char": "同",
+    "pinyin": "tóng",
+    "tone": 2,
+    "meaning_ru": "одинаковый, вместе",
+    "meaning_en": "same, together",
+    "hsk_level": 1,
+    "radicals": [
+      "冂",
+      "一",
+      "口"
+    ],
+    "stroke_count": 6,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Рамка 冂 + рот 口 + одно 一 — все говорят одно и то же, вместе.",
+    "examples_ru": [
+      "同学 (tóngxué) — одноклассник",
+      "不同 (bùtóng) — разный"
+    ]
+  },
+  {
+    "id": 100,
+    "char": "医",
+    "pinyin": "yī",
+    "tone": 1,
+    "meaning_ru": "медицина, врач",
+    "meaning_en": "medicine, doctor",
+    "hsk_level": 1,
+    "radicals": [
+      "匚",
+      "矢"
+    ],
+    "stroke_count": 7,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Ящик 匚 + стрела 矢 — извлечь стрелу из раны, лечить.",
+    "examples_ru": [
+      "医生 (yīshēng) — врач",
+      "医院 (yīyuàn) — больница"
+    ]
+  },
+  {
+    "id": 101,
+    "char": "院",
+    "pinyin": "yuàn",
+    "tone": 4,
+    "meaning_ru": "двор, учреждение",
+    "meaning_en": "courtyard, institution",
+    "hsk_level": 1,
+    "radicals": [
+      "阝",
+      "完"
+    ],
+    "stroke_count": 9,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Холм 阝(значение: место) + 完 (фонетик, wán→yuàn) — огороженное место, двор.",
+    "examples_ru": [
+      "医院 (yīyuàn) — больница",
+      "学院 (xuéyuàn) — институт"
+    ]
+  },
+  {
+    "id": 102,
+    "char": "机",
+    "pinyin": "jī",
+    "tone": 1,
+    "meaning_ru": "машина, механизм, шанс",
+    "meaning_en": "machine, opportunity",
+    "hsk_level": 1,
+    "radicals": [
+      "木",
+      "几"
+    ],
+    "stroke_count": 6,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Дерево 木 (значение: ткацкий станок) + 几 (фонетик, jī) — деревянный механизм.",
+    "examples_ru": [
+      "手机 (shǒujī) — мобильный телефон",
+      "飞机 (fēijī) — самолёт",
+      "机场 (jīchǎng) — аэропорт"
+    ]
+  },
+  {
+    "id": 103,
+    "char": "场",
+    "pinyin": "chǎng",
+    "tone": 3,
+    "meaning_ru": "площадка, место, поле",
+    "meaning_en": "field, place, venue",
+    "hsk_level": 1,
+    "radicals": [
+      "土",
+      "昜"
+    ],
+    "stroke_count": 6,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Земля 土 (значение) + 昜 (фонетик, упрощ. yáng→chǎng) — ровная земля, площадка.",
+    "examples_ru": [
+      "机场 (jīchǎng) — аэропорт",
+      "商场 (shāngchǎng) — торговый центр"
+    ]
+  },
+  {
+    "id": 104,
+    "char": "店",
+    "pinyin": "diàn",
+    "tone": 4,
+    "meaning_ru": "магазин, лавка",
+    "meaning_en": "shop, store",
+    "hsk_level": 1,
+    "radicals": [
+      "广",
+      "占"
+    ],
+    "stroke_count": 8,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Крыша/навес 广 (значение) + 占 (фонетик, zhàn→diàn) — место торговли под навесом.",
+    "examples_ru": [
+      "商店 (shāngdiàn) — магазин",
+      "饭店 (fàndiàn) — ресторан",
+      "书店 (shūdiàn) — книжный"
+    ]
+  },
+  {
+    "id": 105,
+    "char": "影",
+    "pinyin": "yǐng",
+    "tone": 3,
+    "meaning_ru": "тень, фильм, отражение",
+    "meaning_en": "shadow, film, reflection",
+    "hsk_level": 1,
+    "radicals": [
+      "日",
+      "京",
+      "彡"
+    ],
+    "stroke_count": 15,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Солнце/свет 景 + полосы 彡 (тень) — тень от света, изображение.",
+    "examples_ru": [
+      "电影 (diànyǐng) — фильм",
+      "影响 (yǐngxiǎng) — влияние"
+    ]
+  },
+  {
+    "id": 106,
+    "char": "坐",
+    "pinyin": "zuò",
+    "tone": 4,
+    "meaning_ru": "сидеть, ехать (на транспорте)",
+    "meaning_en": "to sit, to ride (transport)",
+    "hsk_level": 1,
+    "radicals": [
+      "人",
+      "人",
+      "土"
+    ],
+    "stroke_count": 7,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Два человека 人人 на земле 土 — сидеть на земле.",
+    "examples_ru": [
+      "请坐 (qǐng zuò) — садитесь",
+      "坐车 (zuò chē) — ехать на машине"
+    ]
+  },
+  {
+    "id": 107,
+    "char": "打",
+    "pinyin": "dǎ",
+    "tone": 3,
+    "meaning_ru": "бить, звонить, делать",
+    "meaning_en": "to hit, to call, to do",
+    "hsk_level": 1,
+    "radicals": [
+      "扌",
+      "丁"
+    ],
+    "stroke_count": 5,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Рука 扌(значение) + 丁 (фонетик, dīng→dǎ) — рука бьёт, ударять.",
+    "examples_ru": [
+      "打电话 (dǎ diànhuà) — звонить",
+      "打车 (dǎchē) — вызвать такси"
+    ]
+  },
+  {
+    "id": 108,
+    "char": "住",
+    "pinyin": "zhù",
+    "tone": 4,
+    "meaning_ru": "жить, проживать, остановиться",
+    "meaning_en": "to live, to reside, to stay",
+    "hsk_level": 1,
+    "radicals": [
+      "亻",
+      "主"
+    ],
+    "stroke_count": 7,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Человек 亻(значение) + 主 (фонетик, zhǔ→zhù) — человек на одном месте, жить.",
+    "examples_ru": [
+      "住在 (zhù zài) — жить в...",
+      "记住 (jìzhù) — запомнить"
+    ]
+  },
+  {
+    "id": 109,
+    "char": "请",
+    "pinyin": "qǐng",
+    "tone": 3,
+    "meaning_ru": "просить, пожалуйста, приглашать",
+    "meaning_en": "please, to invite, to request",
+    "hsk_level": 1,
+    "radicals": [
+      "讠",
+      "青"
+    ],
+    "stroke_count": 10,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Речь 讠(значение) + 青 (фонетик, qīng→qǐng) — просить словами, пожалуйста.",
+    "examples_ru": [
+      "请坐 (qǐng zuò) — садитесь",
+      "请问 (qǐngwèn) — позвольте спросить"
+    ]
+  },
+  {
+    "id": 110,
+    "char": "谢",
+    "pinyin": "xiè",
+    "tone": 4,
+    "meaning_ru": "благодарить, спасибо",
+    "meaning_en": "to thank, thanks",
+    "hsk_level": 1,
+    "radicals": [
+      "讠",
+      "射"
+    ],
+    "stroke_count": 12,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Речь 讠(значение) + 射 (фонетик, shè→xiè) — словами благодарить.",
+    "examples_ru": [
+      "谢谢 (xièxie) — спасибо",
+      "不谢 (bú xiè) — не за что"
+    ]
+  },
+  {
+    "id": 111,
+    "char": "对",
+    "pinyin": "duì",
+    "tone": 4,
+    "meaning_ru": "правильный, к, пара",
+    "meaning_en": "correct, towards, pair",
+    "hsk_level": 1,
+    "radicals": [
+      "又",
+      "寸"
+    ],
+    "stroke_count": 5,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Рука 又 + мера 寸 — точно отмерить, правильно.",
+    "examples_ru": [
+      "对不起 (duìbuqǐ) — извините",
+      "对了 (duì le) — точно, верно"
+    ]
+  },
+  {
+    "id": 112,
+    "char": "起",
+    "pinyin": "qǐ",
+    "tone": 3,
+    "meaning_ru": "вставать, подниматься, начинать",
+    "meaning_en": "to rise, to start, to get up",
+    "hsk_level": 1,
+    "radicals": [
+      "走",
+      "己"
+    ],
+    "stroke_count": 10,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Бежать 走 (значение) + 己 (фонетик, jǐ→qǐ) — подняться и побежать, встать.",
+    "examples_ru": [
+      "对不起 (duìbuqǐ) — извините",
+      "起来 (qǐlái) — встать",
+      "一起 (yìqǐ) — вместе"
+    ]
+  },
+  {
+    "id": 113,
+    "char": "回",
+    "pinyin": "huí",
+    "tone": 2,
+    "meaning_ru": "возвращаться, раз (счётное слово)",
+    "meaning_en": "to return, time (measure word)",
+    "hsk_level": 1,
+    "radicals": [
+      "囗",
+      "口"
+    ],
+    "stroke_count": 6,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Водоворот — вода вращается и возвращается к началу.",
+    "examples_ru": [
+      "回家 (huíjiā) — вернуться домой",
+      "回来 (huílái) — вернуться"
+    ]
+  },
+  {
+    "id": 114,
+    "char": "开",
+    "pinyin": "kāi",
+    "tone": 1,
+    "meaning_ru": "открывать, начинать, вести (машину)",
+    "meaning_en": "to open, to start, to drive",
+    "hsk_level": 1,
+    "radicals": [
+      "一",
+      "廾"
+    ],
+    "stroke_count": 4,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Упрощение от 開. Две руки 廾 поднимают засов 一 — открывать.",
+    "examples_ru": [
+      "开门 (kāimén) — открыть дверь",
+      "开车 (kāichē) — водить машину",
+      "开始 (kāishǐ) — начать"
+    ]
+  },
+  {
+    "id": 115,
+    "char": "关",
+    "pinyin": "guān",
+    "tone": 1,
+    "meaning_ru": "закрывать, выключать, касаться",
+    "meaning_en": "to close, to turn off, to concern",
+    "hsk_level": 1,
+    "radicals": [
+      "丷",
+      "天"
+    ],
+    "stroke_count": 6,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Упрощение от 關. Засов между створками ворот — закрыть.",
+    "examples_ru": [
+      "关门 (guānmén) — закрыть дверь",
+      "关系 (guānxi) — отношения"
+    ]
+  },
+  {
+    "id": 116,
+    "char": "买",
+    "pinyin": "mǎi",
+    "tone": 3,
+    "meaning_ru": "покупать",
+    "meaning_en": "to buy",
+    "hsk_level": 1,
+    "radicals": [
+      "乛",
+      "头"
+    ],
+    "stroke_count": 6,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Упрощение от 買. Сеть 罒 + ракушка 贝 — ловить товар за раковины-деньги.",
+    "examples_ru": [
+      "买东西 (mǎi dōngxi) — делать покупки",
+      "买了 (mǎi le) — купил"
+    ]
+  },
+  {
+    "id": 117,
+    "char": "卖",
+    "pinyin": "mài",
+    "tone": 4,
+    "meaning_ru": "продавать",
+    "meaning_en": "to sell",
+    "hsk_level": 1,
+    "radicals": [
+      "十",
+      "买"
+    ],
+    "stroke_count": 8,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Упрощение от 賣. Десять 十 (= наценка) + покупка 买 — купить и перепродать.",
+    "examples_ru": [
+      "卖东西 (mài dōngxi) — продавать вещи"
+    ]
+  },
+  {
+    "id": 118,
+    "char": "少",
+    "pinyin": "shǎo",
+    "tone": 3,
+    "meaning_ru": "мало, немного",
+    "meaning_en": "few, little, less",
+    "hsk_level": 1,
+    "radicals": [
+      "小"
+    ],
+    "stroke_count": 4,
+    "formation_type": "指事",
+    "formation_explanation_ru": "От «маленький» 小 с убранной чертой — ещё меньше, мало.",
+    "examples_ru": [
+      "多少 (duōshao) — сколько",
+      "不少 (bùshǎo) — немало"
+    ]
+  },
+  {
+    "id": 119,
+    "char": "认",
+    "pinyin": "rèn",
+    "tone": 4,
+    "meaning_ru": "узнавать, признавать",
+    "meaning_en": "to recognize, to admit",
+    "hsk_level": 1,
+    "radicals": [
+      "讠",
+      "人"
+    ],
+    "stroke_count": 4,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Речь 讠(значение) + 人 (фонетик, rén→rèn) — словами подтвердить, узнать.",
+    "examples_ru": [
+      "认识 (rènshi) — знать (человека)",
+      "认为 (rènwéi) — считать, полагать"
+    ]
+  },
+  {
+    "id": 120,
+    "char": "识",
+    "pinyin": "shi",
+    "tone": 0,
+    "meaning_ru": "знать, узнавать (в 认识)",
+    "meaning_en": "to know, to recognize (in 认识)",
+    "hsk_level": 1,
+    "radicals": [
+      "讠",
+      "只"
+    ],
+    "stroke_count": 7,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Речь 讠(значение) + 只 (упрощ. фонетик от 戠, zhī→shí) — различать словами, знать.",
+    "examples_ru": [
+      "认识 (rènshi) — знать (человека)",
+      "知识 (zhīshi) — знания"
+    ]
+  },
+  {
+    "id": 121,
+    "char": "睡",
+    "pinyin": "shuì",
+    "tone": 4,
+    "meaning_ru": "спать",
+    "meaning_en": "to sleep",
+    "hsk_level": 1,
+    "radicals": [
+      "目",
+      "垂"
+    ],
+    "stroke_count": 13,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Глаз 目 (значение) + 垂 (фонетик, chuí→shuì) — глаза опускаются, спать.",
+    "examples_ru": [
+      "睡觉 (shuìjiào) — спать",
+      "睡了 (shuì le) — уснул"
+    ]
+  },
+  {
+    "id": 122,
+    "char": "觉",
+    "pinyin": "jiào",
+    "tone": 4,
+    "meaning_ru": "сон (в 睡觉); чувствовать (jué)",
+    "meaning_en": "sleep (in 睡觉); to feel (jué)",
+    "hsk_level": 1,
+    "radicals": [
+      "⺍",
+      "冖",
+      "见"
+    ],
+    "stroke_count": 9,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Упрощение от 覺. Руки 爫 + 冖 + видеть 见 — осознание, чувство; сон.",
+    "examples_ru": [
+      "睡觉 (shuìjiào) — спать",
+      "觉得 (juéde) — чувствовать, считать"
+    ]
+  },
+  {
+    "id": 123,
+    "char": "穿",
+    "pinyin": "chuān",
+    "tone": 1,
+    "meaning_ru": "надевать, носить (одежду), проходить насквозь",
+    "meaning_en": "to wear, to put on, to pass through",
+    "hsk_level": 1,
+    "radicals": [
+      "穴",
+      "牙"
+    ],
+    "stroke_count": 9,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Пещера/дыра 穴 + зуб 牙 — зуб проходит через дыру, надевать (продевать).",
+    "examples_ru": [
+      "穿衣服 (chuān yīfu) — одеваться",
+      "穿上 (chuānshàng) — надеть"
+    ]
+  },
+  {
+    "id": 124,
+    "char": "衣",
+    "pinyin": "yī",
+    "tone": 1,
+    "meaning_ru": "одежда",
+    "meaning_en": "clothes, clothing",
+    "hsk_level": 1,
+    "radicals": [
+      "衣"
+    ],
+    "stroke_count": 6,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Пиктограмма халата — воротник сверху, полы расходятся внизу.",
+    "examples_ru": [
+      "衣服 (yīfu) — одежда",
+      "大衣 (dàyī) — пальто"
+    ]
+  },
+  {
+    "id": 125,
+    "char": "服",
+    "pinyin": "fú",
+    "tone": 2,
+    "meaning_ru": "одежда (в 衣服), подчиняться",
+    "meaning_en": "clothes (in 衣服), to obey",
+    "hsk_level": 1,
+    "radicals": [
+      "月",
+      "卩"
+    ],
+    "stroke_count": 8,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Тело/плоть 月 + фонетик (человек склоняется) — надевать на тело, одежда.",
+    "examples_ru": [
+      "衣服 (yīfu) — одежда",
+      "服务 (fúwù) — обслуживание"
+    ]
+  },
+  {
+    "id": 126,
+    "char": "雨",
+    "pinyin": "yǔ",
+    "tone": 3,
+    "meaning_ru": "дождь",
+    "meaning_en": "rain",
+    "hsk_level": 1,
+    "radicals": [
+      "雨"
+    ],
+    "stroke_count": 8,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Облако с каплями — дождь падает с неба.",
+    "examples_ru": [
+      "下雨 (xiàyǔ) — идёт дождь",
+      "雨伞 (yǔsǎn) — зонт"
+    ]
+  },
+  {
+    "id": 127,
+    "char": "雪",
+    "pinyin": "xuě",
+    "tone": 3,
+    "meaning_ru": "снег",
+    "meaning_en": "snow",
+    "hsk_level": 1,
+    "radicals": [
+      "雨",
+      "彐"
+    ],
+    "stroke_count": 11,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Дождь 雨 + рука 彐 (можно взять) — осадки, которые можно собрать рукой, снег.",
+    "examples_ru": [
+      "下雪 (xiàxuě) — идёт снег",
+      "雪人 (xuěrén) — снеговик"
+    ]
+  },
+  {
+    "id": 128,
+    "char": "名",
+    "pinyin": "míng",
+    "tone": 2,
+    "meaning_ru": "имя, название, знаменитый",
+    "meaning_en": "name, famous",
+    "hsk_level": 1,
+    "radicals": [
+      "夕",
+      "口"
+    ],
+    "stroke_count": 6,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Вечер 夕 + рот 口 — в темноте называешь своё имя ртом.",
+    "examples_ru": [
+      "名字 (míngzi) — имя",
+      "有名 (yǒumíng) — знаменитый"
+    ]
+  },
+  {
+    "id": 129,
+    "char": "字",
+    "pinyin": "zì",
+    "tone": 4,
+    "meaning_ru": "иероглиф, буква, слово",
+    "meaning_en": "character, word, letter",
+    "hsk_level": 1,
+    "radicals": [
+      "宀",
+      "子"
+    ],
+    "stroke_count": 6,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Крыша 宀 + ребёнок 子 — ребёнок рождается в доме; иероглиф «рождается» от ключа.",
+    "examples_ru": [
+      "名字 (míngzi) — имя",
+      "写字 (xiězì) — писать иероглифы",
+      "汉字 (hànzì) — китайский иероглиф"
+    ]
+  },
+  {
+    "id": 130,
+    "char": "岁",
+    "pinyin": "suì",
+    "tone": 4,
+    "meaning_ru": "лет (возраст), год",
+    "meaning_en": "years old, age",
+    "hsk_level": 1,
+    "radicals": [
+      "山",
+      "夕"
+    ],
+    "stroke_count": 6,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Упрощение от 歲. Гора 山 + 夕 — смена лунных циклов, год жизни.",
+    "examples_ru": [
+      "几岁 (jǐ suì) — сколько лет?",
+      "三岁 (sān suì) — три года"
+    ]
+  },
+  {
+    "id": 131,
+    "char": "点",
+    "pinyin": "diǎn",
+    "tone": 3,
+    "meaning_ru": "точка, час (время), немного, заказывать",
+    "meaning_en": "dot, o'clock, a little, to order",
+    "hsk_level": 1,
+    "radicals": [
+      "灬",
+      "占"
+    ],
+    "stroke_count": 9,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Упрощение от 點. Чёрные точки 黑 (упрощ.) + 占 (фонетик) — точка, отметка.",
+    "examples_ru": [
+      "几点 (jǐ diǎn) — который час?",
+      "一点 (yìdiǎn) — немного",
+      "点菜 (diǎncài) — заказать еду"
+    ]
+  },
+  {
+    "id": 132,
+    "char": "半",
+    "pinyin": "bàn",
+    "tone": 4,
+    "meaning_ru": "половина, пол-",
+    "meaning_en": "half",
+    "hsk_level": 1,
+    "radicals": [
+      "丷",
+      "牛"
+    ],
+    "stroke_count": 5,
+    "formation_type": "指事",
+    "formation_explanation_ru": "Разделение 丷 + бык 牛 — разрубить быка надвое, половина.",
+    "examples_ru": [
+      "一半 (yíbàn) — половина",
+      "半个 (bàn gè) — пол-штуки",
+      "三点半 (sān diǎn bàn) — 3:30"
+    ]
+  },
+  {
+    "id": 133,
+    "char": "钟",
+    "pinyin": "zhōng",
+    "tone": 1,
+    "meaning_ru": "колокол, часы, минута (в 分钟)",
+    "meaning_en": "bell, clock, minute (in 分钟)",
+    "hsk_level": 1,
+    "radicals": [
+      "钅",
+      "中"
+    ],
+    "stroke_count": 9,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Металл 钅 (значение) + 中 (фонетик, zhōng) — металлический колокол, часы.",
+    "examples_ru": [
+      "分钟 (fēnzhōng) — минута",
+      "钟头 (zhōngtóu) — час"
+    ]
+  },
+  {
+    "id": 134,
+    "char": "星",
+    "pinyin": "xīng",
+    "tone": 1,
+    "meaning_ru": "звезда",
+    "meaning_en": "star",
+    "hsk_level": 1,
+    "radicals": [
+      "日",
+      "生"
+    ],
+    "stroke_count": 9,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Солнце 日 (значение: небесное тело) + 生 (фонетик, shēng→xīng) — небесное светило, звезда.",
+    "examples_ru": [
+      "星期 (xīngqī) — неделя",
+      "星星 (xīngxing) — звёздочки"
+    ]
+  },
+  {
+    "id": 135,
+    "char": "期",
+    "pinyin": "qī",
+    "tone": 1,
+    "meaning_ru": "период, срок (в 星期)",
+    "meaning_en": "period, phase (in 星期)",
+    "hsk_level": 1,
+    "radicals": [
+      "其",
+      "月"
+    ],
+    "stroke_count": 12,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Луна 月 (значение: цикл) + 其 (фонетик, qí→qī) — лунный цикл, период.",
+    "examples_ru": [
+      "星期一 (xīngqī yī) — понедельник",
+      "日期 (rìqī) — дата"
+    ]
+  },
+  {
+    "id": 136,
+    "char": "怎",
+    "pinyin": "zěn",
+    "tone": 3,
+    "meaning_ru": "как, каким образом",
+    "meaning_en": "how, why",
+    "hsk_level": 1,
+    "radicals": [
+      "乍",
+      "心"
+    ],
+    "stroke_count": 9,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Сердце 心 (значение: чувство) + 乍 (фонетик, zhà→zěn) — в сердце вопрос: как?",
+    "examples_ru": [
+      "怎么 (zěnme) — как?",
+      "怎样 (zěnyàng) — каким образом?"
+    ]
+  },
+  {
+    "id": 137,
+    "char": "样",
+    "pinyin": "yàng",
+    "tone": 4,
+    "meaning_ru": "вид, образ, форма",
+    "meaning_en": "manner, appearance, shape",
+    "hsk_level": 1,
+    "radicals": [
+      "木",
+      "羊"
+    ],
+    "stroke_count": 10,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Дерево 木 (значение: образец) + 羊 (фонетик, yáng→yàng) — деревянный образец, шаблон.",
+    "examples_ru": [
+      "怎样 (zěnyàng) — каким образом?",
+      "一样 (yíyàng) — одинаковый"
+    ]
+  },
+  {
+    "id": 138,
+    "char": "谁",
+    "pinyin": "shéi",
+    "tone": 2,
+    "meaning_ru": "кто",
+    "meaning_en": "who, whom",
+    "hsk_level": 1,
+    "radicals": [
+      "讠",
+      "隹"
+    ],
+    "stroke_count": 10,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Речь 讠(значение) + 隹 (фонетик, zhuī→shéi) — спрашивать: кто говорит?",
+    "examples_ru": [
+      "你是谁？(nǐ shì shéi?) — ты кто?",
+      "谁的 (shéi de) — чей?"
+    ]
+  },
+  {
+    "id": 139,
+    "char": "哪",
+    "pinyin": "nǎ",
+    "tone": 3,
+    "meaning_ru": "какой, где, куда",
+    "meaning_en": "which, where",
+    "hsk_level": 1,
+    "radicals": [
+      "口",
+      "那"
+    ],
+    "stroke_count": 9,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Рот 口 (значение: вопрос) + 那 (фонетик, nà→nǎ) — ртом спрашиваешь: где?",
+    "examples_ru": [
+      "哪里 (nǎlǐ) — где?",
+      "哪个 (nǎge) — какой?"
+    ]
+  },
+  {
+    "id": 140,
+    "char": "几",
+    "pinyin": "jǐ",
+    "tone": 3,
+    "meaning_ru": "сколько (мало), несколько",
+    "meaning_en": "how many (few), several",
+    "hsk_level": 1,
+    "radicals": [
+      "几"
+    ],
+    "stroke_count": 2,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Пиктограмма маленького столика — нечто малое, сколько?",
+    "examples_ru": [
+      "几个 (jǐ gè) — сколько?",
+      "几点 (jǐ diǎn) — который час?",
+      "几岁 (jǐ suì) — сколько лет?"
+    ]
+  },
+  {
+    "id": 141,
+    "char": "多",
+    "pinyin": "duō",
+    "tone": 1,
+    "meaning_ru": "много, более",
+    "meaning_en": "many, much, more",
+    "hsk_level": 1,
+    "radicals": [
+      "夕",
+      "夕"
+    ],
+    "stroke_count": 6,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Два «вечера» 夕夕 — один за другим, много, множество.",
+    "examples_ru": [
+      "多少 (duōshao) — сколько",
+      "很多 (hěn duō) — очень много",
+      "多大 (duō dà) — насколько большой"
+    ]
+  },
+  {
+    "id": 142,
+    "char": "先",
+    "pinyin": "xiān",
+    "tone": 1,
+    "meaning_ru": "сначала, раньше, прежде",
+    "meaning_en": "first, before, earlier",
+    "hsk_level": 1,
+    "radicals": [
+      "丿",
+      "土",
+      "儿"
+    ],
+    "stroke_count": 6,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Нога 止 (упрощ.) + человек 儿 — человек шагает впереди, первый.",
+    "examples_ru": [
+      "先生 (xiānshēng) — господин",
+      "先走 (xiān zǒu) — уйти первым"
+    ]
+  },
+  {
+    "id": 143,
+    "char": "再",
+    "pinyin": "zài",
+    "tone": 4,
+    "meaning_ru": "ещё раз, снова, потом",
+    "meaning_en": "again, then, once more",
+    "hsk_level": 1,
+    "radicals": [
+      "一",
+      "冂",
+      "土"
+    ],
+    "stroke_count": 6,
+    "formation_type": "指事",
+    "formation_explanation_ru": "Символ повторного действия — снова и снова, ещё раз.",
+    "examples_ru": [
+      "再见 (zàijiàn) — до свидания",
+      "再说 (zài shuō) — потом обсудим"
+    ]
+  },
+  {
+    "id": 144,
+    "char": "都",
+    "pinyin": "dōu",
+    "tone": 1,
+    "meaning_ru": "все, оба, уже",
+    "meaning_en": "all, both, already",
+    "hsk_level": 1,
+    "radicals": [
+      "者",
+      "阝"
+    ],
+    "stroke_count": 10,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Фонетик 者 (zhě→dū) + холм 阝(значение: город) — столица, все собираются.",
+    "examples_ru": [
+      "都是 (dōu shì) — все являются",
+      "大家都 (dàjiā dōu) — все (люди)"
+    ]
+  },
+  {
+    "id": 145,
+    "char": "太",
+    "pinyin": "tài",
+    "tone": 4,
+    "meaning_ru": "слишком, очень",
+    "meaning_en": "too, excessively, very",
+    "hsk_level": 1,
+    "radicals": [
+      "大",
+      "丶"
+    ],
+    "stroke_count": 4,
+    "formation_type": "指事",
+    "formation_explanation_ru": "Большой 大 + точка — ещё больше, чем большой, слишком.",
+    "examples_ru": [
+      "太好了 (tài hǎo le) — замечательно!",
+      "太大 (tài dà) — слишком большой"
+    ]
+  },
+  {
+    "id": 146,
+    "char": "没",
+    "pinyin": "méi",
+    "tone": 2,
+    "meaning_ru": "не (отрицание факта), не иметь",
+    "meaning_en": "not, have not",
+    "hsk_level": 1,
+    "radicals": [
+      "氵",
+      "殳"
+    ],
+    "stroke_count": 7,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Вода 氵(значение) + 殳 (фонетик) — утонуть в воде, исчезнуть, нет.",
+    "examples_ru": [
+      "没有 (méi yǒu) — не иметь",
+      "没关系 (méi guānxi) — ничего страшного"
+    ]
+  },
+  {
+    "id": 147,
+    "char": "别",
+    "pinyin": "bié",
+    "tone": 2,
+    "meaning_ru": "не надо, другой, разделять",
+    "meaning_en": "don't, other, to separate",
+    "hsk_level": 1,
+    "radicals": [
+      "口",
+      "刂"
+    ],
+    "stroke_count": 7,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Кость + нож 刂 — ножом отрезать, отделить. Не надо!",
+    "examples_ru": [
+      "别走 (bié zǒu) — не уходи",
+      "别的 (bié de) — другой"
+    ]
+  },
+  {
+    "id": 148,
+    "char": "地",
+    "pinyin": "de",
+    "tone": 0,
+    "meaning_ru": "наречная частица; земля (dì)",
+    "meaning_en": "adverbial particle; ground (dì)",
+    "hsk_level": 1,
+    "radicals": [
+      "土",
+      "也"
+    ],
+    "stroke_count": 6,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Земля 土 (значение) + 也 (фонетик) — земля, место; как частица связывает наречие с глаголом.",
+    "examples_ru": [
+      "高兴地 (gāoxìng de) — радостно",
+      "慢慢地 (mànmàn de) — медленно"
+    ]
+  },
+  {
+    "id": 149,
+    "char": "呢",
+    "pinyin": "ne",
+    "tone": 0,
+    "meaning_ru": "а? (вопросительная частица)",
+    "meaning_en": "question particle (and you?)",
+    "hsk_level": 1,
+    "radicals": [
+      "口",
+      "尼"
+    ],
+    "stroke_count": 8,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Рот 口 (значение: речь) + 尼 (фонетик, ní→ne) — переспрашивать: а ты?",
+    "examples_ru": [
+      "你呢？(nǐ ne?) — а ты?",
+      "他呢？(tā ne?) — а он?"
+    ]
+  },
+  {
+    "id": 150,
+    "char": "吧",
+    "pinyin": "ba",
+    "tone": 0,
+    "meaning_ru": "ведь, давай (побудительная частица)",
+    "meaning_en": "suggestion/agreement particle",
+    "hsk_level": 1,
+    "radicals": [
+      "口",
+      "巴"
+    ],
+    "stroke_count": 7,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Рот 口 (значение) + 巴 (фонетик, bā→ba) — говорить с предложением, давай.",
+    "examples_ru": [
+      "走吧 (zǒu ba) — пойдём",
+      "好吧 (hǎo ba) — ладно"
+    ]
+  },
+  {
+    "id": 151,
+    "char": "做",
+    "pinyin": "zuò",
+    "tone": 4,
+    "meaning_ru": "делать",
+    "meaning_en": "to do, to make",
+    "hsk_level": 1,
+    "radicals": [
+      "亻",
+      "故"
+    ],
+    "stroke_count": 11,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Человек 亻(значение) + 故 (фонетик, gù→zuò) — человек создаёт, делает.",
+    "examples_ru": [
+      "做饭 (zuòfàn) — готовить еду",
+      "做什么 (zuò shénme) — что делаешь?"
+    ]
+  },
+  {
+    "id": 152,
+    "char": "笑",
+    "pinyin": "xiào",
+    "tone": 4,
+    "meaning_ru": "смеяться, улыбаться",
+    "meaning_en": "to laugh, to smile",
+    "hsk_level": 1,
+    "radicals": [
+      "竹",
+      "夭"
+    ],
+    "stroke_count": 10,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Бамбук 竹 + молодой/гибкий 夭 — бамбук качается на ветру, как человек сгибается от смеха.",
+    "examples_ru": [
+      "笑了 (xiào le) — засмеялся",
+      "微笑 (wēixiào) — улыбка"
+    ]
+  },
+  {
+    "id": 153,
+    "char": "哭",
+    "pinyin": "kū",
+    "tone": 1,
+    "meaning_ru": "плакать",
+    "meaning_en": "to cry, to weep",
+    "hsk_level": 1,
+    "radicals": [
+      "口",
+      "口",
+      "犬"
+    ],
+    "stroke_count": 10,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Два рта 口口 (глаза со слезами) + собака 犬 (вой) — рыдать, выть от горя.",
+    "examples_ru": [
+      "哭了 (kū le) — заплакал",
+      "别哭 (bié kū) — не плачь"
+    ]
+  },
+  {
+    "id": 154,
+    "char": "跑",
+    "pinyin": "pǎo",
+    "tone": 3,
+    "meaning_ru": "бегать",
+    "meaning_en": "to run",
+    "hsk_level": 1,
+    "radicals": [
+      "足",
+      "包"
+    ],
+    "stroke_count": 12,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Нога 足 (значение) + 包 (фонетик, bāo→pǎo) — ноги несут, бежать.",
+    "examples_ru": [
+      "跑步 (pǎobù) — бегать (упражнение)",
+      "跑了 (pǎo le) — убежал"
+    ]
+  },
+  {
+    "id": 155,
+    "char": "走",
+    "pinyin": "zǒu",
+    "tone": 3,
+    "meaning_ru": "идти, уходить",
+    "meaning_en": "to walk, to go, to leave",
+    "hsk_level": 1,
+    "radicals": [
+      "土",
+      "止"
+    ],
+    "stroke_count": 7,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Нога 止 + большой шаг — человек идёт размашисто, ходить.",
+    "examples_ru": [
+      "走路 (zǒulù) — идти пешком",
+      "走了 (zǒu le) — ушёл",
+      "走吧 (zǒu ba) — пойдём"
+    ]
+  },
+  {
+    "id": 156,
+    "char": "飞",
+    "pinyin": "fēi",
+    "tone": 1,
+    "meaning_ru": "летать",
+    "meaning_en": "to fly",
+    "hsk_level": 1,
+    "radicals": [
+      "飞"
+    ],
+    "stroke_count": 3,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Упрощение от 飛. Пиктограмма птицы в полёте — летать.",
+    "examples_ru": [
+      "飞机 (fēijī) — самолёт",
+      "飞了 (fēi le) — улетел"
+    ]
+  },
+  {
+    "id": 157,
+    "char": "送",
+    "pinyin": "sòng",
+    "tone": 4,
+    "meaning_ru": "провожать, дарить, доставлять",
+    "meaning_en": "to send, to give, to deliver",
+    "hsk_level": 1,
+    "radicals": [
+      "辶",
+      "关"
+    ],
+    "stroke_count": 9,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Движение 辶 (значение) + 关 (фонетик, упрощ.) — идти куда-то с подарком, провожать.",
+    "examples_ru": [
+      "送给 (sòng gěi) — подарить",
+      "送人 (sòng rén) — провожать"
+    ]
+  },
+  {
+    "id": 158,
+    "char": "给",
+    "pinyin": "gěi",
+    "tone": 3,
+    "meaning_ru": "давать, для",
+    "meaning_en": "to give, for",
+    "hsk_level": 1,
+    "radicals": [
+      "纟",
+      "合"
+    ],
+    "stroke_count": 9,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Нить 纟(значение: связь) + 合 (фонетик, hé→gěi) — связывать передачей, давать.",
+    "examples_ru": [
+      "给你 (gěi nǐ) — тебе (даю)",
+      "给我 (gěi wǒ) — мне (дай)"
+    ]
+  },
+  {
+    "id": 159,
+    "char": "叫",
+    "pinyin": "jiào",
+    "tone": 4,
+    "meaning_ru": "звать, называться, кричать",
+    "meaning_en": "to call, to be called, to shout",
+    "hsk_level": 1,
+    "radicals": [
+      "口",
+      "丩"
+    ],
+    "stroke_count": 5,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Рот 口 (значение) + 丩 (фонетик, jiū→jiào) — кричать ртом, звать.",
+    "examples_ru": [
+      "你叫什么 (nǐ jiào shénme) — как тебя зовут?",
+      "叫他 (jiào tā) — позвать его"
+    ]
+  },
+  {
+    "id": 160,
+    "char": "问",
+    "pinyin": "wèn",
+    "tone": 4,
+    "meaning_ru": "спрашивать",
+    "meaning_en": "to ask",
+    "hsk_level": 1,
+    "radicals": [
+      "门",
+      "口"
+    ],
+    "stroke_count": 6,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Ворота 门 (фонетик, mén→wèn) + рот 口 (значение) — стоять у ворот и спрашивать.",
+    "examples_ru": [
+      "请问 (qǐngwèn) — позвольте спросить",
+      "问题 (wèntí) — вопрос/проблема"
+    ]
+  },
+  {
+    "id": 161,
+    "char": "答",
+    "pinyin": "dá",
+    "tone": 2,
+    "meaning_ru": "отвечать",
+    "meaning_en": "to answer, to reply",
+    "hsk_level": 1,
+    "radicals": [
+      "竹",
+      "合"
+    ],
+    "stroke_count": 12,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Бамбук 竹 + 合 (фонетик, hé→dá) — бамбуковые дощечки с ответом, отвечать.",
+    "examples_ru": [
+      "回答 (huídá) — ответить",
+      "答案 (dá'àn) — ответ"
+    ]
+  },
+  {
+    "id": 162,
+    "char": "等",
+    "pinyin": "děng",
+    "tone": 3,
+    "meaning_ru": "ждать, и т.д., ранг",
+    "meaning_en": "to wait, etc., rank",
+    "hsk_level": 1,
+    "radicals": [
+      "竹",
+      "寺"
+    ],
+    "stroke_count": 12,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Бамбук 竹 + 寺 (фонетик, sì→děng) — бамбуковые таблички одинаковой длины, равный; ждать.",
+    "examples_ru": [
+      "等一下 (děng yíxià) — подожди",
+      "等等 (děngděng) — и так далее"
+    ]
+  },
+  {
+    "id": 163,
+    "char": "找",
+    "pinyin": "zhǎo",
+    "tone": 3,
+    "meaning_ru": "искать, находить, давать сдачу",
+    "meaning_en": "to look for, to find, to give change",
+    "hsk_level": 1,
+    "radicals": [
+      "扌",
+      "戈"
+    ],
+    "stroke_count": 7,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Рука 扌(значение) + 戈 (фонетик, gē→zhǎo) — рукой шарить, искать.",
+    "examples_ru": [
+      "找人 (zhǎo rén) — искать человека",
+      "找到 (zhǎodào) — нашёл"
+    ]
+  },
+  {
+    "id": 164,
+    "char": "拿",
+    "pinyin": "ná",
+    "tone": 2,
+    "meaning_ru": "брать, держать, нести",
+    "meaning_en": "to take, to hold, to carry",
+    "hsk_level": 1,
+    "radicals": [
+      "合",
+      "手"
+    ],
+    "stroke_count": 10,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Соединять 合 + рука 手 — рукой схватить и соединить с собой, взять.",
+    "examples_ru": [
+      "拿来 (nálái) — принести",
+      "拿走 (názǒu) — забрать"
+    ]
+  },
+  {
+    "id": 165,
+    "char": "放",
+    "pinyin": "fàng",
+    "tone": 4,
+    "meaning_ru": "класть, ставить, отпускать",
+    "meaning_en": "to put, to place, to release",
+    "hsk_level": 1,
+    "radicals": [
+      "方",
+      "攵"
+    ],
+    "stroke_count": 8,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Направление 方 (фонетик, fāng→fàng) + действие 攵(значение: бить) — отпустить в сторону, положить.",
+    "examples_ru": [
+      "放下 (fàngxià) — положить",
+      "放假 (fàngjià) — каникулы/выходной"
+    ]
+  },
+  {
+    "id": 166,
+    "char": "坏",
+    "pinyin": "huài",
+    "tone": 4,
+    "meaning_ru": "плохой, сломанный",
+    "meaning_en": "bad, broken",
+    "hsk_level": 1,
+    "radicals": [
+      "土",
+      "不"
+    ],
+    "stroke_count": 7,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Земля 土 (значение) + 不 (фонетик, упрощ.) — земля разрушена, плохой, сломанный.",
+    "examples_ru": [
+      "坏了 (huài le) — сломалось",
+      "坏人 (huàirén) — плохой человек"
+    ]
+  },
+  {
+    "id": 167,
+    "char": "新",
+    "pinyin": "xīn",
+    "tone": 1,
+    "meaning_ru": "новый",
+    "meaning_en": "new",
+    "hsk_level": 1,
+    "radicals": [
+      "亲",
+      "斤"
+    ],
+    "stroke_count": 13,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Дерево с ветками 亲 + топор 斤 (фонетик) — свежесрубленное дерево, новый.",
+    "examples_ru": [
+      "新年 (xīnnián) — Новый год",
+      "新的 (xīn de) — новый"
+    ]
+  },
+  {
+    "id": 168,
+    "char": "忙",
+    "pinyin": "máng",
+    "tone": 2,
+    "meaning_ru": "занятой",
+    "meaning_en": "busy",
+    "hsk_level": 1,
+    "radicals": [
+      "忄",
+      "亡"
+    ],
+    "stroke_count": 6,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Сердце 忄(значение) + 亡 (фонетик, wáng→máng) — сердце в смятении, некогда, занят.",
+    "examples_ru": [
+      "很忙 (hěn máng) — очень занят",
+      "忙不忙 (máng bù máng) — занят ли?"
+    ]
+  },
+  {
+    "id": 169,
+    "char": "累",
+    "pinyin": "lèi",
+    "tone": 4,
+    "meaning_ru": "уставший, устать",
+    "meaning_en": "tired, exhausted",
+    "hsk_level": 1,
+    "radicals": [
+      "田",
+      "糸"
+    ],
+    "stroke_count": 11,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Поле 田 + нити 糸 — связки тяжёлого урожая с поля, усталость.",
+    "examples_ru": [
+      "很累 (hěn lèi) — очень устал",
+      "累了 (lèi le) — устал"
+    ]
+  },
+  {
+    "id": 170,
+    "char": "错",
+    "pinyin": "cuò",
+    "tone": 4,
+    "meaning_ru": "ошибка, неправильный",
+    "meaning_en": "wrong, mistake",
+    "hsk_level": 1,
+    "radicals": [
+      "钅",
+      "昔"
+    ],
+    "stroke_count": 13,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Металл 钅(значение: скрещение) + 昔 (фонетик, xī→cuò) — перекрещённые линии, ошибка.",
+    "examples_ru": [
+      "不错 (búcuò) — неплохо",
+      "错了 (cuò le) — ошибся"
+    ]
+  },
+  {
+    "id": 171,
+    "char": "黑",
+    "pinyin": "hēi",
+    "tone": 1,
+    "meaning_ru": "чёрный, тёмный",
+    "meaning_en": "black, dark",
+    "hsk_level": 1,
+    "radicals": [
+      "黑"
+    ],
+    "stroke_count": 12,
+    "formation_type": "会意",
+    "formation_explanation_ru": "Окно с сажей + огонь 灬 — дым от огня оставляет чёрную копоть.",
+    "examples_ru": [
+      "黑色 (hēisè) — чёрный цвет",
+      "黑夜 (hēiyè) — тёмная ночь"
+    ]
+  },
+  {
+    "id": 172,
+    "char": "白",
+    "pinyin": "bái",
+    "tone": 2,
+    "meaning_ru": "белый, чистый, напрасно",
+    "meaning_en": "white, pure, in vain",
+    "hsk_level": 1,
+    "radicals": [
+      "白"
+    ],
+    "stroke_count": 5,
+    "formation_type": "象形",
+    "formation_explanation_ru": "Пиктограмма белого зерна риса или солнечного луча — белизна.",
+    "examples_ru": [
+      "白色 (báisè) — белый цвет",
+      "明白 (míngbai) — понимать"
+    ]
+  },
+  {
+    "id": 173,
+    "char": "红",
+    "pinyin": "hóng",
+    "tone": 2,
+    "meaning_ru": "красный",
+    "meaning_en": "red",
+    "hsk_level": 1,
+    "radicals": [
+      "纟",
+      "工"
+    ],
+    "stroke_count": 6,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Нить 纟(значение: шёлк/ткань) + 工 (фонетик, gōng→hóng) — красная нить, красный.",
+    "examples_ru": [
+      "红色 (hóngsè) — красный цвет",
+      "红茶 (hóngchá) — чёрный чай (букв. красный)"
+    ]
+  },
+  {
+    "id": 174,
+    "char": "绿",
+    "pinyin": "lǜ",
+    "tone": 4,
+    "meaning_ru": "зелёный",
+    "meaning_en": "green",
+    "hsk_level": 1,
+    "radicals": [
+      "纟",
+      "录"
+    ],
+    "stroke_count": 11,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Нить 纟(значение: краска) + 录 (фонетик, lù→lǜ) — зелёная краска, зелёный.",
+    "examples_ru": [
+      "绿色 (lǜsè) — зелёный цвет",
+      "绿茶 (lǜchá) — зелёный чай"
+    ]
+  },
+  {
+    "id": 175,
+    "char": "蓝",
+    "pinyin": "lán",
+    "tone": 2,
+    "meaning_ru": "синий, голубой",
+    "meaning_en": "blue",
+    "hsk_level": 1,
+    "radicals": [
+      "艹",
+      "监"
+    ],
+    "stroke_count": 13,
+    "formation_type": "形声",
+    "formation_explanation_ru": "Трава 艹 (значение: растение-индиго) + 监 (фонетик, jiān→lán) — растение для синей краски.",
+    "examples_ru": [
+      "蓝色 (lánsè) — синий/голубой цвет",
+      "蓝天 (lántiān) — голубое небо"
+    ]
   }
 ]

@@ -44,16 +44,16 @@ export default function Characters() {
         <h1 className="text-2xl text-rice font-medium">Иероглифы</h1>
 
         {/* HSK level filter */}
-        <div className="flex items-center gap-1">
-          <span className="text-xs text-rice-muted mr-2">HSK:</span>
+        <div className="flex items-center gap-1.5">
+          <span className="text-sm text-rice-muted mr-1">HSK:</span>
           {[1, 2, 3, 4, 5, 6].map((lvl) => (
             <button
               key={lvl}
               onClick={() => setHskFilter(hskFilter === lvl ? null : lvl)}
-              className={`px-2 py-0.5 text-xs rounded transition-colors ${
+              className={`min-w-[44px] min-h-[44px] px-3 py-2 text-sm rounded-lg transition-colors ${
                 hskFilter === lvl
-                  ? 'bg-cinnabar text-rice'
-                  : 'text-rice-muted hover:text-rice bg-ink-elevated'
+                  ? 'bg-cinnabar text-white'
+                  : 'text-rice-muted hover:text-rice bg-ink-elevated border border-ink-border'
               }`}
             >
               {lvl}

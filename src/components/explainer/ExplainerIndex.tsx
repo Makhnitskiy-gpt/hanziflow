@@ -93,7 +93,7 @@ export function ExplainerIndex() {
               </div>
 
               {/* Read status */}
-              <span className={`text-[10px] flex-shrink-0 ${isSeen ? 'text-jade' : 'text-rice-dim'}`}>
+              <span className={`text-xs flex-shrink-0 ${isSeen ? 'text-jade' : 'text-rice-dim'}`}>
                 {isSeen ? 'Прочитано' : 'Новое'}
               </span>
             </div>

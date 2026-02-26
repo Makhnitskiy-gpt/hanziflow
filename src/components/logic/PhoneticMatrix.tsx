@@ -84,7 +84,7 @@ export function PhoneticMatrix({
               >
                 <span className="font-hanzi text-hanzi text-lg">{pc.component}</span>
                 <br />
-                <span className="text-[10px] text-rice-muted">{pc.pinyin}</span>
+                <span className="text-xs text-rice-muted">{pc.pinyin}</span>
               </th>
             ))}
           </tr>
@@ -100,7 +100,7 @@ export function PhoneticMatrix({
               >
                 <span className="font-hanzi text-hanzi text-lg">{sf.radical}</span>
                 <br />
-                <span className="text-[10px] text-rice-muted">{sf.meaning_ru}</span>
+                <span className="text-xs text-rice-muted">{sf.meaning_ru}</span>
               </td>
               {phoneticComponents.map((pc, ci) => {
                 const cell = matrix.get(`${sf.radical}|${pc.component}`);
@@ -124,7 +124,7 @@ export function PhoneticMatrix({
                         }`}
                       >
                         <span className="font-hanzi text-hanzi text-xl">{cell.char}</span>
-                        <span className="text-[9px] text-rice-muted">{cell.meaning_ru}</span>
+                        <span className="text-xs text-rice-muted">{cell.meaning_ru}</span>
                       </button>
                     ) : (
                       <span className="text-rice-dim">--</span>

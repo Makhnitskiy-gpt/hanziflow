@@ -5,6 +5,7 @@ import { db } from '@/db';
 import { PhoneticMatrix } from '@/components/logic/PhoneticMatrix';
 import { FamilyTree } from '@/components/logic/FamilyTree';
 import { MeaningClusters } from '@/components/logic/MeaningClusters';
+import logicData from '@/data/character-logic.json';
 
 interface OutletCtx {
   setCurrentChar: (char: string | undefined) => void;
@@ -12,121 +13,93 @@ interface OutletCtx {
 
 type LogicTab = 'matrix' | 'families' | 'clusters';
 
-// Sample data structures (would normally come from character-logic.json)
-// These are populated from DB characters or a dedicated logic data file
-
 export default function Logic() {
   const { setCurrentChar } = useOutletContext<OutletCtx>();
   const [activeTab, setActiveTab] = useState<LogicTab>('matrix');
   const [selectedFamily, setSelectedFamily] = useState<string | null>(null);
 
-  // Build phonetic and semantic data from characters
+  // Fetch character data from DB for meaning lookups
   const characterData = useLiveQuery(() => db.characters.toArray(), []);
+  const charMap = useMemo(() => {
+    if (!characterData) return new Map<string, { meaning_ru: string; pinyin: string }>();
+    return new Map(characterData.map((c) => [c.char, { meaning_ru: c.meaning_ru, pinyin: c.pinyin }]));
+  }, [characterData]);
 
+  // Build phonetic components from character-logic.json
   const phoneticComponents = useMemo(() => {
-    if (!characterData) return [];
-
-    // Group characters by shared radicals to detect phonetic components
-    const phoneticMap = new Map<string, Array<{ char: string; meaning_ru: string }>>();
-
-    for (const ch of characterData) {
-      if (ch.formation_type === '形声' && ch.radicals.length >= 2) {
-        // Last radical is typically the phonetic component
-        const phonetic = ch.radicals[ch.radicals.length - 1];
-        if (!phoneticMap.has(phonetic)) {
-          phoneticMap.set(phonetic, []);
-        }
-        phoneticMap.get(phonetic)!.push({ char: ch.char, meaning_ru: ch.meaning_ru });
-      }
-    }
-
-    return Array.from(phoneticMap.entries())
-      .filter(([, derivs]) => derivs.length >= 2)
-      .map(([component, derivatives]) => ({
-        component,
-        pinyin: '',
-        derivatives,
-      }));
-  }, [characterData]);
-
-  const semanticFamilies = useMemo(() => {
-    if (!characterData) return [];
-
-    const semanticMap = new Map<string, string[]>();
-
-    for (const ch of characterData) {
-      if (ch.radicals.length > 0) {
-        const semantic = ch.radicals[0]; // First radical is typically semantic
-        if (!semanticMap.has(semantic)) {
-          semanticMap.set(semantic, []);
-        }
-        semanticMap.get(semantic)!.push(ch.char);
-      }
-    }
-
-    return Array.from(semanticMap.entries())
-      .filter(([, chars]) => chars.length >= 2)
-      .map(([radical, characters]) => ({
-        radical,
-        meaning_ru: '',
-        characters,
-      }));
-  }, [characterData]);
-
-  const meaningClusters = useMemo(() => {
-    if (!characterData) return [];
-
-    // Group by formation type as a basic clustering
-    const typeMap = new Map<string, Array<{ char: string; meaning_ru: string }>>();
-    const typeLabels: Record<string, string> = {
-      '象形': 'Пиктограммы',
-      '指事': 'Указательные',
-      '会意': 'Составные идеограммы',
-      '形声': 'Фоно-семантические',
-    };
-
-    for (const ch of characterData) {
-      const type = ch.formation_type;
-      if (!typeMap.has(type)) {
-        typeMap.set(type, []);
-      }
-      typeMap.get(type)!.push({ char: ch.char, meaning_ru: ch.meaning_ru });
-    }
-
-    return Array.from(typeMap.entries()).map(([type, characters]) => ({
-      title: typeLabels[type] ?? type,
-      description: `Иероглифы типа "${type}"`,
-      characters,
+    return Object.entries(logicData.phonetic_components).map(([component, data]) => ({
+      component,
+      pinyin: data.pinyin,
+      derivatives: data.derivatives.map((ch) => ({
+        char: ch,
+        meaning_ru: charMap.get(ch)?.meaning_ru ?? '',
+      })),
     }));
-  }, [characterData]);
+  }, [charMap]);
+
+  // Build semantic families from character-logic.json
+  const semanticFamilies = useMemo(() => {
+    return Object.entries(logicData.semantic_families).map(([radical, data]) => ({
+      radical,
+      meaning_ru: data.meaning_ru ?? (data as Record<string, unknown>).meaning as string ?? '',
+      characters: data.derivatives,
+    }));
+  }, []);
+
+  // Build meaning clusters from character-logic.json
+  const meaningClusters = useMemo(() => {
+    return Object.entries(logicData.meaning_clusters).map(([title, data]) => ({
+      title,
+      description: data.description_ru,
+      characters: data.chars.map((ch) => ({
+        char: ch,
+        meaning_ru: charMap.get(ch)?.meaning_ru ?? '',
+      })),
+    }));
+  }, [charMap]);
 
   const handleCharSelect = (char: string) => {
     setCurrentChar(char);
     setSelectedFamily(char);
   };
 
-  // Get family data for selected character
+  // Get family data for selected character from character-logic.json
   const familyData = useMemo(() => {
-    if (!selectedFamily || !characterData) return null;
+    if (!selectedFamily) return null;
 
-    // Find all characters sharing a component with the selected one
-    const target = characterData.find((c) => c.char === selectedFamily);
-    if (!target || target.radicals.length === 0) return null;
+    // Search in phonetic_components
+    for (const [component, data] of Object.entries(logicData.phonetic_components)) {
+      if (component === selectedFamily || data.derivatives.includes(selectedFamily)) {
+        return {
+          rootChar: component,
+          rootPinyin: data.pinyin,
+          rootMeaning: data.meaning_ru,
+          derivatives: data.derivatives.map((ch) => ({
+            char: ch,
+            meaning_ru: charMap.get(ch)?.meaning_ru ?? '',
+            pinyin: charMap.get(ch)?.pinyin ?? '',
+          })),
+        };
+      }
+    }
 
-    const rootRad = target.radicals[target.radicals.length - 1];
-    const derivatives = characterData
-      .filter((c) => c.radicals.includes(rootRad) && c.char !== rootRad)
-      .map((c) => ({
-        char: c.char,
-        meaning_ru: c.meaning_ru,
-        pinyin: c.pinyin,
-      }));
+    // Search in semantic_families
+    for (const [radical, data] of Object.entries(logicData.semantic_families)) {
+      if (radical === selectedFamily || data.derivatives.includes(selectedFamily)) {
+        return {
+          rootChar: radical,
+          rootMeaning: data.meaning_ru ?? (data as Record<string, unknown>).meaning as string ?? '',
+          derivatives: data.derivatives.map((ch) => ({
+            char: ch,
+            meaning_ru: charMap.get(ch)?.meaning_ru ?? '',
+            pinyin: charMap.get(ch)?.pinyin ?? '',
+          })),
+        };
+      }
+    }
 
-    return {
-      rootChar: rootRad,
-      derivatives,
-    };
-  }, [selectedFamily, characterData]);
+    return null;
+  }, [selectedFamily, charMap]);
 
   const tabs: Array<{ key: LogicTab; label: string; hanzi: string }> = [
     { key: 'matrix', label: 'Матрица', hanzi: '矩' },
@@ -146,7 +119,7 @@ export default function Logic() {
             onClick={() => setActiveTab(tab.key)}
             className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
               activeTab === tab.key
-                ? 'bg-cinnabar text-rice'
+                ? 'bg-cinnabar text-white'
                 : 'bg-ink-elevated text-rice-muted hover:text-rice border border-ink-border'
             }`}
           >
@@ -170,6 +143,8 @@ export default function Logic() {
           {familyData ? (
             <FamilyTree
               rootChar={familyData.rootChar}
+              rootPinyin={familyData.rootPinyin}
+              rootMeaning={familyData.rootMeaning}
               derivatives={familyData.derivatives}
               onCharSelect={handleCharSelect}
             />
@@ -183,14 +158,14 @@ export default function Logic() {
 
               {/* Quick select from available families */}
               <div className="flex flex-wrap gap-2 max-w-md justify-center mt-4">
-                {phoneticComponents.slice(0, 12).map((pc) => (
+                {Object.entries(logicData.phonetic_components).slice(0, 12).map(([component, data]) => (
                   <button
-                    key={pc.component}
-                    onClick={() => handleCharSelect(pc.derivatives[0]?.char ?? pc.component)}
+                    key={component}
+                    onClick={() => handleCharSelect(component)}
                     className="px-3 py-1.5 rounded-md bg-ink-elevated border border-ink-border text-sm hover:border-gold-dim transition-colors"
                   >
-                    <span className="font-hanzi text-hanzi">{pc.component}</span>
-                    <span className="text-rice-dim ml-1">({pc.derivatives.length})</span>
+                    <span className="font-hanzi text-hanzi">{component}</span>
+                    <span className="text-rice-dim ml-1">({data.derivatives.length})</span>
                   </button>
                 ))}
               </div>

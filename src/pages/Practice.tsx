@@ -115,7 +115,7 @@ export default function Practice() {
               {ch.meaning_ru}
             </span>
             {mode === 'weak' && 'lapses' in ch && (
-              <span className="text-[10px] text-cinnabar mt-0.5">
+              <span className="text-xs text-cinnabar mt-0.5">
                 ошибок: {(ch as { lapses: number }).lapses}
               </span>
             )}

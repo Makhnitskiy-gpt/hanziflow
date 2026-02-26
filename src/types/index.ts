@@ -77,6 +77,23 @@ export interface SRSCard {
 }
 
 // ---------------------------------------------------------------------------
+// Review log (for FSRS calibration)
+// ---------------------------------------------------------------------------
+
+export interface ReviewLog {
+  id?: number;
+  cardId: number;
+  rating: 1 | 2 | 3 | 4;
+  state: State;
+  due: Date;
+  stability: number;
+  difficulty: number;
+  elapsed_days: number;
+  scheduled_days: number;
+  timestamp: Date;
+}
+
+// ---------------------------------------------------------------------------
 // Study session
 // ---------------------------------------------------------------------------
 
@@ -113,7 +130,7 @@ export interface AppSettings {
   id?: number;
   sessionMinutes: number;
   cardsPerSession: number;
-  theme: 'dark';
+  theme: 'light' | 'dark';
   seenExplainers: string[];
   /** Flag set after initial data seed */
   seeded?: boolean;

@@ -52,7 +52,7 @@ export function FamilyTree({
         {rootMeaning && (
           <span className="text-xs text-rice-muted mt-0.5">{rootMeaning}</span>
         )}
-        <span className="text-[10px] text-rice-dim mt-1">Корневой компонент</span>
+        <span className="text-xs text-rice-dim mt-1">Корневой компонент</span>
       </div>
 
       {/* Connecting line */}
@@ -79,7 +79,7 @@ export function FamilyTree({
             >
               <span className="font-hanzi text-3xl text-hanzi">{d.char}</span>
               <span className="text-xs text-gold mt-1">{d.pinyin}</span>
-              <span className="text-[10px] text-rice-muted mt-0.5 text-center leading-tight">
+              <span className="text-xs text-rice-muted mt-0.5 text-center leading-tight">
                 {d.meaning_ru}
               </span>
             </button>

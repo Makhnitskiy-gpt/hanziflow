@@ -88,8 +88,10 @@ export default function Review() {
   );
 
   const handleCardGraded = useCallback(
-    (_card: unknown, _rating: number) => {
-      setSessionProgress({ done: reviewedCount + 1, total: reviewedCount + 5 }); // Approximate
+    (_card: unknown, _rating: number, deckTotal: number) => {
+      const done = reviewedCount + 1;
+      setReviewedCount(done);
+      setSessionProgress({ done, total: deckTotal });
     },
     [setSessionProgress, reviewedCount],
   );
@@ -134,7 +136,7 @@ export default function Review() {
           <span className="font-hanzi text-6xl text-hanzi opacity-20">復</span>
           <button
             onClick={startSession}
-            className="px-8 py-4 rounded-lg bg-cinnabar text-rice text-lg font-medium hover:bg-cinnabar-hover transition-colors shadow-lg shadow-cinnabar/20"
+            className="px-8 py-4 rounded-lg bg-cinnabar text-white text-lg font-medium hover:bg-cinnabar-hover transition-colors shadow-lg shadow-cinnabar/20"
           >
             Начать повторение
           </button>

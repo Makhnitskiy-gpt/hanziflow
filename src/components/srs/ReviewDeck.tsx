@@ -2,13 +2,13 @@ import { useState, useCallback, useEffect } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { Rating } from 'ts-fsrs';
 import { db } from '@/db';
-import type { SRSCard } from '@/types';
+import type { SRSCard, ReviewLog } from '@/types';
 import { gradeCard } from '@/lib/fsrs';
 import { QuizCard } from '@/components/practice/QuizCard';
 
 interface ReviewDeckProps {
   onSessionComplete?: (reviewed: number) => void;
-  onCardGraded?: (card: SRSCard, rating: number) => void;
+  onCardGraded?: (card: SRSCard, rating: number, total: number) => void;
   onCurrentCharChange?: (char: string | undefined) => void;
 }
 
@@ -63,9 +63,23 @@ export function ReviewDeck({ onSessionComplete, onCardGraded, onCurrentCharChang
       // Persist the updated card to DB
       if (updated.id !== undefined) {
         await db.cards.put(updated);
+
+        // Log review for FSRS calibration
+        const log: ReviewLog = {
+          cardId: updated.id,
+          rating,
+          state: currentCard.state,
+          due: currentCard.due,
+          stability: currentCard.stability,
+          difficulty: currentCard.difficulty,
+          elapsed_days: currentCard.elapsed_days,
+          scheduled_days: currentCard.scheduled_days,
+          timestamp: new Date(),
+        };
+        await db.reviewLogs.add(log);
       }
 
-      onCardGraded?.(currentCard, rating);
+      onCardGraded?.(currentCard, rating, total);
 
       const nextReviewed = reviewed + 1;
       setReviewed(nextReviewed);

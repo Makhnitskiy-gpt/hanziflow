@@ -84,7 +84,8 @@ export function WritingPad({ itemId, itemType }: WritingPadProps) {
       ctx.lineWidth = penSize * 6;
     } else {
       ctx.globalCompositeOperation = 'source-over';
-      ctx.strokeStyle = '#e8e0d4'; // rice color
+      const cssStroke = getComputedStyle(document.documentElement).getPropertyValue('--color-stroke').trim();
+      ctx.strokeStyle = cssStroke || '#1a1714';
       ctx.lineWidth = penSize * (0.5 + point.pressure);
     }
   };
@@ -194,7 +195,7 @@ export function WritingPad({ itemId, itemType }: WritingPadProps) {
           <button
             key={s}
             onClick={() => { setPenSize(s); setIsEraser(false); }}
-            className={`flex items-center justify-center w-8 h-8 rounded-md transition-colors ${
+            className={`flex items-center justify-center w-11 h-11 rounded-lg transition-colors ${
               penSize === s && !isEraser
                 ? 'bg-cinnabar text-rice'
                 : 'bg-ink-elevated text-rice-muted hover:text-rice'
@@ -213,7 +214,7 @@ export function WritingPad({ itemId, itemType }: WritingPadProps) {
         {/* Eraser */}
         <button
           onClick={() => setIsEraser(!isEraser)}
-          className={`px-2 py-1 text-xs rounded-md transition-colors ${
+          className={`px-3 py-2 text-sm rounded-lg min-h-[44px] transition-colors ${
             isEraser
               ? 'bg-cinnabar text-rice'
               : 'bg-ink-elevated text-rice-muted hover:text-rice'
@@ -226,7 +227,7 @@ export function WritingPad({ itemId, itemType }: WritingPadProps) {
         <button
           onClick={handleUndo}
           disabled={!canUndo}
-          className="px-2 py-1 text-xs rounded-md bg-ink-elevated text-rice-muted hover:text-rice disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+          className="px-3 py-2 text-sm rounded-lg min-h-[44px] bg-ink-elevated text-rice-muted hover:text-rice disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
         >
           Отмена
         </button>
@@ -235,7 +236,7 @@ export function WritingPad({ itemId, itemType }: WritingPadProps) {
         <button
           onClick={handleRedo}
           disabled={!canRedo}
-          className="px-2 py-1 text-xs rounded-md bg-ink-elevated text-rice-muted hover:text-rice disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+          className="px-3 py-2 text-sm rounded-lg min-h-[44px] bg-ink-elevated text-rice-muted hover:text-rice disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
         >
           Повтор
         </button>
@@ -243,7 +244,7 @@ export function WritingPad({ itemId, itemType }: WritingPadProps) {
         {/* Clear */}
         <button
           onClick={handleClear}
-          className="px-2 py-1 text-xs rounded-md bg-ink-elevated text-rice-muted hover:text-rice transition-colors"
+          className="px-3 py-2 text-sm rounded-lg min-h-[44px] bg-ink-elevated text-rice-muted hover:text-rice transition-colors"
         >
           Очистить
         </button>
@@ -252,7 +253,7 @@ export function WritingPad({ itemId, itemType }: WritingPadProps) {
         {itemId && itemType && (
           <button
             onClick={handleSave}
-            className="ml-auto px-3 py-1 text-xs rounded-md bg-jade text-rice hover:bg-jade-dim transition-colors"
+            className="ml-auto px-4 py-2 text-sm rounded-lg min-h-[44px] bg-jade text-white hover:bg-jade-dim transition-colors"
           >
             Сохранить
           </button>

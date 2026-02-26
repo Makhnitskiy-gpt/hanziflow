@@ -4,6 +4,15 @@ import type { Radical } from '@/types';
 import { ExplainerCard } from '@/components/explainer/ExplainerCard';
 import { PinyinDisplay } from '@/components/shared/PinyinDisplay';
 
+/** Parse tone number from pinyin with diacritics */
+function parseTone(pinyin: string): number {
+  if (/[āēīōūǖ]/.test(pinyin)) return 1;
+  if (/[áéíóúǘ]/.test(pinyin)) return 2;
+  if (/[ǎěǐǒǔǚ]/.test(pinyin)) return 3;
+  if (/[àèìòùǜ]/.test(pinyin)) return 4;
+  return 5;
+}
+
 interface RadicalDetailProps {
   radical: Radical;
   onPractice?: (char: string) => void;
@@ -71,7 +80,7 @@ export function RadicalDetail({ radical, onPractice, onAddToReview }: RadicalDet
           {/* Large character */}
           <div className="flex flex-col items-center">
             <span className="hanzi-lg">{radical.char}</span>
-            <PinyinDisplay pinyin={radical.pinyin} tone={1} size="md" />
+            <PinyinDisplay pinyin={radical.pinyin} tone={parseTone(radical.pinyin)} size="md" />
           </div>
 
           {/* Details */}

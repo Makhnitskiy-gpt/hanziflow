@@ -23,7 +23,7 @@ export function AiMessage({ message }: AiMessageProps) {
             <MarkdownLite text={message.content} />
           )}
         </div>
-        <div className={`text-[10px] mt-1 ${isUser ? 'text-cinnabar/50' : 'text-rice-dim'}`}>
+        <div className={`text-xs mt-1 ${isUser ? 'text-cinnabar/50' : 'text-rice-dim'}`}>
           {formatTime(message.timestamp)}
         </div>
       </div>

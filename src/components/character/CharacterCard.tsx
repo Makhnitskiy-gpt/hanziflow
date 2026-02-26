@@ -34,7 +34,7 @@ export function CharacterCard({ character, onClick, isSelected }: CharacterCardP
       }`}
     >
       <span className={`absolute top-2 right-2 w-2.5 h-2.5 rounded-full ${statusColors[status]}`} />
-      <span className="ink-stamp absolute top-1.5 left-1.5 !w-5 !h-5 !text-[8px]">{formationChar}</span>
+      <span className="ink-stamp ink-stamp-sm absolute top-1.5 left-1.5">{formationChar}</span>
       <span className="hanzi-sm">{character.char}</span>
       <PinyinDisplay pinyin={character.pinyin} tone={character.tone} size="sm" />
       <span className="text-xs text-rice-muted mt-0.5 leading-tight truncate max-w-[92px] text-center">

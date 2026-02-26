@@ -38,7 +38,7 @@ const DEFAULT_SETTINGS: AppSettings = {
   id: 1,
   sessionMinutes: 30,
   cardsPerSession: 20,
-  theme: 'dark',
+  theme: 'light',
   seenExplainers: [],
   seeded: true,
 };
@@ -67,15 +67,17 @@ export async function seedDatabase(db: typeof DBType): Promise<void> {
   const radicals: Radical[] = radicalsModule.default;
   const characters: Character[] = hsk1Module.default;
 
-  // Build SRS cards for all radicals (recognition only initially)
-  const radicalCards: SRSCard[] = radicals.map((r) =>
+  // Build SRS cards for all radicals (recognition + recall)
+  const radicalCards: SRSCard[] = radicals.flatMap((r) => [
     makeNewCard(r.id, 'radical', 'recognition'),
-  );
+    makeNewCard(r.id, 'radical', 'recall'),
+  ]);
 
-  // Build SRS cards for all characters (recognition only initially)
-  const characterCards: SRSCard[] = characters.map((c) =>
+  // Build SRS cards for all characters (recognition + recall)
+  const characterCards: SRSCard[] = characters.flatMap((c) => [
     makeNewCard(c.id, 'character', 'recognition'),
-  );
+    makeNewCard(c.id, 'character', 'recall'),
+  ]);
 
   // Single transaction to ensure atomicity
   await db.transaction(

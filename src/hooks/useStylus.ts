@@ -37,7 +37,10 @@ interface UseStylusReturn {
 // Drawing config
 // ---------------------------------------------------------------------------
 
-const STROKE_COLOR = '#e2e2e2';
+function getStrokeColor(): string {
+  if (typeof document === 'undefined') return '#1a1714';
+  return getComputedStyle(document.documentElement).getPropertyValue('--color-stroke').trim() || '#1a1714';
+}
 const MIN_WIDTH = 1.5;
 const MAX_WIDTH = 7;
 
@@ -74,7 +77,7 @@ export function useStylus(): UseStylusReturn {
       for (const stroke of toDraw) {
         if (stroke.length < 2) continue;
 
-        ctx.strokeStyle = STROKE_COLOR;
+        ctx.strokeStyle = getStrokeColor();
         ctx.lineCap = 'round';
         ctx.lineJoin = 'round';
 

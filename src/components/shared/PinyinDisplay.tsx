@@ -5,9 +5,9 @@ interface PinyinDisplayProps {
 }
 
 const sizeClasses: Record<string, string> = {
-  sm: 'text-sm',
-  md: 'text-base',
-  lg: 'text-xl',
+  sm: 'text-base',
+  md: 'text-lg',
+  lg: 'text-2xl',
 };
 
 export function PinyinDisplay({ pinyin, tone, size = 'sm' }: PinyinDisplayProps) {
