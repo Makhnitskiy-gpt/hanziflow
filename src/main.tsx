@@ -18,10 +18,12 @@ async function seedIfNeeded() {
 async function registerSW() {
   try {
     const { registerSW } = await import('virtual:pwa-register');
-    registerSW({
+    const updateSW = registerSW({
       onNeedRefresh() {
-        // Could show a toast/prompt here
-        console.log('New content available, refresh to update.');
+        // Auto-update when new content is available
+        if (confirm('Доступна новая версия HanziFlow. Обновить?')) {
+          updateSW(true);
+        }
       },
       onOfflineReady() {
         console.log('App ready for offline use.');
