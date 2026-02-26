@@ -32,7 +32,14 @@ export function SessionTimer({ phase, timeLeft, cardsDone, cardsTotal }: Session
       </div>
 
       {/* Progress bar */}
-      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-ink-border">
+      <div
+        className="absolute bottom-0 left-0 right-0 h-0.5 bg-ink-border"
+        role="progressbar"
+        aria-valuenow={cardsDone}
+        aria-valuemin={0}
+        aria-valuemax={cardsTotal}
+        aria-label={`Прогресс сессии: ${cardsDone} из ${cardsTotal}`}
+      >
         <div
           className="h-full bg-gradient-to-r from-cinnabar to-cinnabar-hover transition-[width] duration-300"
           style={{ width: `${progress * 100}%` }}

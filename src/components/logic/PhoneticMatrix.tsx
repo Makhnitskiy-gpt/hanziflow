@@ -1,7 +1,4 @@
 import { useState, useMemo } from 'react';
-import { useLiveQuery } from 'dexie-react-hooks';
-import { db } from '@/db';
-import type { ItemStatus } from '@/types';
 
 interface PhoneticComponent {
   component: string;
@@ -18,41 +15,26 @@ interface SemanticFamily {
 interface PhoneticMatrixProps {
   phoneticComponents: PhoneticComponent[];
   semanticFamilies: SemanticFamily[];
+  learnedChars?: Set<string>;
   onCharSelect: (char: string) => void;
 }
 
 export function PhoneticMatrix({
   phoneticComponents,
   semanticFamilies,
+  learnedChars,
   onCharSelect,
 }: PhoneticMatrixProps) {
   const [highlightRow, setHighlightRow] = useState<number | null>(null);
   const [highlightCol, setHighlightCol] = useState<number | null>(null);
 
-  // Get learned characters
-  const learnedChars = useLiveQuery(async () => {
-    const cards = await db.cards.where('itemType').equals('character').toArray();
-    const known = new Set<string>();
-    const charData = await db.characters.toArray();
-    const charMap = new Map(charData.map((c) => [c.id, c.char]));
-    for (const card of cards) {
-      if (card.state >= 1) {
-        const ch = charMap.get(card.itemId);
-        if (ch) known.add(ch);
-      }
-    }
-    return known;
-  }, []);
-
   // Build matrix: rows = semantic radicals, columns = phonetic components
   // Cell = intersection character (if exists)
   const matrix = useMemo(() => {
-    // Build a lookup: for each semantic+phonetic combo, what character?
     const charLookup = new Map<string, { char: string; meaning_ru: string }>();
 
     for (const pc of phoneticComponents) {
       for (const d of pc.derivatives) {
-        // Key = radical + phonetic
         for (const sf of semanticFamilies) {
           if (sf.characters.includes(d.char)) {
             charLookup.set(`${sf.radical}|${pc.component}`, d);
@@ -117,7 +99,7 @@ export function PhoneticMatrix({
                     {cell ? (
                       <button
                         onClick={() => onCharSelect(cell.char)}
-                        className={`inline-flex flex-col items-center p-1 rounded transition-all ${
+                        className={`inline-flex flex-col items-center p-1 rounded transition-all focus-visible:ring-2 focus-visible:ring-cinnabar ${
                           isKnown
                             ? 'hover:bg-ink-elevated'
                             : 'fog hover:filter-none hover:opacity-100'

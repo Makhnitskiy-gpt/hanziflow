@@ -25,6 +25,21 @@ export default function Logic() {
     return new Map(characterData.map((c) => [c.char, { meaning_ru: c.meaning_ru, pinyin: c.pinyin }]));
   }, [characterData]);
 
+  // Single learned chars query — shared across all Logic sub-components
+  const learnedChars = useLiveQuery(async () => {
+    const cards = await db.cards.where('itemType').equals('character').toArray();
+    const known = new Set<string>();
+    if (!characterData) return known;
+    const idMap = new Map(characterData.map((c) => [c.id, c.char]));
+    for (const card of cards) {
+      if (card.state >= 1) {
+        const ch = idMap.get(card.itemId);
+        if (ch) known.add(ch);
+      }
+    }
+    return known;
+  }, [characterData]);
+
   // Build phonetic components from character-logic.json
   const phoneticComponents = useMemo(() => {
     return Object.entries(logicData.phonetic_components).map(([component, data]) => ({
@@ -117,7 +132,7 @@ export default function Logic() {
           <button
             key={tab.key}
             onClick={() => setActiveTab(tab.key)}
-            className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+            className={`flex items-center gap-1.5 px-4 py-2 min-h-[44px] rounded-lg text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:ring-cinnabar ${
               activeTab === tab.key
                 ? 'bg-cinnabar text-white'
                 : 'bg-ink-elevated text-rice-muted hover:text-rice border border-ink-border'
@@ -134,6 +149,7 @@ export default function Logic() {
         <PhoneticMatrix
           phoneticComponents={phoneticComponents}
           semanticFamilies={semanticFamilies}
+          learnedChars={learnedChars}
           onCharSelect={handleCharSelect}
         />
       )}
@@ -146,6 +162,7 @@ export default function Logic() {
               rootPinyin={familyData.rootPinyin}
               rootMeaning={familyData.rootMeaning}
               derivatives={familyData.derivatives}
+              learnedChars={learnedChars}
               onCharSelect={handleCharSelect}
             />
           ) : (
@@ -177,6 +194,7 @@ export default function Logic() {
       {activeTab === 'clusters' && (
         <MeaningClusters
           clusters={meaningClusters}
+          learnedChars={learnedChars}
           onCharSelect={handleCharSelect}
         />
       )}

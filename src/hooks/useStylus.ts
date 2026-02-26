@@ -55,8 +55,13 @@ export function useStylus(): UseStylusReturn {
   const [strokes, setStrokes] = useState<Stroke[]>([]);
   const [redoStack, setRedoStack] = useState<Stroke[]>([]);
 
+  // Ref mirror for isDrawing — avoids stale closure in pointer event handlers
+  const isDrawingRef = useRef(false);
+
   // Current in-progress stroke (not yet committed)
   const activeStrokeRef = useRef<Stroke>([]);
+  // Ref mirror for strokes — avoids stale closure in pointer move handler
+  const strokesRef = useRef<Stroke[]>([]);
 
   // ------ Canvas rendering ------
 
@@ -110,6 +115,7 @@ export function useStylus(): UseStylusReturn {
       const point = toCanvasCoords(raw, canvas);
 
       activeStrokeRef.current = [point];
+      isDrawingRef.current = true;
       setIsDrawing(true);
       setCurrentPressure(point.pressure);
       // Clear redo stack on new input
@@ -120,7 +126,7 @@ export function useStylus(): UseStylusReturn {
 
   const handlePointerMove = useCallback(
     (e: PointerEvent) => {
-      if (!isDrawing) return;
+      if (!isDrawingRef.current) return;
 
       const canvas = canvasRef.current;
       if (!canvas) return;
@@ -133,14 +139,14 @@ export function useStylus(): UseStylusReturn {
       activeStrokeRef.current.push(point);
       setCurrentPressure(point.pressure);
 
-      redrawCanvas(strokes, activeStrokeRef.current);
+      redrawCanvas(strokesRef.current, activeStrokeRef.current);
     },
-    [isDrawing, strokes, redrawCanvas],
+    [redrawCanvas],
   );
 
   const handlePointerUp = useCallback(
     (e: PointerEvent) => {
-      if (!isDrawing) return;
+      if (!isDrawingRef.current) return;
 
       e.preventDefault();
 
@@ -150,15 +156,17 @@ export function useStylus(): UseStylusReturn {
       if (finished.length > 1) {
         setStrokes((prev) => {
           const next = [...prev, finished];
+          strokesRef.current = next;
           redrawCanvas(next, []);
           return next;
         });
       }
 
+      isDrawingRef.current = false;
       setIsDrawing(false);
       setCurrentPressure(0);
     },
-    [isDrawing, redrawCanvas],
+    [redrawCanvas],
   );
 
   // ------ Attach / detach events ------
@@ -195,6 +203,7 @@ export function useStylus(): UseStylusReturn {
       const last = prev[prev.length - 1];
       setRedoStack((r) => [...r, last]);
       const next = prev.slice(0, -1);
+      strokesRef.current = next;
       redrawCanvas(next, []);
       return next;
     });
@@ -206,6 +215,7 @@ export function useStylus(): UseStylusReturn {
       const last = prevRedo[prevRedo.length - 1];
       setStrokes((prevStrokes) => {
         const next = [...prevStrokes, last];
+        strokesRef.current = next;
         redrawCanvas(next, []);
         return next;
       });
@@ -216,6 +226,7 @@ export function useStylus(): UseStylusReturn {
   const clear = useCallback(() => {
     setStrokes([]);
     setRedoStack([]);
+    strokesRef.current = [];
     activeStrokeRef.current = [];
     redrawCanvas([], []);
   }, [redrawCanvas]);

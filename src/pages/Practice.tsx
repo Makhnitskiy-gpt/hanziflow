@@ -77,9 +77,9 @@ export default function Practice() {
           <button
             key={m.key}
             onClick={() => setMode(m.key)}
-            className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm transition-colors ${
+            className={`flex items-center gap-1.5 px-4 py-2 min-h-[44px] rounded-lg text-sm transition-colors focus-visible:ring-2 focus-visible:ring-cinnabar ${
               mode === m.key
-                ? 'bg-cinnabar text-rice'
+                ? 'bg-cinnabar text-white'
                 : 'bg-ink-elevated text-rice-muted hover:text-rice border border-ink-border'
             }`}
           >

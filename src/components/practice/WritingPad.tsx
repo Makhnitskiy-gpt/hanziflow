@@ -264,6 +264,7 @@ export function WritingPad({ itemId, itemType }: WritingPadProps) {
       <div className="flex-1 mizige rounded-lg overflow-hidden">
         <canvas
           ref={canvasRef}
+          aria-label="Холст для рисования"
           className="w-full h-full cursor-crosshair"
           onPointerDown={handlePointerDown}
           onPointerMove={handlePointerMove}

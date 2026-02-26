@@ -89,7 +89,8 @@ export function QuizCard({ card, onGrade }: QuizCardProps) {
       {!revealed ? (
         <button
           onClick={() => setRevealed(true)}
-          className="w-full py-4 rounded-xl bg-cinnabar text-white text-lg font-medium hover:bg-cinnabar-hover transition-colors shadow-md shadow-cinnabar/15"
+          aria-label="Показать ответ (Пробел)"
+          className="w-full py-4 rounded-xl bg-cinnabar text-white text-lg font-medium hover:bg-cinnabar-hover transition-colors shadow-md shadow-cinnabar/15 focus-visible:ring-2 focus-visible:ring-gold"
         >
           Показать ответ
           <span className="text-sm opacity-60 ml-2">[Пробел]</span>

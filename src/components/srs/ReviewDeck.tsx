@@ -138,7 +138,14 @@ export function ReviewDeck({ onSessionComplete, onCardGraded, onCurrentCharChang
       </div>
 
       {/* Progress bar */}
-      <div className="h-1 bg-ink-elevated rounded-full overflow-hidden">
+      <div
+        className="h-1 bg-ink-elevated rounded-full overflow-hidden"
+        role="progressbar"
+        aria-valuenow={reviewed}
+        aria-valuemin={0}
+        aria-valuemax={total}
+        aria-label={`Прогресс повторения: ${reviewed} из ${total}`}
+      >
         <div
           className="h-full bg-cinnabar rounded-full transition-[width] duration-300"
           style={{ width: `${(reviewed / total) * 100}%` }}

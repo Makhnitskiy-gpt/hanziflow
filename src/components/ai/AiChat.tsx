@@ -79,7 +79,7 @@ export function AiChat({ contextChar, onClose }: AiChatProps) {
   };
 
   return (
-    <div className="absolute right-0 top-0 bottom-0 w-[360px] z-50 flex flex-col bg-ink-surface border-l border-ink-border shadow-2xl">
+    <div role="complementary" aria-label="AI-ассистент" className="absolute right-0 top-0 bottom-0 w-[360px] z-50 flex flex-col bg-ink-surface border-l border-ink-border shadow-2xl">
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-ink-border">
         <div className="flex items-center gap-2">
@@ -92,7 +92,8 @@ export function AiChat({ contextChar, onClose }: AiChatProps) {
         </div>
         <button
           onClick={onClose}
-          className="text-rice-muted hover:text-rice transition-colors p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center"
+          aria-label="Закрыть чат"
+          className="text-rice-muted hover:text-rice transition-colors p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg focus-visible:ring-2 focus-visible:ring-cinnabar"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <line x1="18" y1="6" x2="6" y2="18" />

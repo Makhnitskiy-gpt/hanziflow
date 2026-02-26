@@ -1,5 +1,3 @@
-import { useLiveQuery } from 'dexie-react-hooks';
-import { db } from '@/db';
 import { ProgressRing } from '@/components/shared/ProgressRing';
 
 interface ClusterChar {
@@ -15,25 +13,11 @@ interface MeaningCluster {
 
 interface MeaningClustersProps {
   clusters: MeaningCluster[];
+  learnedChars?: Set<string>;
   onCharSelect: (char: string) => void;
 }
 
-export function MeaningClusters({ clusters, onCharSelect }: MeaningClustersProps) {
-  // Get learned characters
-  const learnedChars = useLiveQuery(async () => {
-    const cards = await db.cards.where('itemType').equals('character').toArray();
-    const known = new Set<string>();
-    const charData = await db.characters.toArray();
-    const charMap = new Map(charData.map((c) => [c.id, c.char]));
-    for (const card of cards) {
-      if (card.state >= 1) {
-        const ch = charMap.get(card.itemId);
-        if (ch) known.add(ch);
-      }
-    }
-    return known;
-  }, []);
-
+export function MeaningClusters({ clusters, learnedChars, onCharSelect }: MeaningClustersProps) {
   const known = learnedChars ?? new Set<string>();
 
   return (
@@ -73,7 +57,7 @@ export function MeaningClusters({ clusters, onCharSelect }: MeaningClustersProps
                   <button
                     key={c.char}
                     onClick={() => onCharSelect(c.char)}
-                    className={`inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-md border transition-all ${
+                    className={`inline-flex items-center gap-1.5 px-2.5 py-1.5 min-h-[44px] rounded-md border transition-all focus-visible:ring-2 focus-visible:ring-cinnabar ${
                       isKnown
                         ? 'border-ink-border bg-ink-elevated hover:border-jade'
                         : 'border-ink-border bg-ink text-rice-dim hover:text-rice-muted'

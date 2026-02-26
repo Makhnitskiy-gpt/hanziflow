@@ -24,7 +24,7 @@ const navItems: NavItem[] = [
 
 export function Sidebar({ onAiChatToggle, darkMode, onToggleDarkMode }: SidebarProps) {
   return (
-    <nav className="flex h-full w-[72px] flex-col items-center bg-ink-surface border-r border-ink-border">
+    <nav aria-label="Основная навигация" className="flex h-full w-[72px] flex-col items-center bg-ink-surface border-r border-ink-border">
       {/* Logo area */}
       <div className="flex items-center justify-center h-14 w-full">
         <span className="font-hanzi text-cinnabar text-lg font-bold">漢</span>
@@ -37,8 +37,9 @@ export function Sidebar({ onAiChatToggle, darkMode, onToggleDarkMode }: SidebarP
             key={item.to}
             to={item.to}
             end={item.to === '/'}
+            aria-label={item.label}
             className={({ isActive }) =>
-              `relative flex flex-col items-center justify-center w-full h-[56px] transition-colors group ${
+              `relative flex flex-col items-center justify-center w-full h-[56px] transition-colors group focus-visible:ring-2 focus-visible:ring-cinnabar focus-visible:ring-inset ${
                 isActive
                   ? 'bg-ink-elevated text-rice'
                   : 'text-rice-muted hover:text-rice hover:bg-ink-elevated/50'
@@ -48,9 +49,9 @@ export function Sidebar({ onAiChatToggle, darkMode, onToggleDarkMode }: SidebarP
             {({ isActive }) => (
               <>
                 {isActive && (
-                  <span className="absolute left-0 top-2 bottom-2 w-[3px] rounded-r-full bg-cinnabar" />
+                  <span className="absolute left-0 top-2 bottom-2 w-[3px] rounded-r-full bg-cinnabar" aria-hidden="true" />
                 )}
-                <span className="font-hanzi text-xl leading-none">
+                <span className="font-hanzi text-xl leading-none" aria-hidden="true">
                   {item.icon}
                 </span>
                 <span className="text-[10px] mt-1 leading-tight">
@@ -67,7 +68,8 @@ export function Sidebar({ onAiChatToggle, darkMode, onToggleDarkMode }: SidebarP
         {/* AI Chat button */}
         <button
           onClick={onAiChatToggle}
-          className="flex items-center justify-center w-11 h-11 rounded-xl text-rice-muted hover:text-cinnabar hover:bg-ink-elevated transition-colors"
+          aria-label="AI-репетитор"
+          className="flex items-center justify-center w-11 h-11 rounded-xl text-rice-muted hover:text-cinnabar hover:bg-ink-elevated transition-colors focus-visible:ring-2 focus-visible:ring-cinnabar"
           title="AI-репетитор"
         >
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -78,7 +80,8 @@ export function Sidebar({ onAiChatToggle, darkMode, onToggleDarkMode }: SidebarP
         {/* Theme toggle */}
         <button
           onClick={onToggleDarkMode}
-          className="flex items-center justify-center w-11 h-11 rounded-xl text-rice-muted hover:text-gold hover:bg-ink-elevated transition-colors"
+          aria-label={darkMode ? 'Светлая тема' : 'Тёмная тема'}
+          className="flex items-center justify-center w-11 h-11 rounded-xl text-rice-muted hover:text-gold hover:bg-ink-elevated transition-colors focus-visible:ring-2 focus-visible:ring-cinnabar"
           title={darkMode ? 'Светлая тема' : 'Тёмная тема'}
         >
           {darkMode ? (

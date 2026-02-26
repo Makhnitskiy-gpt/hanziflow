@@ -54,7 +54,7 @@ export function RadicalGrid({ onSelect, selectedId }: RadicalGridProps) {
           <span className="text-sm text-rice-muted mr-1">Черты:</span>
           <button
             onClick={() => setStrokeFilter(null)}
-            className={`px-3 py-1.5 text-sm rounded-lg transition-colors ${
+            className={`px-3 py-1.5 min-h-[44px] text-sm rounded-lg transition-colors focus-visible:ring-2 focus-visible:ring-cinnabar ${
               strokeFilter === null
                 ? 'bg-cinnabar text-white'
                 : 'text-rice-muted hover:text-rice bg-ink-elevated border border-ink-border'
@@ -66,7 +66,7 @@ export function RadicalGrid({ onSelect, selectedId }: RadicalGridProps) {
             <button
               key={g.label}
               onClick={() => setStrokeFilter(strokeFilter?.label === g.label ? null : g)}
-              className={`px-3 py-1.5 text-sm rounded-lg transition-colors ${
+              className={`px-3 py-1.5 min-h-[44px] text-sm rounded-lg transition-colors focus-visible:ring-2 focus-visible:ring-cinnabar ${
                 strokeFilter?.min === g.min
                   ? 'bg-cinnabar text-white'
                   : 'text-rice-muted hover:text-rice bg-ink-elevated border border-ink-border'
@@ -83,7 +83,7 @@ export function RadicalGrid({ onSelect, selectedId }: RadicalGridProps) {
             <button
               key={s}
               onClick={() => setStatusFilter(s)}
-              className={`px-3 py-1.5 text-sm rounded-lg transition-colors ${
+              className={`px-3 py-1.5 min-h-[44px] text-sm rounded-lg transition-colors focus-visible:ring-2 focus-visible:ring-cinnabar ${
                 statusFilter === s
                   ? 'bg-cinnabar text-white'
                   : 'text-rice-muted hover:text-rice bg-ink-elevated border border-ink-border'

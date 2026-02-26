@@ -1,6 +1,3 @@
-import { useLiveQuery } from 'dexie-react-hooks';
-import { db } from '@/db';
-
 interface Derivative {
   char: string;
   meaning_ru: string;
@@ -12,6 +9,7 @@ interface FamilyTreeProps {
   rootPinyin?: string;
   rootMeaning?: string;
   derivatives: Derivative[];
+  learnedChars?: Set<string>;
   onCharSelect: (char: string) => void;
 }
 
@@ -20,23 +18,9 @@ export function FamilyTree({
   rootPinyin,
   rootMeaning,
   derivatives,
+  learnedChars,
   onCharSelect,
 }: FamilyTreeProps) {
-  // Get learned characters
-  const learnedChars = useLiveQuery(async () => {
-    const cards = await db.cards.where('itemType').equals('character').toArray();
-    const known = new Set<string>();
-    const charData = await db.characters.toArray();
-    const charMap = new Map(charData.map((c) => [c.id, c.char]));
-    for (const card of cards) {
-      if (card.state >= 1) {
-        const ch = charMap.get(card.itemId);
-        if (ch) known.add(ch);
-      }
-    }
-    return known;
-  }, []);
-
   const known = learnedChars ?? new Set<string>();
 
   return (
@@ -56,10 +40,10 @@ export function FamilyTree({
       </div>
 
       {/* Connecting line */}
-      <div className="w-px h-8 bg-ink-border" />
+      <div className="w-px h-8 bg-ink-border" aria-hidden="true" />
 
       {/* Branch connector */}
-      <div className="relative w-full max-w-lg">
+      <div className="relative w-full max-w-lg" aria-hidden="true">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-4/5 h-px bg-ink-border" />
       </div>
 
@@ -71,7 +55,7 @@ export function FamilyTree({
             <button
               key={d.char}
               onClick={() => onCharSelect(d.char)}
-              className={`flex flex-col items-center p-3 rounded-lg border transition-all ${
+              className={`flex flex-col items-center p-3 rounded-lg border transition-all focus-visible:ring-2 focus-visible:ring-cinnabar ${
                 isKnown
                   ? 'rice-paper border-ink-border hover:border-jade'
                   : 'bg-ink-surface border-ink-border fog hover:filter-none hover:opacity-100'

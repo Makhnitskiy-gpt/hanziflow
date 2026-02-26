@@ -19,6 +19,16 @@ export function StrokeCanvas({
   const containerRef = useRef<HTMLDivElement>(null);
   const writerRef = useRef<HanziWriter | null>(null);
 
+  // Store callbacks in refs to avoid reinitializing HanziWriter on every parent render
+  const onCompleteRef = useRef(onComplete);
+  const onCorrectStrokeRef = useRef(onCorrectStroke);
+  const onMistakeRef = useRef(onMistake);
+
+  // Keep refs in sync
+  useEffect(() => { onCompleteRef.current = onComplete; }, [onComplete]);
+  useEffect(() => { onCorrectStrokeRef.current = onCorrectStroke; }, [onCorrectStroke]);
+  useEffect(() => { onMistakeRef.current = onMistake; }, [onMistake]);
+
   const initWriter = useCallback(() => {
     if (!containerRef.current) return;
 
@@ -61,21 +71,21 @@ export function StrokeCanvas({
     // First, animate the stroke order
     writer.animateCharacter({
       onComplete: () => {
-        // Then start the quiz
+        // Then start the quiz — read callbacks from refs (always current)
         writer.quiz({
           onCorrectStroke: () => {
-            onCorrectStroke?.();
+            onCorrectStrokeRef.current?.();
           },
           onMistake: () => {
-            onMistake?.();
+            onMistakeRef.current?.();
           },
           onComplete: () => {
-            onComplete?.();
+            onCompleteRef.current?.();
           },
         });
       },
     });
-  }, [char, size, onComplete, onCorrectStroke, onMistake]);
+  }, [char, size]); // Only re-init when char or size changes
 
   useEffect(() => {
     initWriter();
@@ -107,13 +117,13 @@ export function StrokeCanvas({
           onClick={() => {
             writerRef.current?.animateCharacter();
           }}
-          className="px-4 py-2.5 text-sm text-rice-muted bg-ink-elevated rounded-lg border border-ink-border hover:text-rice transition-colors min-h-[44px]"
+          className="px-4 py-2.5 text-sm text-rice-muted bg-ink-elevated rounded-lg border border-ink-border hover:text-rice transition-colors min-h-[44px] focus-visible:ring-2 focus-visible:ring-cinnabar"
         >
           Показать порядок
         </button>
         <button
           onClick={initWriter}
-          className="px-4 py-2.5 text-sm text-rice-muted bg-ink-elevated rounded-lg border border-ink-border hover:text-rice transition-colors min-h-[44px]"
+          className="px-4 py-2.5 text-sm text-rice-muted bg-ink-elevated rounded-lg border border-ink-border hover:text-rice transition-colors min-h-[44px] focus-visible:ring-2 focus-visible:ring-cinnabar"
         >
           Заново
         </button>

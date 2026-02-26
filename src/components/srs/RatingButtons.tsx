@@ -87,12 +87,13 @@ export function RatingButtons({ card, onRate }: RatingButtonsProps) {
   ];
 
   return (
-    <div className="grid grid-cols-4 gap-3">
+    <div className="grid grid-cols-4 gap-3" role="group" aria-label="Оценка карточки">
       {options.map((opt) => (
         <button
           key={opt.rating}
           onClick={() => onRate(opt.rating)}
-          className={`flex flex-col items-center justify-center min-h-[56px] py-3 px-3 rounded-xl transition-all ${opt.color} ${opt.bgColor}`}
+          aria-label={`${opt.label} — ${opt.sublabel}`}
+          className={`flex flex-col items-center justify-center min-h-[56px] py-3 px-3 rounded-xl transition-all focus-visible:ring-2 focus-visible:ring-gold ${opt.color} ${opt.bgColor}`}
         >
           <span className="text-base font-medium">{opt.label}</span>
           <span className="text-xs opacity-60 mt-1">{opt.sublabel}</span>
