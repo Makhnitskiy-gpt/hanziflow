@@ -41,7 +41,7 @@ export default function Characters() {
   return (
     <div className="flex flex-col gap-6">
       <div className="flex items-center justify-between">
-        <h1 className="text-xl text-rice font-medium">Иероглифы</h1>
+        <h1 className="text-2xl text-rice font-medium">Иероглифы</h1>
 
         {/* HSK level filter */}
         <div className="flex items-center gap-1">
@@ -71,7 +71,7 @@ export default function Characters() {
       )}
 
       {/* Grid */}
-      <div className="grid grid-cols-[repeat(auto-fill,96px)] gap-2">
+      <div className="grid grid-cols-[repeat(auto-fill,104px)] gap-3">
         {characters?.map((character) => (
           <CharacterCard
             key={character.id}

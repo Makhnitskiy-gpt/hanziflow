@@ -18,22 +18,15 @@ export function RadicalCard({ radical, onClick, isSelected }: RadicalCardProps) 
   return (
     <button
       onClick={() => onClick(radical)}
-      className={`rice-paper relative flex flex-col items-center justify-center w-20 h-20 rounded-md transition-all ${
+      className={`rice-paper relative flex flex-col items-center justify-center w-[88px] h-[88px] rounded-xl transition-all ${
         isSelected
           ? 'ring-2 ring-cinnabar shadow-lg shadow-cinnabar/10'
-          : 'hover:bg-ink-elevated border border-ink-border'
+          : 'border border-ink-border hover:border-cinnabar/30 hover:shadow-md'
       }`}
     >
-      {/* Status indicator */}
-      <span
-        className={`absolute top-1.5 right-1.5 w-2 h-2 rounded-full ${statusColors[status]}`}
-      />
-
-      {/* Character */}
+      <span className={`absolute top-2 right-2 w-2.5 h-2.5 rounded-full ${statusColors[status]}`} />
       <span className="hanzi-sm">{radical.char}</span>
-
-      {/* Meaning */}
-      <span className="text-[10px] text-rice-muted mt-1 leading-tight truncate max-w-[72px] text-center">
+      <span className="text-xs text-rice-muted mt-1.5 leading-tight truncate max-w-[76px] text-center">
         {radical.meaning_ru}
       </span>
     </button>

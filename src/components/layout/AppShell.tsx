@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import { Sidebar } from './Sidebar';
 import { CanvasPanel } from './CanvasPanel';
@@ -12,13 +12,23 @@ export function AppShell() {
   const [sessionPhase, setSessionPhase] = useState('');
   const [sessionTimeLeft, setSessionTimeLeft] = useState(0);
   const [sessionProgress, setSessionProgress] = useState({ done: 0, total: 0 });
+  const [darkMode, setDarkMode] = useState(false);
+
+  // Apply theme to document
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+  }, [darkMode]);
 
   return (
     <div className="flex h-dvh w-dvw overflow-hidden bg-ink">
-      {/* Left sidebar — 64px fixed */}
-      <Sidebar onAiChatToggle={() => setAiOpen((v) => !v)} />
+      {/* Left sidebar */}
+      <Sidebar
+        onAiChatToggle={() => setAiOpen((v) => !v)}
+        darkMode={darkMode}
+        onToggleDarkMode={() => setDarkMode((v) => !v)}
+      />
 
-      {/* Main content — flexible */}
+      {/* Main content */}
       <div className="flex flex-1 flex-col overflow-hidden">
         {sessionActive && (
           <SessionTimer
@@ -28,7 +38,7 @@ export function AppShell() {
             cardsTotal={sessionProgress.total}
           />
         )}
-        <main className="flex-1 overflow-y-auto px-6 py-4">
+        <main className="flex-1 overflow-y-auto px-8 py-6">
           <Outlet
             context={{
               setCurrentChar,
@@ -42,7 +52,7 @@ export function AppShell() {
         </main>
       </div>
 
-      {/* Right canvas panel — 360px fixed */}
+      {/* Right canvas panel */}
       <CanvasPanel currentChar={currentChar} />
 
       {/* AI Chat overlay */}

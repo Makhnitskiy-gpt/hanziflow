@@ -33,3 +33,4 @@ dev-dist/
 
 # Build artifacts
 *.tsbuildinfo
+.vercel

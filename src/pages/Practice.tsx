@@ -65,7 +65,7 @@ export default function Practice() {
 
   return (
     <div className="flex flex-col gap-6">
-      <h1 className="text-xl text-rice font-medium">Практика написания</h1>
+      <h1 className="text-2xl text-rice font-medium">Практика написания</h1>
 
       {/* Mode toggle */}
       <div className="flex gap-2">
@@ -111,11 +111,11 @@ export default function Practice() {
           >
             <span className="font-hanzi text-2xl text-hanzi">{ch.char}</span>
             <PinyinDisplay pinyin={ch.pinyin} tone={ch.tone} size="sm" />
-            <span className="text-[9px] text-rice-dim mt-0.5 truncate max-w-[72px]">
+            <span className="text-xs text-rice-dim mt-0.5 truncate max-w-[72px]">
               {ch.meaning_ru}
             </span>
             {mode === 'weak' && 'lapses' in ch && (
-              <span className="text-[8px] text-cinnabar mt-0.5">
+              <span className="text-[10px] text-cinnabar mt-0.5">
                 ошибок: {(ch as { lapses: number }).lapses}
               </span>
             )}

@@ -88,7 +88,7 @@ export default function Progress() {
 
   return (
     <div className="flex flex-col gap-6 max-w-2xl">
-      <h1 className="text-xl text-rice font-medium">Прогресс</h1>
+      <h1 className="text-2xl text-rice font-medium">Прогресс</h1>
 
       {/* Overall */}
       <div className="rice-paper rounded-lg p-6 border border-ink-border flex items-center gap-6">

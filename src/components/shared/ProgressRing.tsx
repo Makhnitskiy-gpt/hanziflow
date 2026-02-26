@@ -39,12 +39,12 @@ export function ProgressRing({ progress, size = 40, label }: ProgressRingProps) 
       </svg>
       {/* Center label */}
       {label && (
-        <span className="absolute text-[10px] text-rice-muted font-medium">
+        <span className="absolute text-xs text-rice-muted font-medium">
           {label}
         </span>
       )}
       {!label && size >= 40 && (
-        <span className="absolute text-[10px] text-rice-muted font-mono">
+        <span className="absolute text-xs text-rice-muted font-mono">
           {Math.round(progress * 100)}
         </span>
       )}

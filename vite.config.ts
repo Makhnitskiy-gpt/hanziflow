@@ -15,8 +15,8 @@ export default defineConfig({
         name: 'HanziFlow — Изучение китайского',
         short_name: 'HanziFlow',
         description: 'Персональное приложение для изучения китайского языка',
-        theme_color: '#0d0d0d',
-        background_color: '#0d0d0d',
+        theme_color: '#faf7f2',
+        background_color: '#faf7f2',
         display: 'standalone',
         orientation: 'landscape',
         icons: [

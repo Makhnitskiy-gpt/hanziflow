@@ -80,7 +80,7 @@ export function ExplainerCard({ explainerKey, title, children }: ExplainerCardPr
           {!isSeen && (
             <button
               onClick={markSeen}
-              className="mt-3 px-3 py-1.5 text-xs rounded-md bg-jade text-rice hover:bg-jade-dim transition-colors"
+              className="mt-4 px-5 py-2.5 text-sm rounded-xl bg-jade text-white font-medium hover:bg-jade-dim transition-colors"
             >
               Понятно
             </button>

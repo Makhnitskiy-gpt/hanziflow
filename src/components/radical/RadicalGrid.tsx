@@ -11,16 +11,22 @@ interface RadicalGridProps {
 
 type StatusFilter = 'all' | ItemStatus;
 
-const strokeGroups = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
+const strokeGroups = [
+  { label: '1-3', min: 1, max: 3 },
+  { label: '4-6', min: 4, max: 6 },
+  { label: '7-9', min: 7, max: 9 },
+  { label: '10-12', min: 10, max: 12 },
+  { label: '13+', min: 13, max: 99 },
+];
 
 export function RadicalGrid({ onSelect, selectedId }: RadicalGridProps) {
-  const [strokeFilter, setStrokeFilter] = useState<number | null>(null);
+  const [strokeFilter, setStrokeFilter] = useState<{ label: string; min: number; max: number } | null>(null);
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all');
 
   const radicals = useLiveQuery(async () => {
     const allItems = await db.radicals.toArray();
     const items = strokeFilter !== null
-      ? allItems.filter((r) => r.strokes === strokeFilter)
+      ? allItems.filter((r) => r.strokes >= strokeFilter.min && r.strokes <= strokeFilter.max)
       : allItems;
 
     // Enrich with SRS card status
@@ -44,44 +50,43 @@ export function RadicalGrid({ onSelect, selectedId }: RadicalGridProps) {
       {/* Filters */}
       <div className="flex flex-wrap items-center gap-2">
         {/* Stroke count filter */}
-        <div className="flex items-center gap-1">
-          <span className="text-xs text-rice-muted mr-1">Черты:</span>
+        <div className="flex items-center gap-1.5">
+          <span className="text-sm text-rice-muted mr-1">Черты:</span>
           <button
             onClick={() => setStrokeFilter(null)}
-            className={`px-2 py-0.5 text-xs rounded transition-colors ${
+            className={`px-3 py-1.5 text-sm rounded-lg transition-colors ${
               strokeFilter === null
-                ? 'bg-cinnabar text-rice'
-                : 'text-rice-muted hover:text-rice bg-ink-elevated'
+                ? 'bg-cinnabar text-white'
+                : 'text-rice-muted hover:text-rice bg-ink-elevated border border-ink-border'
             }`}
           >
             Все
           </button>
-          {strokeGroups.map((n) => (
+          {strokeGroups.map((g) => (
             <button
-              key={n}
-              onClick={() => setStrokeFilter(n)}
-              className={`px-1.5 py-0.5 text-xs rounded transition-colors ${
-                strokeFilter === n
-                  ? 'bg-cinnabar text-rice'
-                  : 'text-rice-muted hover:text-rice bg-ink-elevated'
+              key={g.label}
+              onClick={() => setStrokeFilter(strokeFilter?.label === g.label ? null : g)}
+              className={`px-3 py-1.5 text-sm rounded-lg transition-colors ${
+                strokeFilter?.min === g.min
+                  ? 'bg-cinnabar text-white'
+                  : 'text-rice-muted hover:text-rice bg-ink-elevated border border-ink-border'
               }`}
             >
-              {n}
+              {g.label}
             </button>
           ))}
         </div>
 
         {/* Status filter */}
-        <div className="flex items-center gap-1 ml-auto">
-          <span className="text-xs text-rice-muted mr-1">Статус:</span>
+        <div className="flex items-center gap-1.5 ml-auto">
           {(['all', 'new', 'learning', 'known'] as const).map((s) => (
             <button
               key={s}
               onClick={() => setStatusFilter(s)}
-              className={`px-2 py-0.5 text-xs rounded transition-colors ${
+              className={`px-3 py-1.5 text-sm rounded-lg transition-colors ${
                 statusFilter === s
-                  ? 'bg-cinnabar text-rice'
-                  : 'text-rice-muted hover:text-rice bg-ink-elevated'
+                  ? 'bg-cinnabar text-white'
+                  : 'text-rice-muted hover:text-rice bg-ink-elevated border border-ink-border'
               }`}
             >
               {{ all: 'Все', new: 'Новые', learning: 'Учу', known: 'Знаю' }[s]}
@@ -91,7 +96,7 @@ export function RadicalGrid({ onSelect, selectedId }: RadicalGridProps) {
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-[repeat(auto-fill,80px)] gap-2">
+      <div className="grid grid-cols-[repeat(auto-fill,88px)] gap-3">
         {filtered.map((radical) => (
           <RadicalCard
             key={radical.id}

@@ -113,7 +113,7 @@ export default function Review() {
 
   return (
     <div className="flex flex-col gap-6 max-w-2xl">
-      <h1 className="text-xl text-rice font-medium">Повторение</h1>
+      <h1 className="text-2xl text-rice font-medium">Повторение</h1>
 
       <ExplainerCard explainerKey="srs" title="Как работает повторение?">
         <p className="text-sm text-rice-muted">

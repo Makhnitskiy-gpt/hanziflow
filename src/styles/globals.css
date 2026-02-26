@@ -1,9 +1,40 @@
 @import "tailwindcss";
 
-/* === Ink Culture Theme === */
+/* === HanziFlow Theme System === */
 
 @theme {
-  /* Traditional Chinese colors */
+  /* === Light theme (default) — inspired by rice paper & calligraphy === */
+  --color-ink: #faf7f2;
+  --color-ink-surface: #ffffff;
+  --color-ink-elevated: #f0ebe3;
+  --color-ink-border: #e0d8cc;
+  --color-rice: #1a1714;
+  --color-rice-muted: #6b6358;
+  --color-rice-dim: #b0a899;
+  --color-cinnabar: #c53d43;
+  --color-cinnabar-hover: #b0353a;
+  --color-gold: #b8942e;
+  --color-gold-dim: #d4b96a;
+  --color-jade: #4a7d62;
+  --color-jade-dim: #8fb8a0;
+  --color-hanzi: #1a1714;
+
+  /* Fonts */
+  --font-sans: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+  --font-serif: 'Noto Serif SC', 'Songti SC', serif;
+  --font-hanzi: 'Noto Serif SC', 'Songti SC', serif;
+
+  /* Chinese-inspired design tokens */
+  --color-envelope-bg: #c53d43;
+  --color-envelope-gold: #d4a843;
+  --color-envelope-pattern: rgba(212, 168, 67, 0.15);
+  --color-cloud: #e8ddd0;
+  --color-seal: #c53d43;
+}
+
+/* === Dark theme (toggle) === */
+
+[data-theme="dark"] {
   --color-ink: #0d0d0d;
   --color-ink-surface: #1a1917;
   --color-ink-elevated: #242220;
@@ -18,11 +49,11 @@
   --color-jade: #5b8c72;
   --color-jade-dim: #3d5e4d;
   --color-hanzi: #f5f0e8;
-
-  /* Fonts */
-  --font-sans: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
-  --font-serif: 'Noto Serif SC', 'Songti SC', serif;
-  --font-hanzi: 'Noto Serif SC', 'Songti SC', serif;
+  --color-envelope-bg: #9b2c31;
+  --color-envelope-gold: #c9a96e;
+  --color-envelope-pattern: rgba(201, 169, 110, 0.1);
+  --color-cloud: #242220;
+  --color-seal: #c53d43;
 }
 
 /* === Base styles === */
@@ -33,6 +64,8 @@ body {
   font-family: var(--font-sans);
   overflow: hidden;
   height: 100dvh;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 #root {
@@ -48,21 +81,21 @@ body {
 
 .hanzi-lg {
   font-family: var(--font-hanzi);
-  font-size: 96px;
+  font-size: 112px;
   line-height: 1;
   color: var(--color-hanzi);
 }
 
 .hanzi-md {
   font-family: var(--font-hanzi);
-  font-size: 48px;
+  font-size: 56px;
   line-height: 1;
   color: var(--color-hanzi);
 }
 
 .hanzi-sm {
   font-family: var(--font-hanzi);
-  font-size: 32px;
+  font-size: 36px;
   line-height: 1;
   color: var(--color-hanzi);
 }
@@ -72,14 +105,108 @@ body {
 .tone-1 { color: var(--color-cinnabar); }
 .tone-2 { color: var(--color-gold); }
 .tone-3 { color: var(--color-jade); }
-.tone-4 { color: #7b8fc9; }
+.tone-4 { color: #5b7baf; }
 .tone-5 { color: var(--color-rice-muted); }
 
-/* === Rice paper texture === */
+/* === Rice paper card === */
 
 .rice-paper {
   background-color: var(--color-ink-surface);
-  background-image: url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3h1v1H1V3zm2-2h1v1H3V1z' fill='%23ffffff' fill-opacity='0.02'/%3E%3C/svg%3E");
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+/* === Chinese Red Envelope Card (红包 hóngbāo) === */
+
+.hongbao {
+  background: linear-gradient(135deg, var(--color-envelope-bg) 0%, #d4535a 100%);
+  color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(197, 61, 67, 0.2);
+}
+
+.hongbao::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle, var(--color-envelope-pattern) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.hongbao::after {
+  content: '福';
+  position: absolute;
+  bottom: -8px;
+  right: 16px;
+  font-family: var(--font-hanzi);
+  font-size: 96px;
+  color: rgba(255, 255, 255, 0.06);
+  line-height: 1;
+}
+
+/* === Gold Seal / Stamp badge (印章 yìnzhāng) === */
+
+.ink-stamp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 2px solid var(--color-seal);
+  border-radius: 3px;
+  color: var(--color-seal);
+  font-family: var(--font-hanzi);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transform: rotate(-3deg);
+  box-shadow: 0 0 0 1px rgba(197, 61, 67, 0.1);
+}
+
+.ink-stamp-gold {
+  border-color: var(--color-envelope-gold);
+  color: var(--color-envelope-gold);
+  box-shadow: 0 0 0 1px rgba(212, 168, 67, 0.15);
+}
+
+/* === Cloud pattern (祥云 xiángyún) — auspicious clouds === */
+
+.cloud-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='40' viewBox='0 0 80 40'%3E%3Cpath d='M0 30 Q10 20 20 25 Q30 10 40 20 Q50 10 60 25 Q70 20 80 30' fill='none' stroke='%23e0d8cc' stroke-width='1' opacity='0.3'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+[data-theme="dark"] .cloud-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='40' viewBox='0 0 80 40'%3E%3Cpath d='M0 30 Q10 20 20 25 Q30 10 40 20 Q50 10 60 25 Q70 20 80 30' fill='none' stroke='%232a2520' stroke-width='1' opacity='0.4'/%3E%3C/svg%3E");
+}
+
+/* === Wave border (水波 shuǐbō) === */
+
+.wave-border-top {
+  position: relative;
+}
+
+.wave-border-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-cinnabar) 20%,
+    var(--color-envelope-gold) 50%,
+    var(--color-cinnabar) 80%,
+    transparent
+  );
+  border-radius: 2px;
 }
 
 /* === Mi-zi-ge grid (calligraphy practice) === */
@@ -87,6 +214,8 @@ body {
 .mizige {
   position: relative;
   background-color: var(--color-ink-surface);
+  border: 2px solid var(--color-ink-border);
+  border-radius: 12px;
 }
 
 .mizige::before {
@@ -101,23 +230,7 @@ body {
   background-size: 100% 100%;
   background-position: center;
   pointer-events: none;
-  opacity: 0.5;
-}
-
-/* === Ink stamp badge === */
-
-.ink-stamp {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  border: 2px solid var(--color-cinnabar);
-  border-radius: 2px;
-  color: var(--color-cinnabar);
-  font-family: var(--font-hanzi);
-  font-size: 0.75rem;
-  transform: rotate(-3deg);
+  opacity: 0.4;
 }
 
 /* === Brush stroke divider === */
@@ -127,13 +240,15 @@ body {
   background: linear-gradient(
     90deg,
     transparent,
-    var(--color-ink-border) 10%,
-    var(--color-rice-dim) 30%,
-    var(--color-rice-dim) 50%,
-    var(--color-ink-border) 70%,
-    transparent 90%
+    var(--color-ink-border) 15%,
+    var(--color-cinnabar) 35%,
+    var(--color-envelope-gold) 50%,
+    var(--color-cinnabar) 65%,
+    var(--color-ink-border) 85%,
+    transparent
   );
   border-radius: 2px;
+  opacity: 0.6;
 }
 
 /* === Ink spread animation === */
@@ -153,17 +268,34 @@ body {
   animation: ink-spread 0.6s ease-out forwards;
 }
 
+/* === Gentle fade-in animation === */
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fade-in-up 0.3s ease-out;
+}
+
 /* === Fog of war (unlearned characters) === */
 
 .fog {
   filter: blur(2px);
-  opacity: 0.3;
+  opacity: 0.25;
   transition: all 0.3s ease;
 }
 
 .fog:hover {
   filter: blur(1px);
-  opacity: 0.5;
+  opacity: 0.45;
 }
 
 /* === Scrollbar styling === */
@@ -173,7 +305,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-ink);
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -189,4 +321,40 @@ body {
 
 canvas {
   touch-action: none;
+}
+
+/* === Achievement card with lantern glow === */
+
+.lantern-glow {
+  box-shadow: 0 0 30px rgba(197, 61, 67, 0.15), 0 0 60px rgba(197, 61, 67, 0.05);
+}
+
+/* === Traditional border ornament === */
+
+.ornament-corners {
+  position: relative;
+}
+
+.ornament-corners::before,
+.ornament-corners::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--color-cinnabar);
+  opacity: 0.4;
+}
+
+.ornament-corners::before {
+  top: -1px;
+  left: -1px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.ornament-corners::after {
+  bottom: -1px;
+  right: -1px;
+  border-left: none;
+  border-top: none;
 }
