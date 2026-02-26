@@ -50,22 +50,35 @@ export default function Home() {
         </p>
       </ExplainerCard>
 
-      {/* Hero — red envelope style session start */}
-      <div className="hongbao wave-border-top cursor-pointer" onClick={() => navigate('/review')}>
-        <div className="relative z-10">
-          <p className="text-white/70 text-sm mb-1">Сегодня</p>
-          <p className="text-3xl font-bold text-white">
-            {(dueCount ?? 0) > 0
-              ? `${dueCount} карточек ждут повторения`
-              : 'Готов к изучению'}
-          </p>
-          <button
-            className="mt-5 px-8 py-3 rounded-xl bg-white/20 text-white text-lg font-medium hover:bg-white/30 transition-colors backdrop-blur-sm"
-          >
-            {(dueCount ?? 0) > 0 ? 'Начать сессию' : 'Начать изучение'}
-          </button>
+      {/* Hero — adaptive based on user state */}
+      {(dueCount ?? 0) > 0 ? (
+        <div className="hongbao wave-border-top cursor-pointer" onClick={() => navigate('/review')}>
+          <div className="relative z-10">
+            <p className="text-white/70 text-sm mb-1">Сегодня</p>
+            <p className="text-3xl font-bold text-white">
+              {dueCount} карточек ждут повторения
+            </p>
+            <button className="mt-5 px-8 py-3 rounded-xl bg-white/20 text-white text-lg font-medium hover:bg-white/30 transition-colors backdrop-blur-sm">
+              Начать сессию
+            </button>
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="hongbao wave-border-top cursor-pointer" onClick={() => navigate('/radicals')}>
+          <div className="relative z-10">
+            <p className="text-white/70 text-sm mb-1">С чего начать?</p>
+            <p className="text-3xl font-bold text-white">
+              Изучите первые радикалы
+            </p>
+            <p className="text-white/70 text-sm mt-2">
+              Радикалы -- строительные блоки всех иероглифов. Начните с них.
+            </p>
+            <button className="mt-5 px-8 py-3 rounded-xl bg-white/20 text-white text-lg font-medium hover:bg-white/30 transition-colors backdrop-blur-sm">
+              Перейти к радикалам
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Stats row */}
       <div className="grid grid-cols-3 gap-5">

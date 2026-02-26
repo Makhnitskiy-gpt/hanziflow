@@ -1,8 +1,18 @@
 import { useLiveQuery } from 'dexie-react-hooks';
+import { useNavigate } from 'react-router-dom';
 import { db } from '@/db';
 import type { Radical } from '@/types';
 import { ExplainerCard } from '@/components/explainer/ExplainerCard';
 import { PinyinDisplay } from '@/components/shared/PinyinDisplay';
+
+const CATEGORY_RU: Record<string, string> = {
+  basic: 'Базовые черты',
+  human: 'Человек и тело',
+  nature: 'Природа',
+  animal: 'Животные',
+  object: 'Предметы',
+  abstract: 'Абстрактные',
+};
 
 /** Parse tone number from pinyin with diacritics */
 function parseTone(pinyin: string): number {
@@ -20,6 +30,7 @@ interface RadicalDetailProps {
 }
 
 export function RadicalDetail({ radical, onPractice, onAddToReview }: RadicalDetailProps) {
+  const navigate = useNavigate();
   // Find characters containing this radical
   const containingChars = useLiveQuery(async () => {
     const allChars = await db.characters.toArray();
@@ -90,7 +101,7 @@ export function RadicalDetail({ radical, onPractice, onAddToReview }: RadicalDet
 
             <div className="flex items-center gap-4 text-sm text-rice-muted mt-2">
               <span>Черты: <strong className="text-rice">{radical.strokes}</strong></span>
-              <span>Категория: <strong className="text-rice">{radical.category}</strong></span>
+              <span>Категория: <strong className="text-rice">{CATEGORY_RU[radical.category] ?? radical.category}</strong></span>
             </div>
 
             {/* Mnemonic */}
@@ -124,13 +135,14 @@ export function RadicalDetail({ radical, onPractice, onAddToReview }: RadicalDet
           </h3>
           <div className="flex flex-wrap gap-2">
             {containingChars.map((c) => (
-              <span
+              <button
                 key={c.id}
-                className="inline-flex items-center gap-1.5 px-2 py-1 rounded bg-ink-elevated border border-ink-border text-sm"
+                onClick={() => navigate(`/characters?char=${c.char}`)}
+                className="inline-flex items-center gap-1.5 px-2 py-1 rounded bg-ink-elevated border border-ink-border text-sm hover:border-cinnabar/30 transition-colors"
               >
                 <span className="font-hanzi text-hanzi">{c.char}</span>
                 <span className="text-rice-muted text-xs">{c.meaning_ru}</span>
-              </span>
+              </button>
             ))}
           </div>
         </div>

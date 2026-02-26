@@ -22,6 +22,8 @@ export interface Radical {
   examples: string[];
   mnemonic_ru: string;
   category: string;
+  /** Simplified/alternate form of the radical */
+  variant?: string;
   /** Populated from DB at runtime */
   status?: ItemStatus;
   /** Data-URL of user-drawn mnemonic image */

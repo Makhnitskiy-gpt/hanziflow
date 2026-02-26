@@ -1,38 +1,13 @@
 /**
  * HanziFlow — Database seeding
  *
- * Imports static JSON data (radicals, HSK1 characters),
- * creates initial SRS cards, and writes default settings.
+ * Imports static JSON data (radicals, HSK1 characters)
+ * and writes default settings. SRS cards are NOT created
+ * at seed time — the user adds items to review explicitly.
  */
 
-import { State } from 'ts-fsrs';
-import type { Radical, Character, SRSCard, AppSettings } from '@/types';
+import type { Radical, Character, AppSettings } from '@/types';
 import type { default as DBType } from '@/db';
-
-// ---------------------------------------------------------------------------
-// Helpers
-// ---------------------------------------------------------------------------
-
-function makeNewCard(
-  itemId: number,
-  itemType: 'radical' | 'character',
-  cardType: 'recognition' | 'recall',
-): SRSCard {
-  return {
-    itemId,
-    itemType,
-    cardType,
-    due: new Date(),
-    stability: 0,
-    difficulty: 0,
-    elapsed_days: 0,
-    scheduled_days: 0,
-    learning_steps: 0,
-    reps: 0,
-    lapses: 0,
-    state: State.New,
-  };
-}
 
 const DEFAULT_SETTINGS: AppSettings = {
   id: 1,
@@ -67,18 +42,6 @@ export async function seedDatabase(db: typeof DBType): Promise<void> {
   const radicals: Radical[] = radicalsModule.default;
   const characters: Character[] = hsk1Module.default;
 
-  // Build SRS cards for all radicals (recognition + recall)
-  const radicalCards: SRSCard[] = radicals.flatMap((r) => [
-    makeNewCard(r.id, 'radical', 'recognition'),
-    makeNewCard(r.id, 'radical', 'recall'),
-  ]);
-
-  // Build SRS cards for all characters (recognition + recall)
-  const characterCards: SRSCard[] = characters.flatMap((c) => [
-    makeNewCard(c.id, 'character', 'recognition'),
-    makeNewCard(c.id, 'character', 'recall'),
-  ]);
-
   // Single transaction to ensure atomicity
   await db.transaction(
     'rw',
@@ -87,14 +50,10 @@ export async function seedDatabase(db: typeof DBType): Promise<void> {
       // Clear existing data in case of partial seed
       await db.radicals.clear();
       await db.characters.clear();
-      await db.cards.clear();
 
-      // Bulk-insert content
+      // Bulk-insert content (no SRS cards — user adds them manually)
       await db.radicals.bulkAdd(radicals);
       await db.characters.bulkAdd(characters);
-
-      // Bulk-insert SRS cards
-      await db.cards.bulkAdd([...radicalCards, ...characterCards]);
 
       // Write default settings (marks seeded=true)
       await db.settings.put(DEFAULT_SETTINGS);

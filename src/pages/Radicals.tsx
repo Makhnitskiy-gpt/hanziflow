@@ -1,5 +1,7 @@
-import { useState, useCallback } from 'react';
-import { useOutletContext } from 'react-router-dom';
+import { useState, useCallback, useEffect } from 'react';
+import { useOutletContext, useSearchParams } from 'react-router-dom';
+import { useLiveQuery } from 'dexie-react-hooks';
+import { db } from '@/db';
 import type { Radical } from '@/types';
 import { RadicalGrid } from '@/components/radical/RadicalGrid';
 import { RadicalDetail } from '@/components/radical/RadicalDetail';
@@ -11,6 +13,23 @@ interface OutletCtx {
 export default function Radicals() {
   const { setCurrentChar } = useOutletContext<OutletCtx>();
   const [selected, setSelected] = useState<Radical | null>(null);
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  // Handle ?char= query param (e.g., from DecompositionView link)
+  const charParam = searchParams.get('char');
+  const allRadicals = useLiveQuery(() => db.radicals.toArray(), []);
+
+  useEffect(() => {
+    if (charParam && allRadicals) {
+      const match = allRadicals.find((r) => r.char === charParam || r.variant === charParam);
+      if (match) {
+        setSelected(match);
+        setCurrentChar(match.char);
+        // Clear query param so it doesn't stick
+        setSearchParams({}, { replace: true });
+      }
+    }
+  }, [charParam, allRadicals, setCurrentChar, setSearchParams]);
 
   const handleSelect = useCallback(
     (radical: Radical) => {

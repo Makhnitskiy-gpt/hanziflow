@@ -10,6 +10,7 @@ const Logic = lazy(() => import('@/pages/Logic'));
 const Review = lazy(() => import('@/pages/Review'));
 const Practice = lazy(() => import('@/pages/Practice'));
 const Progress = lazy(() => import('@/pages/Progress'));
+const Guide = lazy(() => import('@/pages/Guide'));
 
 function PageLoader() {
   return (
@@ -80,6 +81,14 @@ function App() {
             element={
               <Suspense fallback={<PageLoader />}>
                 <Progress />
+              </Suspense>
+            }
+          />
+          <Route
+            path="guide"
+            element={
+              <Suspense fallback={<PageLoader />}>
+                <Guide />
               </Suspense>
             }
           />

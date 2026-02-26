@@ -6,11 +6,7 @@
     "meaning_ru": "один, горизонтальная черта",
     "meaning_en": "one, horizontal stroke",
     "strokes": 1,
-    "examples": [
-      "七",
-      "三",
-      "不"
-    ],
+    "examples": ["七", "三", "不"],
     "mnemonic_ru": "Горизонтальная линия — горизонт, самый простой символ",
     "category": "basic"
   },
@@ -21,12 +17,8 @@
     "meaning_ru": "вертикальная черта",
     "meaning_en": "vertical stroke",
     "strokes": 1,
-    "examples": [
-      "中",
-      "丰",
-      "旧"
-    ],
-    "mnemonic_ru": "Вертикальная палка — столб",
+    "examples": ["中", "丰", "旧"],
+    "mnemonic_ru": "Вертикальная палка — столб посреди поля",
     "category": "basic"
   },
   {
@@ -36,12 +28,8 @@
     "meaning_ru": "точка",
     "meaning_en": "dot",
     "strokes": 1,
-    "examples": [
-      "主",
-      "丸",
-      "义"
-    ],
-    "mnemonic_ru": "Капля — точка на бумаге",
+    "examples": ["主", "丸", "义"],
+    "mnemonic_ru": "Капля туши упала на бумагу — точка",
     "category": "basic"
   },
   {
@@ -51,12 +39,8 @@
     "meaning_ru": "откидная влево",
     "meaning_en": "left-falling stroke",
     "strokes": 1,
-    "examples": [
-      "人",
-      "大",
-      "八"
-    ],
-    "mnemonic_ru": "Наклонная черта — как падающий лист",
+    "examples": ["人", "大", "八"],
+    "mnemonic_ru": "Наклонная черта — как падающий лист с дерева",
     "category": "basic"
   },
   {
@@ -66,691 +50,2353 @@
     "meaning_ru": "второй (небесный ствол), изогнутый",
     "meaning_en": "second, bent",
     "strokes": 1,
-    "examples": [
-      "九",
-      "乞",
-      "也"
-    ],
+    "examples": ["九", "乞", "也"],
     "mnemonic_ru": "Изогнутая линия — ласточка в полёте",
     "category": "basic"
   },
   {
     "id": 6,
     "char": "亅",
-    "pinyin": "gōu",
+    "pinyin": "jué",
     "meaning_ru": "крючок",
     "meaning_en": "hook",
     "strokes": 1,
-    "examples": [
-      "了",
-      "予",
-      "事"
-    ],
-    "mnemonic_ru": "Рыболовный крючок",
+    "examples": ["了", "予", "事"],
+    "mnemonic_ru": "Рыболовный крючок опущен в воду",
     "category": "basic"
   },
   {
     "id": 7,
+    "char": "二",
+    "pinyin": "èr",
+    "meaning_ru": "два",
+    "meaning_en": "two",
+    "strokes": 2,
+    "examples": ["元", "云", "互"],
+    "mnemonic_ru": "Две горизонтальные черты — небо и земля",
+    "category": "abstract"
+  },
+  {
+    "id": 8,
+    "char": "亠",
+    "pinyin": "tóu",
+    "meaning_ru": "крышка, верх",
+    "meaning_en": "lid, top",
+    "strokes": 2,
+    "examples": ["六", "亮", "京"],
+    "mnemonic_ru": "Точка над чертой — шляпка гвоздя, крышка",
+    "category": "abstract"
+  },
+  {
+    "id": 9,
     "char": "人",
     "pinyin": "rén",
     "meaning_ru": "человек",
     "meaning_en": "person, human",
     "strokes": 2,
-    "examples": [
-      "大",
-      "个",
-      "从"
-    ],
+    "examples": ["大", "个", "从"],
     "mnemonic_ru": "Шагающий человек — две ноги в движении",
-    "category": "people",
+    "category": "human",
     "variant": "亻"
   },
   {
-    "id": 8,
+    "id": 10,
     "char": "儿",
     "pinyin": "ér",
     "meaning_ru": "ребёнок, ноги",
     "meaning_en": "child, legs",
     "strokes": 2,
-    "examples": [
-      "兄",
-      "先",
-      "光"
-    ],
+    "examples": ["兄", "先", "光"],
     "mnemonic_ru": "Ребёнок — маленький человечек с большой головой",
-    "category": "people"
+    "category": "human"
   },
   {
-    "id": 9,
+    "id": 11,
     "char": "入",
     "pinyin": "rù",
     "meaning_ru": "входить",
     "meaning_en": "enter",
     "strokes": 2,
-    "examples": [
-      "全",
-      "内"
-    ],
-    "mnemonic_ru": "Стрелка, указывающая внутрь — вход",
-    "category": "basic"
+    "examples": ["全", "内", "两"],
+    "mnemonic_ru": "Стрелка, указывающая внутрь — вход в пещеру",
+    "category": "abstract"
   },
   {
-    "id": 10,
+    "id": 12,
     "char": "八",
     "pinyin": "bā",
     "meaning_ru": "восемь, разделять",
     "meaning_en": "eight, divide",
     "strokes": 2,
-    "examples": [
-      "公",
-      "六",
-      "分"
-    ],
+    "examples": ["公", "六", "分"],
     "mnemonic_ru": "Две черты расходятся — разделение, число 8",
-    "category": "basic"
+    "category": "abstract"
   },
   {
-    "id": 11,
+    "id": 13,
     "char": "冂",
     "pinyin": "jiōng",
     "meaning_ru": "граница, рамка",
     "meaning_en": "down box, border",
     "strokes": 2,
-    "examples": [
-      "同",
-      "内",
-      "网"
-    ],
+    "examples": ["同", "内", "网"],
     "mnemonic_ru": "Открытая коробка — рамка без дна",
-    "category": "enclosure"
+    "category": "object"
   },
   {
-    "id": 12,
+    "id": 14,
     "char": "冖",
     "pinyin": "mì",
     "meaning_ru": "крышка",
     "meaning_en": "cover",
     "strokes": 2,
-    "examples": [
-      "写",
-      "军",
-      "冠"
-    ],
-    "mnemonic_ru": "Крышка — горизонталь с загнутыми краями",
-    "category": "enclosure"
+    "examples": ["写", "军", "冠"],
+    "mnemonic_ru": "Крышка кастрюли — горизонталь с загнутыми краями",
+    "category": "object"
   },
   {
-    "id": 13,
+    "id": 15,
+    "char": "冫",
+    "pinyin": "bīng",
+    "meaning_ru": "лёд",
+    "meaning_en": "ice",
+    "strokes": 2,
+    "examples": ["冷", "冬", "冰"],
+    "mnemonic_ru": "Две капли замёрзли — лёд на стекле",
+    "category": "nature"
+  },
+  {
+    "id": 16,
     "char": "几",
     "pinyin": "jǐ",
     "meaning_ru": "столик, несколько",
     "meaning_en": "table, how many",
     "strokes": 2,
-    "examples": [
-      "朵",
-      "机",
-      "凡"
-    ],
-    "mnemonic_ru": "Маленький столик — две ножки",
-    "category": "objects"
+    "examples": ["朵", "机", "凡"],
+    "mnemonic_ru": "Маленький столик — две ножки и столешница",
+    "category": "object"
   },
   {
-    "id": 14,
+    "id": 17,
     "char": "凵",
-    "pinyin": "qū",
+    "pinyin": "kǎn",
     "meaning_ru": "открытый рот, ёмкость",
     "meaning_en": "open mouth, receptacle",
     "strokes": 2,
-    "examples": [
-      "出",
-      "凶",
-      "画"
-    ],
+    "examples": ["出", "凶", "击"],
     "mnemonic_ru": "Открытый ящик — ёмкость без крышки",
-    "category": "enclosure"
+    "category": "object"
   },
   {
-    "id": 15,
+    "id": 18,
     "char": "刀",
     "pinyin": "dāo",
     "meaning_ru": "нож",
     "meaning_en": "knife",
     "strokes": 2,
-    "examples": [
-      "分",
-      "切",
-      "刃"
-    ],
-    "mnemonic_ru": "Изогнутое лезвие ножа",
-    "category": "objects",
+    "examples": ["分", "切", "刃"],
+    "mnemonic_ru": "Изогнутое лезвие ножа — острый клинок",
+    "category": "object",
     "variant": "刂"
   },
   {
-    "id": 16,
+    "id": 19,
     "char": "力",
     "pinyin": "lì",
     "meaning_ru": "сила",
     "meaning_en": "power, force",
     "strokes": 2,
-    "examples": [
-      "男",
-      "加",
-      "动"
-    ],
-    "mnemonic_ru": "Мускулистая рука — сила",
+    "examples": ["男", "加", "动"],
+    "mnemonic_ru": "Мускулистая рука напряглась — сила",
     "category": "abstract"
   },
   {
-    "id": 17,
+    "id": 20,
     "char": "勹",
     "pinyin": "bāo",
     "meaning_ru": "обёртка",
     "meaning_en": "wrap",
     "strokes": 2,
-    "examples": [
-      "包",
-      "句",
-      "勿"
-    ],
-    "mnemonic_ru": "Изогнутая линия оборачивает содержимое",
-    "category": "enclosure"
+    "examples": ["包", "句", "勿"],
+    "mnemonic_ru": "Изогнутая линия оборачивает содержимое — свёрток",
+    "category": "object"
   },
   {
-    "id": 18,
+    "id": 21,
     "char": "匕",
     "pinyin": "bǐ",
     "meaning_ru": "ложка, кинжал",
     "meaning_en": "spoon, dagger",
     "strokes": 2,
-    "examples": [
-      "比",
-      "北",
-      "化"
-    ],
+    "examples": ["比", "北", "化"],
     "mnemonic_ru": "Маленькая ложка или короткий кинжал",
-    "category": "objects"
+    "category": "object"
   },
   {
-    "id": 19,
+    "id": 22,
     "char": "匚",
     "pinyin": "fāng",
     "meaning_ru": "короб, вместилище",
     "meaning_en": "box, hiding enclosure",
     "strokes": 2,
-    "examples": [
-      "区",
-      "匹",
-      "医"
-    ],
-    "mnemonic_ru": "Открытый короб — ящик без крышки",
-    "category": "enclosure"
+    "examples": ["区", "匹", "医"],
+    "mnemonic_ru": "Открытый короб — ящик без крышки сбоку",
+    "category": "object"
   },
   {
-    "id": 20,
+    "id": 23,
+    "char": "匸",
+    "pinyin": "xì",
+    "meaning_ru": "укрытие",
+    "meaning_en": "hiding enclosure",
+    "strokes": 2,
+    "examples": ["匹", "区", "匿"],
+    "mnemonic_ru": "Навес-укрытие — спрятаться от дождя",
+    "category": "object"
+  },
+  {
+    "id": 24,
     "char": "十",
     "pinyin": "shí",
     "meaning_ru": "десять",
     "meaning_en": "ten",
     "strokes": 2,
-    "examples": [
-      "千",
-      "早",
-      "古"
-    ],
-    "mnemonic_ru": "Крест — десять, как римская X повёрнутая",
-    "category": "basic"
+    "examples": ["千", "早", "古"],
+    "mnemonic_ru": "Крест — десять, как перекрёсток двух дорог",
+    "category": "abstract"
   },
   {
-    "id": 21,
+    "id": 25,
     "char": "卜",
     "pinyin": "bǔ",
     "meaning_ru": "гадание",
     "meaning_en": "divination",
     "strokes": 2,
-    "examples": [
-      "上",
-      "下",
-      "卡"
-    ],
-    "mnemonic_ru": "Трещина на гадательной кости",
+    "examples": ["占", "卡", "卦"],
+    "mnemonic_ru": "Трещина на гадательной кости — предсказание",
     "category": "abstract"
   },
   {
-    "id": 22,
+    "id": 26,
     "char": "卩",
     "pinyin": "jié",
     "meaning_ru": "печать, узел",
     "meaning_en": "seal",
     "strokes": 2,
-    "examples": [
-      "即",
-      "却",
-      "卫"
-    ],
+    "examples": ["即", "却", "卫"],
     "mnemonic_ru": "Коленопреклонённый человек — знак почтения",
-    "category": "abstract"
+    "category": "abstract",
+    "variant": "⺙"
   },
   {
-    "id": 23,
+    "id": 27,
     "char": "厂",
     "pinyin": "hǎn",
     "meaning_ru": "обрыв, навес",
-    "meaning_en": "cliff, factory",
+    "meaning_en": "cliff",
     "strokes": 2,
-    "examples": [
-      "厚",
-      "原",
-      "历"
-    ],
-    "mnemonic_ru": "Навес — крыша без стен, скала с выступом",
-    "category": "enclosure"
+    "examples": ["厚", "原", "历"],
+    "mnemonic_ru": "Навес скалы — крыша без стен, обрыв",
+    "category": "nature"
   },
   {
-    "id": 24,
+    "id": 28,
     "char": "厶",
     "pinyin": "sī",
     "meaning_ru": "частный, личный",
     "meaning_en": "private",
     "strokes": 2,
-    "examples": [
-      "公",
-      "去",
-      "台"
-    ],
+    "examples": ["公", "去", "台"],
     "mnemonic_ru": "Свёрнутый рулон — что-то спрятанное, личное",
     "category": "abstract"
   },
   {
-    "id": 25,
+    "id": 29,
     "char": "又",
     "pinyin": "yòu",
     "meaning_ru": "опять, правая рука",
     "meaning_en": "again, right hand",
     "strokes": 2,
-    "examples": [
-      "友",
-      "对",
-      "双"
-    ],
-    "mnemonic_ru": "Правая рука — снова берёт",
-    "category": "body"
+    "examples": ["友", "对", "双"],
+    "mnemonic_ru": "Правая рука тянется — снова берёт",
+    "category": "human"
   },
   {
-    "id": 26,
+    "id": 30,
     "char": "口",
     "pinyin": "kǒu",
     "meaning_ru": "рот",
     "meaning_en": "mouth",
     "strokes": 3,
-    "examples": [
-      "吃",
-      "喝",
-      "吗"
-    ],
-    "mnemonic_ru": "Открытый квадрат — открытый рот",
-    "category": "body"
+    "examples": ["吃", "喝", "吗"],
+    "mnemonic_ru": "Открытый квадрат — рот, готовый говорить",
+    "category": "human"
   },
   {
-    "id": 27,
+    "id": 31,
     "char": "囗",
     "pinyin": "wéi",
     "meaning_ru": "ограда",
     "meaning_en": "enclosure",
     "strokes": 3,
-    "examples": [
-      "国",
-      "四",
-      "回"
-    ],
-    "mnemonic_ru": "Замкнутый квадрат — стена вокруг, ограда",
-    "category": "enclosure"
+    "examples": ["国", "四", "回"],
+    "mnemonic_ru": "Замкнутый квадрат — стена вокруг города",
+    "category": "object"
   },
   {
-    "id": 28,
+    "id": 32,
     "char": "土",
     "pinyin": "tǔ",
     "meaning_ru": "земля, почва",
     "meaning_en": "earth, soil",
     "strokes": 3,
-    "examples": [
-      "地",
-      "在",
-      "城"
-    ],
-    "mnemonic_ru": "Крест на линии — росток из земли",
+    "examples": ["地", "在", "城"],
+    "mnemonic_ru": "Крест на линии — росток пробивается из земли",
     "category": "nature"
   },
   {
-    "id": 29,
+    "id": 33,
     "char": "士",
     "pinyin": "shì",
     "meaning_ru": "учёный, воин",
     "meaning_en": "scholar, warrior",
     "strokes": 3,
-    "examples": [
-      "志",
-      "吉",
-      "壮"
-    ],
-    "mnemonic_ru": "Человек с широкими плечами — муж, учёный",
-    "category": "people"
+    "examples": ["志", "吉", "壮"],
+    "mnemonic_ru": "Человек с широкими плечами — муж, воин",
+    "category": "human"
   },
   {
-    "id": 30,
+    "id": 34,
+    "char": "夂",
+    "pinyin": "zhǐ",
+    "meaning_ru": "идти (медленно)",
+    "meaning_en": "go slowly",
+    "strokes": 3,
+    "examples": ["冬", "夏", "处"],
+    "mnemonic_ru": "Нога медленно опускается — неторопливый шаг",
+    "category": "abstract"
+  },
+  {
+    "id": 35,
+    "char": "夊",
+    "pinyin": "suī",
+    "meaning_ru": "медленно идти",
+    "meaning_en": "go slowly",
+    "strokes": 3,
+    "examples": ["夏", "复", "夔"],
+    "mnemonic_ru": "Волочащаяся нога — еле плетётся",
+    "category": "abstract"
+  },
+  {
+    "id": 36,
+    "char": "夕",
+    "pinyin": "xī",
+    "meaning_ru": "вечер",
+    "meaning_en": "evening, sunset",
+    "strokes": 3,
+    "examples": ["多", "外", "名"],
+    "mnemonic_ru": "Полумесяц появился — наступил вечер",
+    "category": "nature"
+  },
+  {
+    "id": 37,
     "char": "大",
     "pinyin": "dà",
     "meaning_ru": "большой",
     "meaning_en": "big, large",
     "strokes": 3,
-    "examples": [
-      "天",
-      "太",
-      "夫"
-    ],
+    "examples": ["天", "太", "夫"],
     "mnemonic_ru": "Человек раскинул руки — вот такой большой!",
-    "category": "people"
+    "category": "human"
   },
   {
-    "id": 31,
+    "id": 38,
     "char": "女",
     "pinyin": "nǚ",
     "meaning_ru": "женщина",
     "meaning_en": "woman, female",
     "strokes": 3,
-    "examples": [
-      "好",
-      "妈",
-      "她"
-    ],
-    "mnemonic_ru": "Фигура сидящей женщины со скрещёнными руками",
-    "category": "people"
+    "examples": ["好", "妈", "她"],
+    "mnemonic_ru": "Фигура сидящей женщины со скрещёнными ногами",
+    "category": "human"
   },
   {
-    "id": 32,
+    "id": 39,
     "char": "子",
     "pinyin": "zǐ",
     "meaning_ru": "ребёнок, сын",
     "meaning_en": "child, son",
     "strokes": 3,
-    "examples": [
-      "好",
-      "学",
-      "字"
-    ],
+    "examples": ["好", "学", "字"],
     "mnemonic_ru": "Младенец в пелёнках с ручками",
-    "category": "people"
+    "category": "human"
   },
   {
-    "id": 33,
+    "id": 40,
     "char": "宀",
     "pinyin": "mián",
     "meaning_ru": "крыша, дом",
     "meaning_en": "roof",
     "strokes": 3,
-    "examples": [
-      "家",
-      "字",
-      "安"
-    ],
-    "mnemonic_ru": "Крыша дома — треугольник",
-    "category": "enclosure"
+    "examples": ["家", "字", "安"],
+    "mnemonic_ru": "Крыша дома — уютный треугольник над головой",
+    "category": "object"
   },
   {
-    "id": 34,
+    "id": 41,
     "char": "寸",
     "pinyin": "cùn",
     "meaning_ru": "вершок, мера длины",
     "meaning_en": "inch, measure",
     "strokes": 3,
-    "examples": [
-      "对",
-      "寺",
-      "村"
-    ],
-    "mnemonic_ru": "Рука с отметкой на запястье — место, где щупают пульс",
+    "examples": ["对", "寺", "村"],
+    "mnemonic_ru": "Рука с отметкой на запястье — место пульса",
     "category": "abstract"
   },
   {
-    "id": 35,
+    "id": 42,
     "char": "小",
     "pinyin": "xiǎo",
     "meaning_ru": "маленький",
     "meaning_en": "small, little",
     "strokes": 3,
-    "examples": [
-      "少",
-      "尖",
-      "尘"
-    ],
-    "mnemonic_ru": "Три капельки — что-то крохотное, маленькое",
+    "examples": ["少", "尖", "尘"],
+    "mnemonic_ru": "Три капельки — что-то совсем крохотное",
     "category": "abstract"
   },
   {
-    "id": 36,
+    "id": 43,
+    "char": "尢",
+    "pinyin": "wāng",
+    "meaning_ru": "хромой",
+    "meaning_en": "lame",
+    "strokes": 3,
+    "examples": ["尤", "尧", "就"],
+    "mnemonic_ru": "Человек с кривой ногой — хромает",
+    "category": "human"
+  },
+  {
+    "id": 44,
     "char": "尸",
     "pinyin": "shī",
     "meaning_ru": "тело, труп",
     "meaning_en": "corpse, body",
     "strokes": 3,
-    "examples": [
-      "尾",
-      "居",
-      "层"
-    ],
-    "mnemonic_ru": "Лежащее тело — навес, повторяющий форму тела",
-    "category": "body"
+    "examples": ["尾", "居", "层"],
+    "mnemonic_ru": "Лежащее тело под навесом",
+    "category": "human"
   },
   {
-    "id": 37,
+    "id": 45,
+    "char": "屮",
+    "pinyin": "chè",
+    "meaning_ru": "росток",
+    "meaning_en": "sprout",
+    "strokes": 3,
+    "examples": ["屯", "艸", "出"],
+    "mnemonic_ru": "Маленький росток пробивается из земли",
+    "category": "nature"
+  },
+  {
+    "id": 46,
     "char": "山",
     "pinyin": "shān",
     "meaning_ru": "гора",
     "meaning_en": "mountain",
     "strokes": 3,
-    "examples": [
-      "出",
-      "岁",
-      "岛"
-    ],
-    "mnemonic_ru": "Три вершины — горная гряда",
+    "examples": ["出", "岁", "岛"],
+    "mnemonic_ru": "Три вершины — горная гряда на горизонте",
     "category": "nature"
   },
   {
-    "id": 38,
+    "id": 47,
+    "char": "巛",
+    "pinyin": "chuān",
+    "meaning_ru": "река",
+    "meaning_en": "river",
+    "strokes": 3,
+    "examples": ["川", "州", "巡"],
+    "mnemonic_ru": "Три струи воды текут параллельно — река",
+    "category": "nature"
+  },
+  {
+    "id": 48,
+    "char": "工",
+    "pinyin": "gōng",
+    "meaning_ru": "работа, мастер",
+    "meaning_en": "work, craft",
+    "strokes": 3,
+    "examples": ["左", "巧", "功"],
+    "mnemonic_ru": "Угольник плотника — инструмент мастера",
+    "category": "object"
+  },
+  {
+    "id": 49,
+    "char": "己",
+    "pinyin": "jǐ",
+    "meaning_ru": "сам, себя",
+    "meaning_en": "self, oneself",
+    "strokes": 3,
+    "examples": ["起", "记", "已"],
+    "mnemonic_ru": "Свёрнутая верёвка — замкнутый на себе",
+    "category": "abstract"
+  },
+  {
+    "id": 50,
     "char": "巾",
     "pinyin": "jīn",
     "meaning_ru": "полотенце, ткань",
     "meaning_en": "cloth, towel",
     "strokes": 3,
-    "examples": [
-      "市",
-      "帮",
-      "带"
-    ],
+    "examples": ["市", "帮", "带"],
     "mnemonic_ru": "Свисающее полотенце на верёвке",
-    "category": "objects"
+    "category": "object"
   },
   {
-    "id": 39,
+    "id": 51,
     "char": "干",
     "pinyin": "gān",
     "meaning_ru": "сухой, щит, ствол",
-    "meaning_en": "dry, shield, trunk",
+    "meaning_en": "dry, shield",
     "strokes": 3,
-    "examples": [
-      "平",
-      "年",
-      "干"
-    ],
-    "mnemonic_ru": "Щит или ствол дерева — две горизонтали на вертикали",
-    "category": "objects"
+    "examples": ["平", "年", "干"],
+    "mnemonic_ru": "Щит или ствол — две горизонтали на вертикали",
+    "category": "object"
   },
   {
-    "id": 40,
+    "id": 52,
     "char": "幺",
     "pinyin": "yāo",
-    "meaning_ru": "маленький, тонкий",
+    "meaning_ru": "маленький, тонкая нить",
     "meaning_en": "tiny, thread",
     "strokes": 3,
-    "examples": [
-      "幻",
-      "幼"
-    ],
-    "mnemonic_ru": "Тоненькая нитка — что-то крохотное",
-    "category": "abstract"
+    "examples": ["幻", "幼", "幽"],
+    "mnemonic_ru": "Тоненькая шёлковая нитка — что-то крохотное",
+    "category": "object"
   },
   {
-    "id": 41,
+    "id": 53,
     "char": "广",
     "pinyin": "guǎng",
     "meaning_ru": "широкий, навес",
     "meaning_en": "wide, shelter",
     "strokes": 3,
-    "examples": [
-      "店",
-      "床",
-      "座"
-    ],
-    "mnemonic_ru": "Широкий навес — крыша на столбе",
-    "category": "enclosure"
+    "examples": ["店", "床", "座"],
+    "mnemonic_ru": "Широкий навес — крыша на столбе, укрытие",
+    "category": "object"
   },
   {
-    "id": 42,
+    "id": 54,
     "char": "廴",
     "pinyin": "yǐn",
     "meaning_ru": "длинный шаг",
     "meaning_en": "long stride",
     "strokes": 3,
-    "examples": [
-      "建",
-      "延",
-      "廷"
-    ],
-    "mnemonic_ru": "Длинный шаг вперёд — движение",
-    "category": "basic"
+    "examples": ["建", "延", "廷"],
+    "mnemonic_ru": "Длинный шаг вперёд — размашистое движение",
+    "category": "abstract"
   },
   {
-    "id": 43,
+    "id": 55,
+    "char": "廾",
+    "pinyin": "gǒng",
+    "meaning_ru": "сложенные руки",
+    "meaning_en": "clasped hands",
+    "strokes": 3,
+    "examples": ["开", "弁", "异"],
+    "mnemonic_ru": "Две руки сложены вместе — поклон",
+    "category": "human"
+  },
+  {
+    "id": 56,
+    "char": "弋",
+    "pinyin": "yì",
+    "meaning_ru": "стрела на верёвке",
+    "meaning_en": "shoot, arrow on string",
+    "strokes": 3,
+    "examples": ["式", "代", "弑"],
+    "mnemonic_ru": "Стрела с привязанной верёвкой — охота на птиц",
+    "category": "object"
+  },
+  {
+    "id": 57,
     "char": "弓",
     "pinyin": "gōng",
     "meaning_ru": "лук (оружие)",
     "meaning_en": "bow",
     "strokes": 3,
-    "examples": [
-      "张",
-      "强",
-      "引"
-    ],
-    "mnemonic_ru": "Изогнутый лук с тетивой",
-    "category": "objects"
+    "examples": ["张", "强", "引"],
+    "mnemonic_ru": "Изогнутый лук с тетивой — натянут для стрельбы",
+    "category": "object"
   },
   {
-    "id": 44,
+    "id": 58,
+    "char": "彐",
+    "pinyin": "jì",
+    "meaning_ru": "голова свиньи",
+    "meaning_en": "pig snout",
+    "strokes": 3,
+    "examples": ["录", "归", "当"],
+    "mnemonic_ru": "Морда свиньи — три горизонтали с пятачком",
+    "category": "animal"
+  },
+  {
+    "id": 59,
+    "char": "彡",
+    "pinyin": "shān",
+    "meaning_ru": "волосы, узор",
+    "meaning_en": "hair, bristle, pattern",
+    "strokes": 3,
+    "examples": ["形", "影", "彩"],
+    "mnemonic_ru": "Три наклонные линии — пряди волос на ветру",
+    "category": "human"
+  },
+  {
+    "id": 60,
+    "char": "彳",
+    "pinyin": "chì",
+    "meaning_ru": "шаг левой ногой",
+    "meaning_en": "step (left foot)",
+    "strokes": 3,
+    "examples": ["行", "往", "很"],
+    "mnemonic_ru": "Левая нога делает шаг — начало пути",
+    "category": "human"
+  },
+  {
+    "id": 61,
     "char": "心",
     "pinyin": "xīn",
     "meaning_ru": "сердце, душа",
     "meaning_en": "heart, mind",
     "strokes": 4,
-    "examples": [
-      "想",
-      "忙",
-      "快"
-    ],
+    "examples": ["想", "忙", "快"],
     "mnemonic_ru": "Три капли крови и крючок — бьющееся сердце",
-    "category": "body",
+    "category": "human",
     "variant": "忄"
   },
   {
-    "id": 45,
+    "id": 62,
+    "char": "戈",
+    "pinyin": "gē",
+    "meaning_ru": "алебарда, копьё",
+    "meaning_en": "halberd, spear",
+    "strokes": 4,
+    "examples": ["我", "成", "战"],
+    "mnemonic_ru": "Древковое оружие — алебарда на длинном шесте",
+    "category": "object"
+  },
+  {
+    "id": 63,
+    "char": "戶",
+    "pinyin": "hù",
+    "meaning_ru": "дверь, дом",
+    "meaning_en": "door, house",
+    "strokes": 4,
+    "examples": ["所", "房", "扇"],
+    "mnemonic_ru": "Одна створка двери — вход в дом",
+    "category": "object"
+  },
+  {
+    "id": 64,
     "char": "手",
     "pinyin": "shǒu",
     "meaning_ru": "рука",
     "meaning_en": "hand",
     "strokes": 4,
-    "examples": [
-      "打",
-      "把",
-      "找"
-    ],
+    "examples": ["打", "把", "找"],
     "mnemonic_ru": "Рука с растопыренными пальцами",
-    "category": "body",
+    "category": "human",
     "variant": "扌"
   },
   {
-    "id": 46,
+    "id": 65,
+    "char": "支",
+    "pinyin": "zhī",
+    "meaning_ru": "ветка, поддерживать",
+    "meaning_en": "branch, support",
+    "strokes": 4,
+    "examples": ["支", "枝", "技"],
+    "mnemonic_ru": "Рука держит бамбуковую ветку",
+    "category": "object"
+  },
+  {
+    "id": 66,
+    "char": "攴",
+    "pinyin": "pū",
+    "meaning_ru": "ударять",
+    "meaning_en": "strike, hit",
+    "strokes": 4,
+    "examples": ["收", "改", "放"],
+    "mnemonic_ru": "Рука с палкой — удар, наказание",
+    "category": "abstract",
+    "variant": "攵"
+  },
+  {
+    "id": 67,
+    "char": "文",
+    "pinyin": "wén",
+    "meaning_ru": "письменность, узор",
+    "meaning_en": "script, literature",
+    "strokes": 4,
+    "examples": ["这", "对", "齐"],
+    "mnemonic_ru": "Человек с татуировкой — письмена на теле",
+    "category": "abstract"
+  },
+  {
+    "id": 68,
+    "char": "斗",
+    "pinyin": "dǒu",
+    "meaning_ru": "ковш, мера объёма",
+    "meaning_en": "dipper, measure",
+    "strokes": 4,
+    "examples": ["料", "斜", "斟"],
+    "mnemonic_ru": "Ковш Большой Медведицы — черпак для зерна",
+    "category": "object"
+  },
+  {
+    "id": 69,
+    "char": "斤",
+    "pinyin": "jīn",
+    "meaning_ru": "топор, мера веса (цзинь)",
+    "meaning_en": "axe, catty",
+    "strokes": 4,
+    "examples": ["新", "所", "断"],
+    "mnemonic_ru": "Тяжёлый топор — и оружие, и мера веса",
+    "category": "object"
+  },
+  {
+    "id": 70,
+    "char": "方",
+    "pinyin": "fāng",
+    "meaning_ru": "квадрат, сторона, метод",
+    "meaning_en": "square, direction, method",
+    "strokes": 4,
+    "examples": ["放", "旅", "族"],
+    "mnemonic_ru": "Плот с мачтой — квадратный, плывёт в направлении",
+    "category": "abstract"
+  },
+  {
+    "id": 71,
+    "char": "无",
+    "pinyin": "wú",
+    "meaning_ru": "не, без",
+    "meaning_en": "not, without",
+    "strokes": 4,
+    "examples": ["无", "旡", "既"],
+    "mnemonic_ru": "Танцующий человек — ничего нет, пусто",
+    "category": "abstract"
+  },
+  {
+    "id": 72,
     "char": "日",
     "pinyin": "rì",
     "meaning_ru": "солнце, день",
     "meaning_en": "sun, day",
     "strokes": 4,
-    "examples": [
-      "明",
-      "时",
-      "早"
-    ],
-    "mnemonic_ru": "Квадратное солнце с точкой внутри",
+    "examples": ["明", "时", "早"],
+    "mnemonic_ru": "Квадратное солнце с чертой внутри — яркий день",
     "category": "nature"
   },
   {
-    "id": 47,
+    "id": 73,
+    "char": "曰",
+    "pinyin": "yuē",
+    "meaning_ru": "говорить, гласить",
+    "meaning_en": "say, speak",
+    "strokes": 4,
+    "examples": ["曹", "曾", "替"],
+    "mnemonic_ru": "Широкий рот произносит слово — молвить",
+    "category": "abstract"
+  },
+  {
+    "id": 74,
     "char": "月",
     "pinyin": "yuè",
     "meaning_ru": "луна, месяц",
     "meaning_en": "moon, month",
     "strokes": 4,
-    "examples": [
-      "明",
-      "有",
-      "朋"
-    ],
+    "examples": ["明", "有", "朋"],
     "mnemonic_ru": "Полумесяц — серп луны с рёбрами",
     "category": "nature"
   },
   {
-    "id": 48,
+    "id": 75,
     "char": "木",
     "pinyin": "mù",
     "meaning_ru": "дерево",
     "meaning_en": "tree, wood",
     "strokes": 4,
-    "examples": [
-      "林",
-      "本",
-      "休"
-    ],
-    "mnemonic_ru": "Дерево — ствол с ветвями и корнями",
+    "examples": ["林", "本", "休"],
+    "mnemonic_ru": "Дерево — ствол с ветвями вверху и корнями внизу",
     "category": "nature"
   },
   {
-    "id": 49,
+    "id": 76,
+    "char": "欠",
+    "pinyin": "qiàn",
+    "meaning_ru": "зевать, недоставать",
+    "meaning_en": "yawn, lack",
+    "strokes": 4,
+    "examples": ["次", "欢", "歌"],
+    "mnemonic_ru": "Человек открыл рот — зевает, чего-то не хватает",
+    "category": "human"
+  },
+  {
+    "id": 77,
+    "char": "止",
+    "pinyin": "zhǐ",
+    "meaning_ru": "остановиться",
+    "meaning_en": "stop, halt",
+    "strokes": 4,
+    "examples": ["正", "步", "此"],
+    "mnemonic_ru": "Нога упёрлась в землю — стоп, дальше ни шагу",
+    "category": "human"
+  },
+  {
+    "id": 78,
+    "char": "歹",
+    "pinyin": "dǎi",
+    "meaning_ru": "плохой, смерть",
+    "meaning_en": "bad, death",
+    "strokes": 4,
+    "examples": ["死", "残", "殊"],
+    "mnemonic_ru": "Кости скелета — разложение, смерть",
+    "category": "abstract"
+  },
+  {
+    "id": 79,
+    "char": "殳",
+    "pinyin": "shū",
+    "meaning_ru": "оружие, палица",
+    "meaning_en": "weapon, lance",
+    "strokes": 4,
+    "examples": ["段", "殴", "毁"],
+    "mnemonic_ru": "Рука сжимает палицу — бить, орудие боя",
+    "category": "object"
+  },
+  {
+    "id": 80,
+    "char": "毋",
+    "pinyin": "wú",
+    "meaning_ru": "не, запрет",
+    "meaning_en": "do not",
+    "strokes": 4,
+    "examples": ["每", "母", "毒"],
+    "mnemonic_ru": "Перечёркнутый знак — запрет, нельзя!",
+    "category": "abstract"
+  },
+  {
+    "id": 81,
+    "char": "比",
+    "pinyin": "bǐ",
+    "meaning_ru": "сравнивать",
+    "meaning_en": "compare",
+    "strokes": 4,
+    "examples": ["比", "皆", "批"],
+    "mnemonic_ru": "Два человека рядом — кто выше? сравнение",
+    "category": "abstract"
+  },
+  {
+    "id": 82,
+    "char": "毛",
+    "pinyin": "máo",
+    "meaning_ru": "шерсть, волосы",
+    "meaning_en": "fur, hair",
+    "strokes": 4,
+    "examples": ["毯", "毫", "笔"],
+    "mnemonic_ru": "Пушистый хвост — шерстинки торчат в стороны",
+    "category": "human"
+  },
+  {
+    "id": 83,
+    "char": "氏",
+    "pinyin": "shì",
+    "meaning_ru": "род, клан, фамилия",
+    "meaning_en": "clan, family name",
+    "strokes": 4,
+    "examples": ["民", "纸", "低"],
+    "mnemonic_ru": "Знамя рода — фамильный герб на древке",
+    "category": "abstract"
+  },
+  {
+    "id": 84,
+    "char": "气",
+    "pinyin": "qì",
+    "meaning_ru": "пар, воздух, энергия ци",
+    "meaning_en": "steam, air, qi",
+    "strokes": 4,
+    "examples": ["气", "氧", "氛"],
+    "mnemonic_ru": "Клубы пара поднимаются — энергия ци",
+    "category": "nature"
+  },
+  {
+    "id": 85,
     "char": "水",
     "pinyin": "shuǐ",
     "meaning_ru": "вода",
     "meaning_en": "water",
     "strokes": 4,
-    "examples": [
-      "河",
-      "海",
-      "没"
-    ],
-    "mnemonic_ru": "Поток воды — центральная струя и брызги",
+    "examples": ["河", "海", "没"],
+    "mnemonic_ru": "Поток воды — центральная струя и брызги по бокам",
     "category": "nature",
     "variant": "氵"
   },
   {
-    "id": 50,
+    "id": 86,
     "char": "火",
     "pinyin": "huǒ",
     "meaning_ru": "огонь",
     "meaning_en": "fire",
     "strokes": 4,
-    "examples": [
-      "灯",
-      "炒",
-      "烧"
-    ],
-    "mnemonic_ru": "Пламя — языки огня поднимаются вверх",
+    "examples": ["灯", "炒", "烧"],
+    "mnemonic_ru": "Пламя костра — языки огня поднимаются вверх",
     "category": "nature",
     "variant": "灬"
+  },
+  {
+    "id": 87,
+    "char": "爪",
+    "pinyin": "zhǎo",
+    "meaning_ru": "когти, лапа",
+    "meaning_en": "claw",
+    "strokes": 4,
+    "examples": ["爬", "爱", "争"],
+    "mnemonic_ru": "Когтистая лапа тянется сверху — хватает",
+    "category": "animal",
+    "variant": "爫"
+  },
+  {
+    "id": 88,
+    "char": "父",
+    "pinyin": "fù",
+    "meaning_ru": "отец",
+    "meaning_en": "father",
+    "strokes": 4,
+    "examples": ["爸", "爷", "斧"],
+    "mnemonic_ru": "Рука с палкой — отец, глава семьи, строгий",
+    "category": "human"
+  },
+  {
+    "id": 89,
+    "char": "爻",
+    "pinyin": "yáo",
+    "meaning_ru": "черты триграмм (Ицзин)",
+    "meaning_en": "trigram lines",
+    "strokes": 4,
+    "examples": ["爽", "学", "觉"],
+    "mnemonic_ru": "Скрещённые палочки — гадательные черты Ицзина",
+    "category": "abstract"
+  },
+  {
+    "id": 90,
+    "char": "爿",
+    "pinyin": "pán",
+    "meaning_ru": "половина дерева, доска",
+    "meaning_en": "split wood",
+    "strokes": 4,
+    "examples": ["壮", "将", "牌"],
+    "mnemonic_ru": "Расколотое бревно — левая половина доски",
+    "category": "object"
+  },
+  {
+    "id": 91,
+    "char": "片",
+    "pinyin": "piàn",
+    "meaning_ru": "кусок, ломтик",
+    "meaning_en": "slice, piece",
+    "strokes": 4,
+    "examples": ["版", "牌", "片"],
+    "mnemonic_ru": "Правая половина расколотого бревна — щепка",
+    "category": "object"
+  },
+  {
+    "id": 92,
+    "char": "牙",
+    "pinyin": "yá",
+    "meaning_ru": "зуб, клык",
+    "meaning_en": "tooth, fang",
+    "strokes": 4,
+    "examples": ["牙", "芽", "雅"],
+    "mnemonic_ru": "Торчащий клык — зуб с корнем",
+    "category": "human"
+  },
+  {
+    "id": 93,
+    "char": "牛",
+    "pinyin": "niú",
+    "meaning_ru": "корова, бык",
+    "meaning_en": "cow, ox",
+    "strokes": 4,
+    "examples": ["物", "特", "牧"],
+    "mnemonic_ru": "Морда быка с рогами — мощное животное",
+    "category": "animal",
+    "variant": "牜"
+  },
+  {
+    "id": 94,
+    "char": "犬",
+    "pinyin": "quǎn",
+    "meaning_ru": "собака",
+    "meaning_en": "dog",
+    "strokes": 4,
+    "examples": ["状", "犯", "狗"],
+    "mnemonic_ru": "Собака стоит на задних лапах — верный друг",
+    "category": "animal",
+    "variant": "犭"
+  },
+  {
+    "id": 95,
+    "char": "玄",
+    "pinyin": "xuán",
+    "meaning_ru": "тёмный, таинственный",
+    "meaning_en": "dark, mysterious",
+    "strokes": 5,
+    "examples": ["玄", "率", "弦"],
+    "mnemonic_ru": "Нить скрученная в тайну — мистическая тьма",
+    "category": "abstract"
+  },
+  {
+    "id": 96,
+    "char": "玉",
+    "pinyin": "yù",
+    "meaning_ru": "яшма, нефрит",
+    "meaning_en": "jade",
+    "strokes": 5,
+    "examples": ["王", "国", "珍"],
+    "mnemonic_ru": "Три нефритовых диска на нити — сокровище",
+    "category": "nature",
+    "variant": "⺩"
+  },
+  {
+    "id": 97,
+    "char": "瓜",
+    "pinyin": "guā",
+    "meaning_ru": "тыква, дыня",
+    "meaning_en": "melon",
+    "strokes": 5,
+    "examples": ["瓜", "瓢", "瓣"],
+    "mnemonic_ru": "Тыква на лозе — висит и качается",
+    "category": "nature"
+  },
+  {
+    "id": 98,
+    "char": "瓦",
+    "pinyin": "wǎ",
+    "meaning_ru": "черепица",
+    "meaning_en": "tile",
+    "strokes": 5,
+    "examples": ["瓶", "瓷", "瓦"],
+    "mnemonic_ru": "Глиняная черепица на крыше — керамика",
+    "category": "object"
+  },
+  {
+    "id": 99,
+    "char": "甘",
+    "pinyin": "gān",
+    "meaning_ru": "сладкий",
+    "meaning_en": "sweet",
+    "strokes": 5,
+    "examples": ["甜", "甚", "某"],
+    "mnemonic_ru": "Рот с чем-то внутри — на языке сладко",
+    "category": "abstract"
+  },
+  {
+    "id": 100,
+    "char": "生",
+    "pinyin": "shēng",
+    "meaning_ru": "рождаться, жизнь",
+    "meaning_en": "life, birth",
+    "strokes": 5,
+    "examples": ["生", "星", "产"],
+    "mnemonic_ru": "Росток пробивается из земли — новая жизнь",
+    "category": "nature"
+  },
+  {
+    "id": 101,
+    "char": "用",
+    "pinyin": "yòng",
+    "meaning_ru": "использовать",
+    "meaning_en": "use",
+    "strokes": 5,
+    "examples": ["用", "甩", "通"],
+    "mnemonic_ru": "Забор из досок — полезная вещь, применение",
+    "category": "abstract"
+  },
+  {
+    "id": 102,
+    "char": "田",
+    "pinyin": "tián",
+    "meaning_ru": "поле",
+    "meaning_en": "field",
+    "strokes": 5,
+    "examples": ["男", "思", "界"],
+    "mnemonic_ru": "Рисовое поле, разделённое на участки — квадрат с крестом",
+    "category": "nature"
+  },
+  {
+    "id": 103,
+    "char": "疋",
+    "pinyin": "pǐ",
+    "meaning_ru": "отрез ткани, штука",
+    "meaning_en": "bolt of cloth",
+    "strokes": 5,
+    "examples": ["疏", "疑", "蛋"],
+    "mnemonic_ru": "Рулон ткани разворачивается — отмерять",
+    "category": "object"
+  },
+  {
+    "id": 104,
+    "char": "疒",
+    "pinyin": "nè",
+    "meaning_ru": "болезнь",
+    "meaning_en": "sickness",
+    "strokes": 5,
+    "examples": ["病", "痛", "疗"],
+    "mnemonic_ru": "Человек лёг на кровать — заболел",
+    "category": "human"
+  },
+  {
+    "id": 105,
+    "char": "癶",
+    "pinyin": "bō",
+    "meaning_ru": "ступни врозь",
+    "meaning_en": "footsteps",
+    "strokes": 5,
+    "examples": ["发", "登", "癸"],
+    "mnemonic_ru": "Две ступни расставлены — готов шагнуть",
+    "category": "human"
+  },
+  {
+    "id": 106,
+    "char": "白",
+    "pinyin": "bái",
+    "meaning_ru": "белый",
+    "meaning_en": "white",
+    "strokes": 5,
+    "examples": ["百", "的", "皇"],
+    "mnemonic_ru": "Луч солнца падает — белый свет, чистота",
+    "category": "nature"
+  },
+  {
+    "id": 107,
+    "char": "皮",
+    "pinyin": "pí",
+    "meaning_ru": "кожа, шкура",
+    "meaning_en": "skin, hide",
+    "strokes": 5,
+    "examples": ["破", "波", "被"],
+    "mnemonic_ru": "Рука снимает шкуру — кожевенное дело",
+    "category": "human"
+  },
+  {
+    "id": 108,
+    "char": "皿",
+    "pinyin": "mǐn",
+    "meaning_ru": "посуда, блюдо",
+    "meaning_en": "dish, vessel",
+    "strokes": 5,
+    "examples": ["盘", "盖", "盛"],
+    "mnemonic_ru": "Плоское блюдо на подставке — посуда",
+    "category": "object"
+  },
+  {
+    "id": 109,
+    "char": "目",
+    "pinyin": "mù",
+    "meaning_ru": "глаз",
+    "meaning_en": "eye",
+    "strokes": 5,
+    "examples": ["看", "眼", "相"],
+    "mnemonic_ru": "Вертикальный глаз с зрачком — пристальный взгляд",
+    "category": "human"
+  },
+  {
+    "id": 110,
+    "char": "矛",
+    "pinyin": "máo",
+    "meaning_ru": "копьё",
+    "meaning_en": "spear",
+    "strokes": 5,
+    "examples": ["矛", "矜", "柔"],
+    "mnemonic_ru": "Длинное копьё с наконечником — колющее оружие",
+    "category": "object"
+  },
+  {
+    "id": 111,
+    "char": "矢",
+    "pinyin": "shǐ",
+    "meaning_ru": "стрела",
+    "meaning_en": "arrow",
+    "strokes": 5,
+    "examples": ["知", "短", "矮"],
+    "mnemonic_ru": "Стрела с оперением летит в цель",
+    "category": "object"
+  },
+  {
+    "id": 112,
+    "char": "石",
+    "pinyin": "shí",
+    "meaning_ru": "камень",
+    "meaning_en": "stone",
+    "strokes": 5,
+    "examples": ["破", "研", "碗"],
+    "mnemonic_ru": "Камень под обрывом — твёрдый и тяжёлый",
+    "category": "nature"
+  },
+  {
+    "id": 113,
+    "char": "示",
+    "pinyin": "shì",
+    "meaning_ru": "показывать, божество, алтарь",
+    "meaning_en": "show, spirit, altar",
+    "strokes": 5,
+    "examples": ["社", "神", "祝"],
+    "mnemonic_ru": "Алтарь с тремя каплями — жертвоприношение духам",
+    "category": "abstract",
+    "variant": "礻"
+  },
+  {
+    "id": 114,
+    "char": "禸",
+    "pinyin": "róu",
+    "meaning_ru": "след зверя",
+    "meaning_en": "animal track",
+    "strokes": 5,
+    "examples": ["禹", "禽", "离"],
+    "mnemonic_ru": "Отпечаток звериной лапы на земле",
+    "category": "animal"
+  },
+  {
+    "id": 115,
+    "char": "禾",
+    "pinyin": "hé",
+    "meaning_ru": "злак, колос",
+    "meaning_en": "grain, cereal",
+    "strokes": 5,
+    "examples": ["和", "秋", "种"],
+    "mnemonic_ru": "Колос риса склонился — урожай зреет",
+    "category": "nature"
+  },
+  {
+    "id": 116,
+    "char": "穴",
+    "pinyin": "xué",
+    "meaning_ru": "пещера, нора",
+    "meaning_en": "cave, hole",
+    "strokes": 5,
+    "examples": ["空", "穷", "突"],
+    "mnemonic_ru": "Крыша с двумя отверстиями — пещера в скале",
+    "category": "nature"
+  },
+  {
+    "id": 117,
+    "char": "立",
+    "pinyin": "lì",
+    "meaning_ru": "стоять",
+    "meaning_en": "stand",
+    "strokes": 5,
+    "examples": ["站", "端", "竞"],
+    "mnemonic_ru": "Человек твёрдо стоит на земле — опора",
+    "category": "human"
+  },
+  {
+    "id": 118,
+    "char": "竹",
+    "pinyin": "zhú",
+    "meaning_ru": "бамбук",
+    "meaning_en": "bamboo",
+    "strokes": 6,
+    "examples": ["笔", "笑", "第"],
+    "mnemonic_ru": "Два стебля бамбука с листьями — бамбуковая роща",
+    "category": "nature",
+    "variant": "⺮"
+  },
+  {
+    "id": 119,
+    "char": "米",
+    "pinyin": "mǐ",
+    "meaning_ru": "рис",
+    "meaning_en": "rice",
+    "strokes": 6,
+    "examples": ["粮", "精", "类"],
+    "mnemonic_ru": "Зёрна риса рассыпаны крестом — основа питания",
+    "category": "nature"
+  },
+  {
+    "id": 120,
+    "char": "糸",
+    "pinyin": "mì",
+    "meaning_ru": "шёлк, нить",
+    "meaning_en": "silk, thread",
+    "strokes": 6,
+    "examples": ["红", "线", "给"],
+    "mnemonic_ru": "Моток шёлковой нити — тонкая пряжа",
+    "category": "object",
+    "variant": "纟"
+  },
+  {
+    "id": 121,
+    "char": "缶",
+    "pinyin": "fǒu",
+    "meaning_ru": "глиняный сосуд",
+    "meaning_en": "jar, pottery",
+    "strokes": 6,
+    "examples": ["缺", "罐", "缸"],
+    "mnemonic_ru": "Глиняный горшок — простая посуда гончара",
+    "category": "object"
+  },
+  {
+    "id": 122,
+    "char": "网",
+    "pinyin": "wǎng",
+    "meaning_ru": "сеть",
+    "meaning_en": "net",
+    "strokes": 6,
+    "examples": ["罗", "罚", "罢"],
+    "mnemonic_ru": "Сплетённая сеть — ловушка для рыбы",
+    "category": "object",
+    "variant": "罒"
+  },
+  {
+    "id": 123,
+    "char": "羊",
+    "pinyin": "yáng",
+    "meaning_ru": "баран, овца",
+    "meaning_en": "sheep, goat",
+    "strokes": 6,
+    "examples": ["美", "样", "鲜"],
+    "mnemonic_ru": "Морда барана с рогами — кудрявый и добрый",
+    "category": "animal"
+  },
+  {
+    "id": 124,
+    "char": "羽",
+    "pinyin": "yǔ",
+    "meaning_ru": "перо, крыло",
+    "meaning_en": "feather, wing",
+    "strokes": 6,
+    "examples": ["习", "翔", "翻"],
+    "mnemonic_ru": "Два пера рядом — крылья птицы",
+    "category": "animal"
+  },
+  {
+    "id": 125,
+    "char": "老",
+    "pinyin": "lǎo",
+    "meaning_ru": "старый, почтенный",
+    "meaning_en": "old, venerable",
+    "strokes": 6,
+    "examples": ["老", "考", "者"],
+    "mnemonic_ru": "Старик с клюкой — седая мудрость",
+    "category": "human"
+  },
+  {
+    "id": 126,
+    "char": "而",
+    "pinyin": "ér",
+    "meaning_ru": "а, и, борода",
+    "meaning_en": "and, yet, beard",
+    "strokes": 6,
+    "examples": ["而", "耐", "需"],
+    "mnemonic_ru": "Свисающая борода — связка между словами",
+    "category": "human"
+  },
+  {
+    "id": 127,
+    "char": "耒",
+    "pinyin": "lěi",
+    "meaning_ru": "плуг, соха",
+    "meaning_en": "plow",
+    "strokes": 6,
+    "examples": ["耕", "耗", "耘"],
+    "mnemonic_ru": "Деревянный плуг — инструмент пахаря",
+    "category": "object"
+  },
+  {
+    "id": 128,
+    "char": "耳",
+    "pinyin": "ěr",
+    "meaning_ru": "ухо",
+    "meaning_en": "ear",
+    "strokes": 6,
+    "examples": ["闻", "聪", "职"],
+    "mnemonic_ru": "Ушная раковина — прислушивается к звукам",
+    "category": "human"
+  },
+  {
+    "id": 129,
+    "char": "聿",
+    "pinyin": "yù",
+    "meaning_ru": "кисть для письма",
+    "meaning_en": "writing brush",
+    "strokes": 6,
+    "examples": ["书", "律", "建"],
+    "mnemonic_ru": "Рука держит кисть — каллиграфия",
+    "category": "object"
+  },
+  {
+    "id": 130,
+    "char": "肉",
+    "pinyin": "ròu",
+    "meaning_ru": "мясо, плоть",
+    "meaning_en": "meat, flesh",
+    "strokes": 6,
+    "examples": ["肥", "肩", "胖"],
+    "mnemonic_ru": "Кусок мяса с прожилками — плоть",
+    "category": "human"
+  },
+  {
+    "id": 131,
+    "char": "臣",
+    "pinyin": "chén",
+    "meaning_ru": "подданный, чиновник",
+    "meaning_en": "minister, official",
+    "strokes": 6,
+    "examples": ["臣", "卧", "临"],
+    "mnemonic_ru": "Глаз, склонённый вниз — подданный перед правителем",
+    "category": "human"
+  },
+  {
+    "id": 132,
+    "char": "自",
+    "pinyin": "zì",
+    "meaning_ru": "сам, нос",
+    "meaning_en": "self, nose",
+    "strokes": 6,
+    "examples": ["自", "息", "鼻"],
+    "mnemonic_ru": "Палец указывает на нос — это я сам!",
+    "category": "human"
+  },
+  {
+    "id": 133,
+    "char": "至",
+    "pinyin": "zhì",
+    "meaning_ru": "достигать, до",
+    "meaning_en": "arrive, reach",
+    "strokes": 6,
+    "examples": ["到", "致", "室"],
+    "mnemonic_ru": "Стрела воткнулась в землю — цель достигнута",
+    "category": "abstract"
+  },
+  {
+    "id": 134,
+    "char": "臼",
+    "pinyin": "jiù",
+    "meaning_ru": "ступка",
+    "meaning_en": "mortar",
+    "strokes": 6,
+    "examples": ["臼", "舅", "鼠"],
+    "mnemonic_ru": "Каменная ступка — ёмкость для растирания зерна",
+    "category": "object"
+  },
+  {
+    "id": 135,
+    "char": "舌",
+    "pinyin": "shé",
+    "meaning_ru": "язык",
+    "meaning_en": "tongue",
+    "strokes": 6,
+    "examples": ["话", "舍", "乱"],
+    "mnemonic_ru": "Язык высунут изо рта — болтать, пробовать на вкус",
+    "category": "human"
+  },
+  {
+    "id": 136,
+    "char": "舛",
+    "pinyin": "chuǎn",
+    "meaning_ru": "ошибка, противоположный",
+    "meaning_en": "oppose, error",
+    "strokes": 7,
+    "examples": ["舞", "舜", "舛"],
+    "mnemonic_ru": "Две ноги идут в разные стороны — путаница",
+    "category": "abstract"
+  },
+  {
+    "id": 137,
+    "char": "舟",
+    "pinyin": "zhōu",
+    "meaning_ru": "лодка",
+    "meaning_en": "boat",
+    "strokes": 6,
+    "examples": ["船", "航", "般"],
+    "mnemonic_ru": "Лодка-долблёнка — выдолбленное бревно на воде",
+    "category": "object"
+  },
+  {
+    "id": 138,
+    "char": "艮",
+    "pinyin": "gèn",
+    "meaning_ru": "гора (триграмма), останавливаться",
+    "meaning_en": "mountain trigram, stop",
+    "strokes": 6,
+    "examples": ["很", "根", "跟"],
+    "mnemonic_ru": "Глаз упёрся в гору — стоп, граница",
+    "category": "abstract"
+  },
+  {
+    "id": 139,
+    "char": "色",
+    "pinyin": "sè",
+    "meaning_ru": "цвет, красота",
+    "meaning_en": "color, beauty",
+    "strokes": 6,
+    "examples": ["色", "绝", "艳"],
+    "mnemonic_ru": "Человек преклонил колено перед красотой — цвет",
+    "category": "abstract"
+  },
+  {
+    "id": 140,
+    "char": "艸",
+    "pinyin": "cǎo",
+    "meaning_ru": "трава",
+    "meaning_en": "grass",
+    "strokes": 6,
+    "examples": ["花", "草", "茶"],
+    "mnemonic_ru": "Два ростка торчат из земли — зелёная трава",
+    "category": "nature",
+    "variant": "艹"
+  },
+  {
+    "id": 141,
+    "char": "虍",
+    "pinyin": "hū",
+    "meaning_ru": "тигровые полосы",
+    "meaning_en": "tiger stripes",
+    "strokes": 6,
+    "examples": ["虎", "虑", "虚"],
+    "mnemonic_ru": "Полосатая шкура тигра — хищник затаился",
+    "category": "animal"
+  },
+  {
+    "id": 142,
+    "char": "虫",
+    "pinyin": "chóng",
+    "meaning_ru": "насекомое, червь",
+    "meaning_en": "insect, worm",
+    "strokes": 6,
+    "examples": ["蛇", "蝴", "蚊"],
+    "mnemonic_ru": "Ползающее существо — змея или гусеница",
+    "category": "animal"
+  },
+  {
+    "id": 143,
+    "char": "血",
+    "pinyin": "xuè",
+    "meaning_ru": "кровь",
+    "meaning_en": "blood",
+    "strokes": 6,
+    "examples": ["血", "衅", "衆"],
+    "mnemonic_ru": "Капля крови в чаше — жертвенная кровь",
+    "category": "human"
+  },
+  {
+    "id": 144,
+    "char": "行",
+    "pinyin": "xíng",
+    "meaning_ru": "идти, ряд",
+    "meaning_en": "walk, go, row",
+    "strokes": 6,
+    "examples": ["行", "街", "衡"],
+    "mnemonic_ru": "Перекрёсток дорог — иди, двигайся",
+    "category": "abstract"
+  },
+  {
+    "id": 145,
+    "char": "衣",
+    "pinyin": "yī",
+    "meaning_ru": "одежда",
+    "meaning_en": "clothes",
+    "strokes": 6,
+    "examples": ["表", "裁", "被"],
+    "mnemonic_ru": "Халат с полами и рукавами — накидка",
+    "category": "object",
+    "variant": "衤"
+  },
+  {
+    "id": 146,
+    "char": "襾",
+    "pinyin": "yà",
+    "meaning_ru": "покрывало, запад",
+    "meaning_en": "cover, west",
+    "strokes": 6,
+    "examples": ["西", "要", "覆"],
+    "mnemonic_ru": "Солнце садится под покрывало — запад",
+    "category": "abstract"
+  },
+  {
+    "id": 147,
+    "char": "見",
+    "pinyin": "jiàn",
+    "meaning_ru": "видеть",
+    "meaning_en": "see",
+    "strokes": 7,
+    "examples": ["观", "视", "现"],
+    "mnemonic_ru": "Большой глаз на ногах — идёт и смотрит",
+    "category": "human",
+    "variant": "见"
+  },
+  {
+    "id": 148,
+    "char": "角",
+    "pinyin": "jiǎo",
+    "meaning_ru": "рог, угол",
+    "meaning_en": "horn, angle",
+    "strokes": 7,
+    "examples": ["解", "触", "角"],
+    "mnemonic_ru": "Рог животного — острый угол",
+    "category": "animal"
+  },
+  {
+    "id": 149,
+    "char": "言",
+    "pinyin": "yán",
+    "meaning_ru": "речь, слово",
+    "meaning_en": "speech, word",
+    "strokes": 7,
+    "examples": ["语", "话", "说"],
+    "mnemonic_ru": "Звуковые волны изо рта — слова, речь",
+    "category": "abstract",
+    "variant": "讠"
+  },
+  {
+    "id": 150,
+    "char": "谷",
+    "pinyin": "gǔ",
+    "meaning_ru": "долина, ущелье",
+    "meaning_en": "valley",
+    "strokes": 7,
+    "examples": ["谷", "欲", "浴"],
+    "mnemonic_ru": "Ущелье между гор — вода течёт по долине",
+    "category": "nature"
+  },
+  {
+    "id": 151,
+    "char": "豆",
+    "pinyin": "dòu",
+    "meaning_ru": "бобы, сосуд на ножке",
+    "meaning_en": "bean, ritual vessel",
+    "strokes": 7,
+    "examples": ["豆", "豊", "短"],
+    "mnemonic_ru": "Ритуальная чаша на высокой ножке — бобы",
+    "category": "nature"
+  },
+  {
+    "id": 152,
+    "char": "豕",
+    "pinyin": "shǐ",
+    "meaning_ru": "свинья",
+    "meaning_en": "pig",
+    "strokes": 7,
+    "examples": ["家", "象", "豪"],
+    "mnemonic_ru": "Свинья с брюхом и хвостиком — хрюшка",
+    "category": "animal"
+  },
+  {
+    "id": 153,
+    "char": "豸",
+    "pinyin": "zhì",
+    "meaning_ru": "хищный зверь",
+    "meaning_en": "wild beast",
+    "strokes": 7,
+    "examples": ["豹", "貌", "貂"],
+    "mnemonic_ru": "Хищник припал к земле — готов к прыжку",
+    "category": "animal"
+  },
+  {
+    "id": 154,
+    "char": "貝",
+    "pinyin": "bèi",
+    "meaning_ru": "раковина, деньги",
+    "meaning_en": "shell, money",
+    "strokes": 7,
+    "examples": ["财", "贵", "贝"],
+    "mnemonic_ru": "Раковина каури — древние деньги",
+    "category": "object",
+    "variant": "贝"
+  },
+  {
+    "id": 155,
+    "char": "赤",
+    "pinyin": "chì",
+    "meaning_ru": "красный, голый",
+    "meaning_en": "red, bare",
+    "strokes": 7,
+    "examples": ["赤", "赦", "赫"],
+    "mnemonic_ru": "Человек у огня — покраснел от жара",
+    "category": "nature"
+  },
+  {
+    "id": 156,
+    "char": "走",
+    "pinyin": "zǒu",
+    "meaning_ru": "бежать, идти",
+    "meaning_en": "run, walk",
+    "strokes": 7,
+    "examples": ["起", "赶", "超"],
+    "mnemonic_ru": "Человек в движении — бежит, размахивая руками",
+    "category": "human"
+  },
+  {
+    "id": 157,
+    "char": "足",
+    "pinyin": "zú",
+    "meaning_ru": "нога, стопа",
+    "meaning_en": "foot, leg",
+    "strokes": 7,
+    "examples": ["跑", "路", "跳"],
+    "mnemonic_ru": "Стопа с коленом — шагающая нога",
+    "category": "human",
+    "variant": "⻊"
+  },
+  {
+    "id": 158,
+    "char": "身",
+    "pinyin": "shēn",
+    "meaning_ru": "тело",
+    "meaning_en": "body",
+    "strokes": 7,
+    "examples": ["身", "躲", "射"],
+    "mnemonic_ru": "Беременная женщина — тело с животом",
+    "category": "human"
+  },
+  {
+    "id": 159,
+    "char": "車",
+    "pinyin": "chē",
+    "meaning_ru": "повозка, колесница",
+    "meaning_en": "cart, vehicle",
+    "strokes": 7,
+    "examples": ["军", "转", "轮"],
+    "mnemonic_ru": "Повозка с колёсами — вид сверху",
+    "category": "object",
+    "variant": "车"
+  },
+  {
+    "id": 160,
+    "char": "辛",
+    "pinyin": "xīn",
+    "meaning_ru": "горький, острый, тяжёлый",
+    "meaning_en": "bitter, hard, toilsome",
+    "strokes": 7,
+    "examples": ["辞", "辣", "辨"],
+    "mnemonic_ru": "Орудие казни — горечь наказания",
+    "category": "abstract"
+  },
+  {
+    "id": 161,
+    "char": "辰",
+    "pinyin": "chén",
+    "meaning_ru": "утро, созвездие, земная ветвь",
+    "meaning_en": "morning, celestial body",
+    "strokes": 7,
+    "examples": ["晨", "辱", "振"],
+    "mnemonic_ru": "Моллюск в раковине — время, звёзды",
+    "category": "nature"
+  },
+  {
+    "id": 162,
+    "char": "辵",
+    "pinyin": "chuò",
+    "meaning_ru": "идти, движение",
+    "meaning_en": "walk, advance",
+    "strokes": 7,
+    "examples": ["过", "还", "进"],
+    "mnemonic_ru": "Нога на перекрёстке — идти, продвигаться",
+    "category": "abstract",
+    "variant": "辶"
+  },
+  {
+    "id": 163,
+    "char": "邑",
+    "pinyin": "yì",
+    "meaning_ru": "город, селение",
+    "meaning_en": "city, settlement",
+    "strokes": 7,
+    "examples": ["都", "部", "邮"],
+    "mnemonic_ru": "Человек преклонил колено у стены — поселение",
+    "category": "object",
+    "variant": "⻏"
+  },
+  {
+    "id": 164,
+    "char": "酉",
+    "pinyin": "yǒu",
+    "meaning_ru": "кувшин для вина, десятая ветвь",
+    "meaning_en": "wine vessel",
+    "strokes": 7,
+    "examples": ["酒", "醉", "配"],
+    "mnemonic_ru": "Глиняный кувшин с вином — бродит, пахнет",
+    "category": "object"
+  },
+  {
+    "id": 165,
+    "char": "釆",
+    "pinyin": "biàn",
+    "meaning_ru": "различать, след зверя",
+    "meaning_en": "distinguish, animal footprint",
+    "strokes": 7,
+    "examples": ["释", "番", "审"],
+    "mnemonic_ru": "Когтистый след на земле — различать следы",
+    "category": "abstract"
+  },
+  {
+    "id": 166,
+    "char": "里",
+    "pinyin": "lǐ",
+    "meaning_ru": "деревня, мера длины ли",
+    "meaning_en": "village, mile",
+    "strokes": 7,
+    "examples": ["里", "理", "野"],
+    "mnemonic_ru": "Поле и земля — деревня, родная земля",
+    "category": "nature"
+  },
+  {
+    "id": 167,
+    "char": "金",
+    "pinyin": "jīn",
+    "meaning_ru": "золото, металл",
+    "meaning_en": "gold, metal",
+    "strokes": 8,
+    "examples": ["银", "铁", "钱"],
+    "mnemonic_ru": "Самородки в земле под крышей — золото, металл",
+    "category": "nature",
+    "variant": "钅"
+  },
+  {
+    "id": 168,
+    "char": "長",
+    "pinyin": "cháng",
+    "meaning_ru": "длинный, старший",
+    "meaning_en": "long, senior",
+    "strokes": 8,
+    "examples": ["长", "张", "帐"],
+    "mnemonic_ru": "Старец с длинными волосами и посохом",
+    "category": "abstract",
+    "variant": "长"
+  },
+  {
+    "id": 169,
+    "char": "門",
+    "pinyin": "mén",
+    "meaning_ru": "ворота",
+    "meaning_en": "gate, door",
+    "strokes": 8,
+    "examples": ["间", "问", "闻"],
+    "mnemonic_ru": "Двустворчатые ворота — вход в город",
+    "category": "object",
+    "variant": "门"
+  },
+  {
+    "id": 170,
+    "char": "阜",
+    "pinyin": "fù",
+    "meaning_ru": "холм, насыпь",
+    "meaning_en": "mound, hill",
+    "strokes": 8,
+    "examples": ["院", "阳", "队"],
+    "mnemonic_ru": "Ступенчатый холм — земляная насыпь",
+    "category": "nature",
+    "variant": "⻖"
+  },
+  {
+    "id": 171,
+    "char": "隶",
+    "pinyin": "lì",
+    "meaning_ru": "раб, подчинённый",
+    "meaning_en": "slave, subordinate",
+    "strokes": 8,
+    "examples": ["隶", "隸", "康"],
+    "mnemonic_ru": "Рука схватила беглеца — поймали, подчинили",
+    "category": "human"
+  },
+  {
+    "id": 172,
+    "char": "隹",
+    "pinyin": "zhuī",
+    "meaning_ru": "короткохвостая птица",
+    "meaning_en": "short-tailed bird",
+    "strokes": 8,
+    "examples": ["谁", "难", "集"],
+    "mnemonic_ru": "Пухлая птичка на ветке — воробей",
+    "category": "animal"
+  },
+  {
+    "id": 173,
+    "char": "雨",
+    "pinyin": "yǔ",
+    "meaning_ru": "дождь",
+    "meaning_en": "rain",
+    "strokes": 8,
+    "examples": ["雪", "雷", "电"],
+    "mnemonic_ru": "Капли падают из тучи — дождь за окном",
+    "category": "nature"
+  },
+  {
+    "id": 174,
+    "char": "靑",
+    "pinyin": "qīng",
+    "meaning_ru": "синий, зелёный, молодой",
+    "meaning_en": "blue, green, young",
+    "strokes": 8,
+    "examples": ["青", "清", "情"],
+    "mnemonic_ru": "Растения и чистая вода — свежая зелень юности",
+    "category": "nature",
+    "variant": "青"
+  },
+  {
+    "id": 175,
+    "char": "非",
+    "pinyin": "fēi",
+    "meaning_ru": "не, ошибка, противоположный",
+    "meaning_en": "not, wrong, oppose",
+    "strokes": 8,
+    "examples": ["非", "悲", "排"],
+    "mnemonic_ru": "Два крыла разлетаются — разделение, отрицание",
+    "category": "abstract"
+  },
+  {
+    "id": 176,
+    "char": "面",
+    "pinyin": "miàn",
+    "meaning_ru": "лицо, поверхность",
+    "meaning_en": "face, surface",
+    "strokes": 9,
+    "examples": ["面", "麵"],
+    "mnemonic_ru": "Лицо в рамке — глаз и контур головы",
+    "category": "human"
+  },
+  {
+    "id": 177,
+    "char": "革",
+    "pinyin": "gé",
+    "meaning_ru": "кожа (выделанная), реформа",
+    "meaning_en": "leather, reform",
+    "strokes": 9,
+    "examples": ["鞋", "靴", "勒"],
+    "mnemonic_ru": "Шкура натянута на раму — выделанная кожа",
+    "category": "object"
+  },
+  {
+    "id": 178,
+    "char": "韋",
+    "pinyin": "wéi",
+    "meaning_ru": "мягкая кожа",
+    "meaning_en": "soft leather, tanned hide",
+    "strokes": 9,
+    "examples": ["韩", "韧", "违"],
+    "mnemonic_ru": "Ноги ходят вокруг кожи — мнут, выделывают",
+    "category": "object",
+    "variant": "韦"
+  },
+  {
+    "id": 179,
+    "char": "韭",
+    "pinyin": "jiǔ",
+    "meaning_ru": "лук-порей, черемша",
+    "meaning_en": "leek",
+    "strokes": 9,
+    "examples": ["韭", "韮"],
+    "mnemonic_ru": "Пучки лука растут на грядке — зелёные стрелки",
+    "category": "nature"
+  },
+  {
+    "id": 180,
+    "char": "音",
+    "pinyin": "yīn",
+    "meaning_ru": "звук",
+    "meaning_en": "sound",
+    "strokes": 9,
+    "examples": ["音", "意", "暗"],
+    "mnemonic_ru": "Слово рождается во рту — звук речи, музыка",
+    "category": "abstract"
+  },
+  {
+    "id": 181,
+    "char": "頁",
+    "pinyin": "yè",
+    "meaning_ru": "голова, страница",
+    "meaning_en": "head, page",
+    "strokes": 9,
+    "examples": ["顶", "须", "领"],
+    "mnemonic_ru": "Голова на шее — макушка, лоб",
+    "category": "human",
+    "variant": "页"
+  },
+  {
+    "id": 182,
+    "char": "風",
+    "pinyin": "fēng",
+    "meaning_ru": "ветер",
+    "meaning_en": "wind",
+    "strokes": 9,
+    "examples": ["风", "岚", "飒"],
+    "mnemonic_ru": "Насекомое под парусом — ветер несёт",
+    "category": "nature",
+    "variant": "风"
+  },
+  {
+    "id": 183,
+    "char": "飛",
+    "pinyin": "fēi",
+    "meaning_ru": "летать",
+    "meaning_en": "fly",
+    "strokes": 9,
+    "examples": ["飞", "飘"],
+    "mnemonic_ru": "Птица поднимает крылья — взлетает!",
+    "category": "abstract",
+    "variant": "飞"
+  },
+  {
+    "id": 184,
+    "char": "食",
+    "pinyin": "shí",
+    "meaning_ru": "еда, есть",
+    "meaning_en": "food, eat",
+    "strokes": 9,
+    "examples": ["饭", "饮", "饿"],
+    "mnemonic_ru": "Крышка над чашей с рисом — еда готова",
+    "category": "object",
+    "variant": "饣"
+  },
+  {
+    "id": 185,
+    "char": "首",
+    "pinyin": "shǒu",
+    "meaning_ru": "голова, первый",
+    "meaning_en": "head, first",
+    "strokes": 9,
+    "examples": ["首", "道", "导"],
+    "mnemonic_ru": "Голова с волосами — глава, начало всего",
+    "category": "human"
+  },
+  {
+    "id": 186,
+    "char": "香",
+    "pinyin": "xiāng",
+    "meaning_ru": "аромат, благовоние",
+    "meaning_en": "fragrant",
+    "strokes": 9,
+    "examples": ["香", "馨", "馥"],
+    "mnemonic_ru": "Злаки на солнце — запах спелого зерна, аромат",
+    "category": "nature"
+  },
+  {
+    "id": 187,
+    "char": "馬",
+    "pinyin": "mǎ",
+    "meaning_ru": "лошадь",
+    "meaning_en": "horse",
+    "strokes": 10,
+    "examples": ["马", "骑", "驾"],
+    "mnemonic_ru": "Лошадь с гривой и четырьмя копытами — скачет",
+    "category": "animal",
+    "variant": "马"
+  },
+  {
+    "id": 188,
+    "char": "骨",
+    "pinyin": "gǔ",
+    "meaning_ru": "кость",
+    "meaning_en": "bone",
+    "strokes": 10,
+    "examples": ["骨", "骼", "髓"],
+    "mnemonic_ru": "Скелет с суставами — кость, остов",
+    "category": "human"
+  },
+  {
+    "id": 189,
+    "char": "高",
+    "pinyin": "gāo",
+    "meaning_ru": "высокий",
+    "meaning_en": "tall, high",
+    "strokes": 10,
+    "examples": ["高", "搞", "稿"],
+    "mnemonic_ru": "Высокая башня с окном — дозорная вышка",
+    "category": "abstract"
+  },
+  {
+    "id": 190,
+    "char": "髟",
+    "pinyin": "biāo",
+    "meaning_ru": "длинные волосы",
+    "meaning_en": "long hair",
+    "strokes": 10,
+    "examples": ["髪", "鬓", "髻"],
+    "mnemonic_ru": "Длинные волосы свисают с головы — причёска",
+    "category": "human"
+  },
+  {
+    "id": 191,
+    "char": "鬥",
+    "pinyin": "dòu",
+    "meaning_ru": "сражаться",
+    "meaning_en": "fight",
+    "strokes": 10,
+    "examples": ["斗", "闘", "斛"],
+    "mnemonic_ru": "Два бойца лицом к лицу — схватка",
+    "category": "abstract"
+  },
+  {
+    "id": 192,
+    "char": "鬯",
+    "pinyin": "chàng",
+    "meaning_ru": "ароматное вино",
+    "meaning_en": "sacrificial wine",
+    "strokes": 10,
+    "examples": ["鬯", "鬱", "郁"],
+    "mnemonic_ru": "Кувшин с травяным вином — ритуальный напиток",
+    "category": "object"
+  },
+  {
+    "id": 193,
+    "char": "鬲",
+    "pinyin": "lì",
+    "meaning_ru": "котёл-треножник",
+    "meaning_en": "tripod cauldron",
+    "strokes": 10,
+    "examples": ["鬲", "融", "隔"],
+    "mnemonic_ru": "Котёл на трёх ножках — варить еду на огне",
+    "category": "object"
+  },
+  {
+    "id": 194,
+    "char": "鬼",
+    "pinyin": "guǐ",
+    "meaning_ru": "дух, призрак",
+    "meaning_en": "ghost, demon",
+    "strokes": 10,
+    "examples": ["魂", "魔", "鬼"],
+    "mnemonic_ru": "Страшная фигура с рогами — призрак во тьме",
+    "category": "abstract"
+  },
+  {
+    "id": 195,
+    "char": "魚",
+    "pinyin": "yú",
+    "meaning_ru": "рыба",
+    "meaning_en": "fish",
+    "strokes": 11,
+    "examples": ["鱼", "鲜", "鲤"],
+    "mnemonic_ru": "Рыба с головой, телом и хвостом — плещется",
+    "category": "animal",
+    "variant": "鱼"
+  },
+  {
+    "id": 196,
+    "char": "鳥",
+    "pinyin": "niǎo",
+    "meaning_ru": "птица",
+    "meaning_en": "bird",
+    "strokes": 11,
+    "examples": ["鸟", "鸡", "鸣"],
+    "mnemonic_ru": "Птица с клювом, крыльями и хвостом — поёт",
+    "category": "animal",
+    "variant": "鸟"
+  },
+  {
+    "id": 197,
+    "char": "鹵",
+    "pinyin": "lǔ",
+    "meaning_ru": "соль, рассол",
+    "meaning_en": "salt, brine",
+    "strokes": 11,
+    "examples": ["卤", "咸", "鹹"],
+    "mnemonic_ru": "Кристаллы соли в чане — солёный рассол",
+    "category": "nature",
+    "variant": "卤"
+  },
+  {
+    "id": 198,
+    "char": "鹿",
+    "pinyin": "lù",
+    "meaning_ru": "олень",
+    "meaning_en": "deer",
+    "strokes": 11,
+    "examples": ["鹿", "麓", "麝"],
+    "mnemonic_ru": "Олень с ветвистыми рогами — грациозный",
+    "category": "animal"
+  },
+  {
+    "id": 199,
+    "char": "麥",
+    "pinyin": "mài",
+    "meaning_ru": "пшеница",
+    "meaning_en": "wheat",
+    "strokes": 11,
+    "examples": ["麦", "面", "麸"],
+    "mnemonic_ru": "Колос пшеницы с корнями — хлеб насущный",
+    "category": "nature",
+    "variant": "麦"
+  },
+  {
+    "id": 200,
+    "char": "麻",
+    "pinyin": "má",
+    "meaning_ru": "конопля, лён",
+    "meaning_en": "hemp, flax",
+    "strokes": 11,
+    "examples": ["麻", "磨", "魔"],
+    "mnemonic_ru": "Стебли конопли сушатся под навесом — волокно",
+    "category": "nature"
+  },
+  {
+    "id": 201,
+    "char": "黃",
+    "pinyin": "huáng",
+    "meaning_ru": "жёлтый",
+    "meaning_en": "yellow",
+    "strokes": 12,
+    "examples": ["黄", "横", "璜"],
+    "mnemonic_ru": "Свет огня в поле — жёлтый цвет лёссовой земли",
+    "category": "nature",
+    "variant": "黄"
+  },
+  {
+    "id": 202,
+    "char": "黍",
+    "pinyin": "shǔ",
+    "meaning_ru": "просо",
+    "meaning_en": "millet",
+    "strokes": 12,
+    "examples": ["黍", "黏", "黎"],
+    "mnemonic_ru": "Зёрна проса в воде — каша, основа древней еды",
+    "category": "nature"
+  },
+  {
+    "id": 203,
+    "char": "黑",
+    "pinyin": "hēi",
+    "meaning_ru": "чёрный",
+    "meaning_en": "black",
+    "strokes": 12,
+    "examples": ["黑", "默", "墨"],
+    "mnemonic_ru": "Копоть на огне — всё стало чёрным, тьма",
+    "category": "nature"
+  },
+  {
+    "id": 204,
+    "char": "黹",
+    "pinyin": "zhǐ",
+    "meaning_ru": "вышивка",
+    "meaning_en": "embroidery",
+    "strokes": 12,
+    "examples": ["黻", "黼"],
+    "mnemonic_ru": "Иголка с ниткой — искусная вышивка на ткани",
+    "category": "object"
+  },
+  {
+    "id": 205,
+    "char": "黽",
+    "pinyin": "mǐn",
+    "meaning_ru": "лягушка, жаба",
+    "meaning_en": "frog, toad",
+    "strokes": 13,
+    "examples": ["黾", "鼋", "蝇"],
+    "mnemonic_ru": "Лягушка сверху — голова и лапки по бокам",
+    "category": "animal",
+    "variant": "黾"
+  },
+  {
+    "id": 206,
+    "char": "鼎",
+    "pinyin": "dǐng",
+    "meaning_ru": "треножный котёл, символ власти",
+    "meaning_en": "tripod cauldron, symbol of power",
+    "strokes": 13,
+    "examples": ["鼎", "鼐"],
+    "mnemonic_ru": "Массивный бронзовый котёл на трёх ногах — власть",
+    "category": "object"
+  },
+  {
+    "id": 207,
+    "char": "鼓",
+    "pinyin": "gǔ",
+    "meaning_ru": "барабан",
+    "meaning_en": "drum",
+    "strokes": 13,
+    "examples": ["鼓", "鼗", "鞀"],
+    "mnemonic_ru": "Рука бьёт по натянутой коже — бум-бум, барабан",
+    "category": "object"
+  },
+  {
+    "id": 208,
+    "char": "鼠",
+    "pinyin": "shǔ",
+    "meaning_ru": "мышь, крыса",
+    "meaning_en": "rat, mouse",
+    "strokes": 13,
+    "examples": ["鼠", "鼬", "鼹"],
+    "mnemonic_ru": "Мышь с зубками и хвостиком — юркая, шуршит",
+    "category": "animal"
+  },
+  {
+    "id": 209,
+    "char": "鼻",
+    "pinyin": "bí",
+    "meaning_ru": "нос",
+    "meaning_en": "nose",
+    "strokes": 14,
+    "examples": ["鼻", "鼾", "齁"],
+    "mnemonic_ru": "Нос в центре лица — дышит, нюхает",
+    "category": "human"
+  },
+  {
+    "id": 210,
+    "char": "齊",
+    "pinyin": "qí",
+    "meaning_ru": "ровный, равный",
+    "meaning_en": "even, equal",
+    "strokes": 14,
+    "examples": ["齐", "斋", "济"],
+    "mnemonic_ru": "Колосья одной высоты — ровный ряд, гармония",
+    "category": "abstract",
+    "variant": "齐"
+  },
+  {
+    "id": 211,
+    "char": "齒",
+    "pinyin": "chǐ",
+    "meaning_ru": "зубы",
+    "meaning_en": "teeth",
+    "strokes": 15,
+    "examples": ["齿", "龄", "龋"],
+    "mnemonic_ru": "Ряд зубов во рту — белая улыбка",
+    "category": "human",
+    "variant": "齿"
+  },
+  {
+    "id": 212,
+    "char": "龍",
+    "pinyin": "lóng",
+    "meaning_ru": "дракон",
+    "meaning_en": "dragon",
+    "strokes": 16,
+    "examples": ["龙", "笼", "聋"],
+    "mnemonic_ru": "Величественный дракон — извивается в облаках",
+    "category": "animal",
+    "variant": "龙"
+  },
+  {
+    "id": 213,
+    "char": "龜",
+    "pinyin": "guī",
+    "meaning_ru": "черепаха",
+    "meaning_en": "turtle",
+    "strokes": 16,
+    "examples": ["龟", "龟"],
+    "mnemonic_ru": "Черепаха с панцирем — мудрость и долголетие",
+    "category": "animal",
+    "variant": "龟"
+  },
+  {
+    "id": 214,
+    "char": "龠",
+    "pinyin": "yuè",
+    "meaning_ru": "флейта",
+    "meaning_en": "flute",
+    "strokes": 17,
+    "examples": ["龠", "籥", "钥"],
+    "mnemonic_ru": "Бамбуковая флейта с отверстиями — нежная мелодия",
+    "category": "object"
   }
 ]

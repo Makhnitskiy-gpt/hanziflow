@@ -1,6 +1,6 @@
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { useOutletContext } from 'react-router-dom';
+import { useOutletContext, useSearchParams } from 'react-router-dom';
 import { db } from '@/db';
 import type { Character, ItemStatus } from '@/types';
 import { CharacterCard } from '@/components/character/CharacterCard';
@@ -14,6 +14,24 @@ export default function Characters() {
   const { setCurrentChar } = useOutletContext<OutletCtx>();
   const [selected, setSelected] = useState<Character | null>(null);
   const [hskFilter, setHskFilter] = useState<number | null>(1);
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  // Handle ?char= query param (e.g., from RadicalDetail link)
+  const charParam = searchParams.get('char');
+  const allCharsForLookup = useLiveQuery(() => db.characters.toArray(), []);
+
+  useEffect(() => {
+    if (charParam && allCharsForLookup) {
+      const match = allCharsForLookup.find((c) => c.char === charParam);
+      if (match) {
+        setSelected(match);
+        setCurrentChar(match.char);
+        // Show all HSK levels so the character is visible
+        setHskFilter(null);
+        setSearchParams({}, { replace: true });
+      }
+    }
+  }, [charParam, allCharsForLookup, setCurrentChar, setSearchParams]);
 
   const characters = useLiveQuery(async () => {
     const items = hskFilter !== null
@@ -43,21 +61,27 @@ export default function Characters() {
       <div className="flex items-center justify-between">
         <h1 className="text-2xl text-rice font-medium">Иероглифы</h1>
 
-        {/* HSK level filter */}
+        {/* HSK level filter — only HSK-1 has data currently */}
         <div className="flex items-center gap-1.5">
           <span className="text-sm text-rice-muted mr-1">HSK:</span>
-          {[1, 2, 3, 4, 5, 6].map((lvl) => (
-            <button
+          <button
+            onClick={() => setHskFilter(hskFilter === 1 ? null : 1)}
+            className={`min-w-[44px] min-h-[44px] px-3 py-2 text-sm rounded-lg transition-colors ${
+              hskFilter === 1
+                ? 'bg-cinnabar text-white'
+                : 'text-rice-muted hover:text-rice bg-ink-elevated border border-ink-border'
+            }`}
+          >
+            1
+          </button>
+          {[2, 3, 4, 5, 6].map((lvl) => (
+            <span
               key={lvl}
-              onClick={() => setHskFilter(hskFilter === lvl ? null : lvl)}
-              className={`min-w-[44px] min-h-[44px] px-3 py-2 text-sm rounded-lg transition-colors ${
-                hskFilter === lvl
-                  ? 'bg-cinnabar text-white'
-                  : 'text-rice-muted hover:text-rice bg-ink-elevated border border-ink-border'
-              }`}
+              className="min-w-[44px] min-h-[44px] px-3 py-2 text-sm rounded-lg text-rice-dim bg-ink-elevated/50 border border-ink-border/50 flex items-center justify-center cursor-not-allowed"
+              title="Скоро"
             >
               {lvl}
-            </button>
+            </span>
           ))}
         </div>
       </div>

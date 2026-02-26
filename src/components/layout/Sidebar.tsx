@@ -20,6 +20,7 @@ const navItems: NavItem[] = [
   { to: '/review', icon: '復', label: 'Повторение' },
   { to: '/practice', icon: '練', label: 'Практика' },
   { to: '/progress', icon: '進', label: 'Прогресс' },
+  { to: '/guide', icon: '?', label: 'Справочник' },
 ];
 
 export function Sidebar({ onAiChatToggle, darkMode, onToggleDarkMode }: SidebarProps) {

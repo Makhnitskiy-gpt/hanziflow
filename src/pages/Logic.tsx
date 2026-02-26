@@ -157,32 +157,69 @@ export default function Logic() {
       {activeTab === 'families' && (
         <div className="flex flex-col gap-4">
           {familyData ? (
-            <FamilyTree
-              rootChar={familyData.rootChar}
-              rootPinyin={familyData.rootPinyin}
-              rootMeaning={familyData.rootMeaning}
-              derivatives={familyData.derivatives}
-              learnedChars={learnedChars}
-              onCharSelect={handleCharSelect}
-            />
-          ) : (
-            <div className="flex flex-col items-center gap-4 py-12 text-rice-dim">
-              <span className="font-hanzi text-4xl opacity-20">族</span>
-              <p className="text-sm text-center">
-                Выберите иероглиф из матрицы или списка,<br />
-                чтобы увидеть его семью
-              </p>
+            <>
+              {/* Back button */}
+              <button
+                onClick={() => {
+                  setSelectedFamily(null);
+                  setCurrentChar(undefined);
+                }}
+                className="self-start flex items-center gap-1.5 px-3 py-2 min-h-[44px] text-sm text-rice-muted hover:text-rice bg-ink-elevated rounded-lg border border-ink-border transition-colors focus-visible:ring-2 focus-visible:ring-cinnabar"
+              >
+                <span aria-hidden="true">&larr;</span> Все семьи
+              </button>
 
-              {/* Quick select from available families */}
-              <div className="flex flex-wrap gap-2 max-w-md justify-center mt-4">
-                {Object.entries(logicData.phonetic_components).slice(0, 12).map(([component, data]) => (
+              <FamilyTree
+                rootChar={familyData.rootChar}
+                rootPinyin={familyData.rootPinyin}
+                rootMeaning={familyData.rootMeaning}
+                derivatives={familyData.derivatives}
+                learnedChars={learnedChars}
+                onCharSelect={handleCharSelect}
+              />
+            </>
+          ) : (
+            <div className="flex flex-col gap-4">
+              {/* Explanation */}
+              <div className="rice-paper rounded-lg p-4 border border-ink-border">
+                <p className="text-sm text-rice-muted leading-relaxed">
+                  <strong className="text-rice">Семья иероглифов</strong> — группа знаков с общим компонентом.
+                  Выберите корневой компонент, чтобы увидеть все производные иероглифы.
+                </p>
+              </div>
+
+              {/* Section: Phonetic families */}
+              <h3 className="text-sm text-rice font-medium">Фонетические семьи <span className="text-rice-dim font-normal">({Object.keys(logicData.phonetic_components).length})</span></h3>
+              <div className="flex flex-wrap gap-2">
+                {Object.entries(logicData.phonetic_components).map(([component, data]) => (
                   <button
                     key={component}
                     onClick={() => handleCharSelect(component)}
-                    className="px-3 py-1.5 rounded-md bg-ink-elevated border border-ink-border text-sm hover:border-gold-dim transition-colors"
+                    className="flex items-center gap-2 px-3 py-2 min-h-[44px] rounded-lg bg-ink-elevated border border-ink-border text-sm hover:border-gold-dim transition-colors focus-visible:ring-2 focus-visible:ring-cinnabar"
                   >
-                    <span className="font-hanzi text-hanzi">{component}</span>
-                    <span className="text-rice-dim ml-1">({data.derivatives.length})</span>
+                    <span className="font-hanzi text-xl text-hanzi">{component}</span>
+                    <div className="flex flex-col items-start">
+                      <span className="text-xs text-gold">{data.pinyin}</span>
+                      <span className="text-xs text-rice-dim">{data.derivatives.length} производных</span>
+                    </div>
+                  </button>
+                ))}
+              </div>
+
+              {/* Section: Semantic families */}
+              <h3 className="text-sm text-rice font-medium mt-4">Семантические семьи <span className="text-rice-dim font-normal">({Object.keys(logicData.semantic_families).length})</span></h3>
+              <div className="flex flex-wrap gap-2">
+                {Object.entries(logicData.semantic_families).map(([radical, data]) => (
+                  <button
+                    key={radical}
+                    onClick={() => handleCharSelect(radical)}
+                    className="flex items-center gap-2 px-3 py-2 min-h-[44px] rounded-lg bg-ink-elevated border border-ink-border text-sm hover:border-jade/30 transition-colors focus-visible:ring-2 focus-visible:ring-cinnabar"
+                  >
+                    <span className="font-hanzi text-xl text-hanzi">{radical}</span>
+                    <div className="flex flex-col items-start">
+                      <span className="text-xs text-jade">{data.meaning_ru ?? ''}</span>
+                      <span className="text-xs text-rice-dim">{data.derivatives.length} производных</span>
+                    </div>
                   </button>
                 ))}
               </div>

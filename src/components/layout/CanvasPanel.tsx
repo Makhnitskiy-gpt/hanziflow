@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { useLiveQuery } from 'dexie-react-hooks';
+import { db } from '@/db';
 import { StrokeCanvas } from '@/components/practice/StrokeCanvas';
 import { WritingPad } from '@/components/practice/WritingPad';
 
@@ -10,6 +12,16 @@ type CanvasMode = 'stroke' | 'draw';
 
 export function CanvasPanel({ currentChar }: CanvasPanelProps) {
   const [mode, setMode] = useState<CanvasMode>('stroke');
+
+  // Resolve itemId and itemType for the current character (for saving mnemonics)
+  const itemInfo = useLiveQuery(async () => {
+    if (!currentChar) return null;
+    const radical = await db.radicals.where('char').equals(currentChar).first();
+    if (radical) return { itemId: radical.id, itemType: 'radical' as const };
+    const character = await db.characters.where('char').equals(currentChar).first();
+    if (character) return { itemId: character.id, itemType: 'character' as const };
+    return null;
+  }, [currentChar]);
 
   return (
     <aside className="flex h-full w-[360px] flex-col border-l border-ink-border bg-ink-surface">
@@ -23,8 +35,7 @@ export function CanvasPanel({ currentChar }: CanvasPanelProps) {
               : 'text-rice-muted hover:text-rice'
           }`}
         >
-          <span className="font-hanzi mr-1">練習</span>
-          <span className="text-xs">Штрихи</span>
+          Штрихи
         </button>
         <button
           onClick={() => setMode('draw')}
@@ -34,8 +45,7 @@ export function CanvasPanel({ currentChar }: CanvasPanelProps) {
               : 'text-rice-muted hover:text-rice'
           }`}
         >
-          <span className="font-hanzi mr-1">畫</span>
-          <span className="text-xs">Рисование</span>
+          Рисование
         </button>
       </div>
 
@@ -50,14 +60,16 @@ export function CanvasPanel({ currentChar }: CanvasPanelProps) {
             />
           ) : (
             <div className="flex flex-col items-center gap-3 text-rice-dim">
-              <span className="font-hanzi text-4xl opacity-30">字</span>
               <p className="text-sm text-center">
                 Выберите иероглиф для<br />практики штрихов
               </p>
             </div>
           )
         ) : (
-          <WritingPad />
+          <WritingPad
+            itemId={itemInfo?.itemId}
+            itemType={itemInfo?.itemType}
+          />
         )}
       </div>
     </aside>
